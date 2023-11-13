@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "RELAY🚩",
                 "US🇺🇸",
                 "DE🇩🇪",
                 "GB🇬🇧",
@@ -120,7 +121,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @iP_CF | DE🇩🇪 | 0️⃣3️⃣",
@@ -138,10 +139,19 @@
             "tolerance": 50
         },
         {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣"
             ],
@@ -204,7 +214,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "aws-aus-sydney-1.f1cflinea.com",
             "server_port": 443,
