@@ -110,10 +110,10 @@
                 "TR🇹🇷",
                 "US🇺🇸",
                 "FI🇫🇮",
-                "FR🇫🇷",
                 "IT🇮🇹",
                 "IR🇮🇷",
                 "NO🇳🇴",
+                "FR🇫🇷",
                 "LV🇱🇻",
                 "NL🇳🇱"
             ]
@@ -250,13 +250,12 @@
                 "رایگان | REALITY | @V2Hub | Donated | FI🇫🇮 | 1️⃣5️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | FI🇫🇮 | 3️⃣1️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | FI🇫🇮 | 3️⃣5️⃣",
-                "رایگان | REALITY | @V2RayTz | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2Hub | Donated | FR🇫🇷 | 1️⃣3️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | IR🇮🇷 | 0️⃣6️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | IR🇮🇷 | 0️⃣8️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | IR🇮🇷 | 1️⃣4️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | NO🇳🇴 | 1️⃣0️⃣",
+                "رایگان | REALITY | @V2Hub | Donated | FR🇫🇷 | 1️⃣3️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | LV🇱🇻 | 3️⃣4️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | NL🇳🇱 | 3️⃣7️⃣"
             ],
@@ -438,17 +437,6 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @V2RayTz | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2Hub | Donated | FR🇫🇷 | 1️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
@@ -475,6 +463,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2Hub | Donated | NO🇳🇴 | 1️⃣0️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2Hub | Donated | FR🇫🇷 | 1️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -4288,76 +4286,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @V2RayTz | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "940-Join.V2RayTz.sbs",
-            "server_port": 25437,
-            "uuid": "da181e60-1617-4f63-b6fb-8206d0bc3878",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "agoli.nufilter.store",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4kUMdeZyy4x765VwzFBIZDAZJ_jgxCw7Adkvg75HoAA",
-                    "short_id": "dfeef0c3"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett,@ServerNett",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @V2Hub | Donated | FR🇫🇷 | 1️⃣3️⃣",
-            "type": "vless",
-            "server": "46.105.218.0",
-            "server_port": 16741,
-            "uuid": "d2176467-4879-4beb-94e9-f1fa8177d8e2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ea.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "kp0my80cNyM8TPeU-LbUaU3DSlAnYkbJ9jeWI2WougM",
-                    "short_id": "6ae860e1"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @V2Hub | Donated | IT🇮🇹 | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.84.196.39",
@@ -4499,6 +4427,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "g2com",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2Hub | Donated | FR🇫🇷 | 1️⃣3️⃣",
+            "type": "vless",
+            "server": "46.105.218.0",
+            "server_port": 16741,
+            "uuid": "d2176467-4879-4beb-94e9-f1fa8177d8e2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ea.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kp0my80cNyM8TPeU-LbUaU3DSlAnYkbJ9jeWI2WougM",
+                    "short_id": "6ae860e1"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
