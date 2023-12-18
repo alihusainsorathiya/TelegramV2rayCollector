@@ -110,20 +110,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "US🇺🇸",
+                "RELAY🚩",
                 "GB🇬🇧",
                 "FR🇫🇷",
                 "JP🇯🇵",
                 "DE🇩🇪",
-                "CA🇨🇦"
+                "CA🇨🇦",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @V2rayCollectorDonate | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @yaney_01 | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @V2rayCollectorDonate | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | GB🇬🇧 | 0️⃣2️⃣",
@@ -134,18 +134,18 @@
                 "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @yaney_01 | CA🇨🇦 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @yaney_01 | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @yaney_01 | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @V2rayCollectorDonate | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @yaney_01 | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @V2rayCollectorDonate | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -208,7 +208,17 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @V2rayCollectorDonate | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @yaney_01 | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @V2rayCollectorDonate | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "ip.1alpha1.shop",
             "server_port": 8443,
@@ -233,18 +243,6 @@
                 "headers": {
                     "Host": "trows.1alpha1.shop"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @yaney_01 | US🇺🇸 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "64.110.90.224",
-            "server_port": 40004,
-            "password": "57edfecf-5694-4a34-8072-54a4f0636a62",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -468,6 +466,18 @@
             "tag": "رایگان | TROJAN | @yaney_01 | CA🇨🇦 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "68.233.121.121",
+            "server_port": 40004,
+            "password": "57edfecf-5694-4a34-8072-54a4f0636a62",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @yaney_01 | US🇺🇸 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "64.110.90.224",
             "server_port": 40004,
             "password": "57edfecf-5694-4a34-8072-54a4f0636a62",
             "multiplex": {
