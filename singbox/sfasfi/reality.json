@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "FI🇫🇮",
                 "DE🇩🇪",
                 "RU🇷🇺",
                 "PK🇵🇰",
@@ -124,6 +125,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @V2RayTz | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2Hub | Donated | DE🇩🇪 | 0️⃣1️⃣",
@@ -214,6 +216,16 @@
                 "رایگان | REALITY | @Nika_Shakarami | Donated | US🇺🇸 | 4️⃣8️⃣",
                 "رایگان | REALITY | @Nika_Shakarami | Donated | US🇺🇸 | 4️⃣9️⃣",
                 "رایگان | REALITY | @Nika_Shakarami | Donated | US🇺🇸 | 5️⃣0️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2RayTz | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -398,6 +410,41 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @V2RayTz | FI🇫🇮 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "65.21.58.66",
+            "server_port": 443,
+            "uuid": "ed1b1f97-db22-4df1-b6a4-5e0a3462e389",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "upmusics.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QQccw-lr9IZ5f7B5918_3LVWRwJF4Hg97ND5j78JwVU",
+                    "short_id": "7ad4bd9d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
