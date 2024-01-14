@@ -118,13 +118,12 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @forwardv2ray | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @DirectVPN | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @yaney_01 | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @yaney_01 | JP🇯🇵 | 0️⃣2️⃣"
             ],
@@ -137,8 +136,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @iP_CF | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @forwardv2ray | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -170,7 +168,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -225,11 +223,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "cdn-13.cdn2cdn.com",
-            "server_port": 2083,
-            "password": "qG9K8AGnn9XH5jUqeFu96g",
+            "server": "de6.melobigg.site",
+            "server_port": 443,
+            "password": "yjQi9IX5mu",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -237,7 +235,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn13.cdn2cdn.com",
+                "server_name": "de6.melobigg.site",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -246,37 +244,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/me",
                 "headers": {
-                    "Host": "cdn13.cdn2cdn.com"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @forwardv2ray | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "cdn-16.cdn2cdn.com",
-            "server_port": 2083,
-            "password": "gviRoLVUKA5kBX2M0gJSvg",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn16.cdn2cdn.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cdn16.cdn2cdn.com"
+                    "Host": null
                 }
             }
         },
@@ -365,11 +335,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "de6.melobigg.site",
-            "server_port": 443,
-            "password": "yjQi9IX5mu",
+            "server": "cdn-13.cdn2cdn.com",
+            "server_port": 2083,
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -377,7 +347,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de6.melobigg.site",
+                "server_name": "cdn13.cdn2cdn.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -386,9 +356,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/me",
+                "path": "\/",
                 "headers": {
-                    "Host": null
+                    "Host": "cdn13.cdn2cdn.com"
                 }
             }
         },
