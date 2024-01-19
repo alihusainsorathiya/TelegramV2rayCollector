@@ -107,8 +107,8 @@
                 "URL-TEST | رایگان",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @forwardv2ray | FI🇫🇮 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ]
         },
         {
@@ -117,8 +117,8 @@
             "outbounds": [
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @forwardv2ray | FI🇫🇮 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -195,6 +195,41 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @VmessProtocol | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "5.42.86.225",
+            "server_port": 2058,
+            "uuid": "18d0c2b1-7f35-4954-bb74-b86d3a0e66c5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.who.int",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1yjMDe_3ZcrJDc4fGqWPmy-udJRLW502p2EjplmCWx8",
+                    "short_id": "76753364"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "116.203.5.228",
@@ -224,41 +259,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@wancloudfa",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @forwardv2ray | FI🇫🇮 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "95.217.128.188",
-            "server_port": 443,
-            "uuid": "daeec10e-92f4-4346-b174-60c0920a896c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "3tpharma.com.vn",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "whCikzvk0RJwGHSVOBAwvzpR7YP8sjc4arHDSEmuKiY",
-                    "short_id": "d9eadeae"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
