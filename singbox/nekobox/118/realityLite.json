@@ -108,48 +108,15 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": [
-                "URL-TEST | رایگان",
-                "رایگان | REALITY | @forwardv2ray | IR🇮🇷 | 0️⃣2️⃣"
-            ]
+            "outbounds": null
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @forwardv2ray | IR🇮🇷 | 0️⃣2️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @forwardv2ray | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "91.107.152.11",
-            "server_port": 50826,
-            "uuid": "ee61e1ed-5ef2-4f4f-9607-0e98ba648289",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discord.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1rBainssU0b7YBuC5XRzvQMgCEntSVQ3YHj21XdRyBM",
-                    "short_id": "4c10a7d8"
-                }
-            }
         },
         {
             "tag": "direct",
