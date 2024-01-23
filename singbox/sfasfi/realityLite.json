@@ -106,15 +106,48 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST | رایگان",
+                "رایگان | REALITY | @forwardv2ray | AU🇦🇺 | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "رایگان | REALITY | @forwardv2ray | AU🇦🇺 | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @forwardv2ray | AU🇦🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "168.138.1.240",
+            "server_port": 45454,
+            "uuid": "Azadi-az-inja-migzare",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7CAmwf8sQED881rdAtKEIBo_uOel_roRoMGO0xJzbyU",
+                    "short_id": "3dae8e8d"
+                }
+            }
         },
         {
             "tag": "direct",
