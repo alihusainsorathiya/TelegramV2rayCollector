@@ -108,16 +108,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "IR🇮🇷",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "IR🇮🇷"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @V2rayCollectorDonate | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @forwardv2ray | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayCollectorDonate | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @forwardv2ray | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,22 +148,12 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @Outlinev2rayNG | DE🇩🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @V2rayCollectorDonate | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "91.107.153.57",
-            "server_port": 41896,
-            "uuid": "8f172083-fb7f-40a4-b509-b0f007d7db4c",
-            "flow": "xtls-rprx-vision",
+            "server": "reversereality4.freelines.net",
+            "server_port": 443,
+            "uuid": "8f55f968-8ef3-4558-e0a5-8dc9cd10076f",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -158,17 +162,24 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "discord.com",
+                "server_name": "reversereality4.freelines.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "7dyMBOW0SokLK4EstrmTezP7Jj0SUe74R5Z6tFlz8TQ",
-                    "short_id": "b1e61a21"
+                    "public_key": "AFPcGxQqvUIftXlPdPqfLnT0_VZIrYBg1UH-fn1i_mk",
+                    "short_id": "c4d30fb6"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -204,6 +215,69 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @forwardv2ray | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "49.13.167.75",
+            "server_port": 443,
+            "uuid": "0cffbb80-900f-4c3c-b256-a907d5becda8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "t.ArV2ray.shop",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Ao_iIDifXHZgU3ec0G1J6xBsDFSAM-nXBArGbBXpwWE",
+                    "short_id": "10f8fb3a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "91.107.153.57",
+            "server_port": 41896,
+            "uuid": "8f172083-fb7f-40a4-b509-b0f007d7db4c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7dyMBOW0SokLK4EstrmTezP7Jj0SUe74R5Z6tFlz8TQ",
+                    "short_id": "b1e61a21"
+                }
             }
         },
         {
