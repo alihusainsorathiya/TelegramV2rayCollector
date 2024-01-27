@@ -108,35 +108,75 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪"
+                "IR🇮🇷",
+                "SE🇸🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayCollectorDonate | DE🇩🇪 | 1️⃣6️⃣"
+                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "IR🇮🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayCollectorDonate | DE🇩🇪 | 1️⃣6️⃣"
+                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @V2rayCollectorDonate | DE🇩🇪 | 1️⃣6️⃣",
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "reversereality4.freelines.net",
+            "server": "91.107.249.141",
+            "server_port": 52391,
+            "uuid": "fd881ed5-1c65-422e-a0ef-505690c4c3f3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "aLE5KaEL109tMDAisa1qRPFMzgBsNiZXCLzNZ0S-hmY",
+                    "short_id": "366fba16"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "70.34.219.139",
             "server_port": 443,
-            "uuid": "8f55f968-8ef3-4558-e0a5-8dc9cd10076f",
+            "uuid": "b44481aa-46c7-4d2f-e342-1317d65adfd2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -146,7 +186,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "reversereality4.freelines.net",
+                "server_name": "reversereality2.freelines.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -154,8 +194,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "AFPcGxQqvUIftXlPdPqfLnT0_VZIrYBg1UH-fn1i_mk",
-                    "short_id": "c4d30fb6"
+                    "public_key": "rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w",
+                    "short_id": ""
                 }
             },
             "transport": {
