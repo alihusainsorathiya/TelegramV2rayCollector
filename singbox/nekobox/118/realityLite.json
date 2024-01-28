@@ -110,8 +110,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣"
             ]
         },
@@ -119,76 +117,11 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @VmessProtocol | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "91.107.249.141",
-            "server_port": 52391,
-            "uuid": "fd881ed5-1c65-422e-a0ef-505690c4c3f3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discord.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "aLE5KaEL109tMDAisa1qRPFMzgBsNiZXCLzNZ0S-hmY",
-                    "short_id": "366fba16"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @VmessProtocol | SE🇸🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "70.34.219.139",
-            "server_port": 443,
-            "uuid": "b44481aa-46c7-4d2f-e342-1317d65adfd2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "reversereality2.freelines.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "رایگان | REALITY | @fnet00 | DE🇩🇪 | 0️⃣1️⃣",
