@@ -106,6 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | REALITY | @V2pedia | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | PL🇵🇱 | 0️⃣7️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣8️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | FI🇫🇮 | 1️⃣1️⃣",
@@ -118,6 +119,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2pedia | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | PL🇵🇱 | 0️⃣7️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣8️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | FI🇫🇮 | 1️⃣1️⃣",
@@ -158,6 +160,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayCollectorDonate | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ractm.pubgji.eu.org",
+            "server_port": 39152,
+            "uuid": "14895f01-3e17-4253-9913-bbc3dcb169b9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "account.zula.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sdBnam4YRnGK5b-jYt2DGOucuHh6Y0eUAOgnZuDt1Go",
+                    "short_id": "0f50d389"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
