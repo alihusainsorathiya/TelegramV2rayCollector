@@ -108,49 +108,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "FR🇫🇷",
-                "RU🇷🇺",
                 "SE🇸🇪",
+                "RU🇷🇺",
                 "IE🇮🇪",
-                "US🇺🇸",
                 "RELAY🚩",
-                "CA🇨🇦"
+                "CA🇨🇦",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @iP_CF | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @V2rayCollectorDonate | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @V2rayCollectorDonate | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @V2rayCollectorDonate | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @DirectVPN | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @iP_CF | FR🇫🇷 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @V2rayCollectorDonate | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -160,7 +139,18 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @V2rayCollectorDonate | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | SE🇸🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @V2rayCollectorDonate | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -178,22 +168,12 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @DirectVPN | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -210,31 +190,20 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @iP_CF | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "fr1.test3.net",
-            "server_port": 443,
-            "password": "147669c0-cbef-11ee-b2e9-1239d0255272",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "irancell.ir",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @V2rayCollectorDonate | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @V2rayCollectorDonate | SE🇸🇪 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "ru01.bsawc.shop",
-            "server_port": 30005,
+            "server": "sg02.bsawc.shop",
+            "server_port": 51652,
             "password": "6a407a94-3fda-4946-a48c-2aa1ced31687",
             "multiplex": {
                 "enabled": false,
@@ -243,7 +212,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ru01.bsawc.shop",
+                "server_name": "sg02.bsawc.shop",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -265,6 +234,27 @@
             "tls": {
                 "enabled": true,
                 "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @V2rayCollectorDonate | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "ru01.bsawc.shop",
+            "server_port": 30005,
+            "password": "6a407a94-3fda-4946-a48c-2aa1ced31687",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ru01.bsawc.shop",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -311,55 +301,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @DirectVPN | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "44.217.13.206",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "cdn13.cdn2cdn.com",
-            "server_port": 2083,
-            "password": "qG9K8AGnn9XH5jUqeFu96g",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn13.cdn2cdn.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": null
                 }
             }
         },
@@ -420,6 +361,34 @@
             }
         },
         {
+            "tag": "رایگان | TROJAN | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "hongkong.followerpanell.ir",
+            "server_port": 8443,
+            "password": "e40c26851093180",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "162.159.1.94",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "99.79.131.31",
@@ -437,6 +406,34 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "cdn13.cdn2cdn.com",
+            "server_port": 2083,
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn13.cdn2cdn.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": null
                 }
             }
         },
