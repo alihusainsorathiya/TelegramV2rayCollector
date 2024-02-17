@@ -107,8 +107,7 @@
                 "URL-TEST | رایگان",
                 "IR🇮🇷",
                 "DE🇩🇪",
-                "NL🇳🇱",
-                "FI🇫🇮"
+                "NL🇳🇱"
             ]
         },
         {
@@ -117,8 +116,7 @@
             "outbounds": [
                 "رایگان | REALITY | @ARv2ray | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray_swhil | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣3️⃣",
-                "رایگان | REALITY | @VmessProtocol | FI🇫🇮 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,16 +147,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FI🇫🇮",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -264,41 +252,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @VmessProtocol | FI🇫🇮 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "fi-01.allhub.ltd",
-            "server_port": 443,
-            "uuid": "9e6e8844-5eca-4e7e-b02e-235234521658",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "MZdzrFI1TPMrqDmtAuEsQjGGe0scA9mmMSWevCY33h4",
-                    "short_id": "6c92dc78"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
