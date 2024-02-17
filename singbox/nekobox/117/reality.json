@@ -105,28 +105,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "US🇺🇸",
-                "DE🇩🇪",
-                "FI🇫🇮"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ipV2Ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @forwardv2ray | FI🇫🇮 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ipV2Ray | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @V2RayTz | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,56 +123,12 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2RayTz | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "FI🇫🇮",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @forwardv2ray | FI🇫🇮 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @ipV2Ray | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "152.42.140.102",
-            "server_port": 443,
-            "uuid": "2af6333f-f071-4b06-bdfc-d4d54cee690c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mail.feat.agency",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "g4XT9dWsau6T9lqs6zvwmz0FPALeWVsWcSGvrBeOA14",
-                    "short_id": "9f28192e"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣2️⃣",
@@ -223,12 +166,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @forwardv2ray | FI🇫🇮 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @V2RayTz | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "95.217.246.107",
-            "server_port": 990,
-            "uuid": "d8df1c33-b516-4a06-8632-6551af445eaa",
-            "flow": "xtls-rprx-vision",
+            "server": "195.201.38.188",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -237,17 +180,24 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fixedfloat.com",
+                "server_name": "greenpepper.ir",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "7uQawZMYd4y20_F-FLXDVzbQTovNRdKwYY3RNOyNrk0",
-                    "short_id": "6edd5a0eec3bd2e7"
+                    "public_key": "ukD3I7XRdbBvLVOscQVtAe5vJs7nYubH0E5ES4XUbX8",
+                    "short_id": "5a4ce4d9"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
