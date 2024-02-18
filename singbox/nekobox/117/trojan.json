@@ -109,8 +109,7 @@
                 "GB🇬🇧",
                 "RELAY🚩",
                 "DE🇩🇪",
-                "CA🇨🇦",
-                "US🇺🇸"
+                "CA🇨🇦"
             ]
         },
         {
@@ -121,11 +120,10 @@
                 "رایگان | TROJAN | @PrivateVPNs | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @forwardv2ray | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @fnet00 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @forwardv2ray | CA🇨🇦 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,7 +155,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @forwardv2ray | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @fnet00 | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -167,7 +165,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -177,18 +176,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @forwardv2ray | CA🇨🇦 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @V2RayTz | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -286,11 +274,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @forwardv2ray | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @fnet00 | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "cdn-16.cdn2cdn.com",
+            "server": "cdn13.cdn2cdn.com",
             "server_port": 2083,
-            "password": "gviRoLVUKA5kBX2M0gJSvg",
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -298,7 +286,35 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn16.cdn2cdn.com",
+                "server_name": "cdn13.cdn2cdn.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": null
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "5.104.108.109",
+            "server_port": 443,
+            "password": "45a8d20d-9a78-4be4-a74a-ab3b9e84e34e",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "20-24-33-134.nhost.00cdn.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -307,9 +323,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "5.104.108.109",
+            "server": "5.104.108.120",
             "server_port": 443,
             "password": "45a8d20d-9a78-4be4-a74a-ab3b9e84e34e",
             "multiplex": {
@@ -345,55 +361,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @forwardv2ray | CA🇨🇦 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "23.227.38.46",
-            "server_port": 443,
-            "password": "02e2ac12-e4eb-4082-958f-9f007938bc44",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jus3.jsjc.sbs",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "cdn13.cdn2cdn.com",
-            "server_port": 2083,
-            "password": "qG9K8AGnn9XH5jUqeFu96g",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn13.cdn2cdn.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": null
                 }
             }
         },
