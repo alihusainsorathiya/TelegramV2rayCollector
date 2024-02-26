@@ -108,27 +108,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱",
-                "LU🇱🇺"
+                "LU🇱🇺",
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ipV2Ray | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayng_vpnrog | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | LU🇱🇺 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ipV2Ray | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ShadowProxy66 | LU🇱🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayng_vpnrog | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -146,11 +134,21 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @ipV2Ray | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayng_vpnrog | NL🇳🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @ShadowProxy66 | LU🇱🇺 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "188.166.41.78",
+            "server": "107.189.28.186",
             "server_port": 443,
-            "uuid": "697c90e6-af69-4bcf-b2ff-daa2199240f0",
+            "uuid": "0f57a21f-e7bd-41a1-9a64-37ade75714b5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -160,7 +158,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ziethh.com",
+                "server_name": "*.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -168,13 +166,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "npq0eNhO705tMPWJ14ciofEpNInHQCecwFljrxex8FU",
-                    "short_id": "f34d400b"
+                    "public_key": "C9XTLtWUS7bxjXafKZ3z_Qgg-jjfMPoAamMhLBmciCw",
+                    "short_id": "b2d438a1"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ipV2Ray",
+                "service_name": "channelV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -210,41 +208,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | LU🇱🇺 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "107.189.28.186",
-            "server_port": 443,
-            "uuid": "0f57a21f-e7bd-41a1-9a64-37ade75714b5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "*.cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "C9XTLtWUS7bxjXafKZ3z_Qgg-jjfMPoAamMhLBmciCw",
-                    "short_id": "b2d438a1"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "channelV2Ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
