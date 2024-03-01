@@ -111,7 +111,8 @@
                 "RELAY🚩",
                 "FR🇫🇷",
                 "DE🇩🇪",
-                "NL🇳🇱"
+                "NL🇳🇱",
+                "US🇺🇸"
             ]
         },
         {
@@ -121,9 +122,10 @@
                 "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,8 +146,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,7 +156,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,6 +168,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -249,11 +261,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @DirectVPN | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "35.181.182.54",
+            "server": "18.197.74.97",
             "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "password": "telegram-id-privatevpns",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -270,9 +282,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "18.197.74.97",
+            "server": "18.193.187.115",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -315,6 +327,25 @@
                 "path": "\/",
                 "headers": {
                     "Host": "cdn13.cdn2cdn.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "zula.ir",
+            "server_port": 443,
+            "password": "d9c08db0-d81e-11ee-8c0c-1239d0255272",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/howdy",
+                "headers": {
+                    "Host": "us1.test3.net"
                 }
             }
         },
