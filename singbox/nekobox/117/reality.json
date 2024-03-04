@@ -106,7 +106,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "US🇺🇸"
+                "GB🇬🇧",
+                "RELAY🚩"
             ]
         },
         {
@@ -117,9 +118,9 @@
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @vpnmasi | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | GB🇬🇧 | 0️⃣3️⃣",
+                "رایگان | REALITY | @vpnmasi | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +134,6 @@
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -141,10 +141,20 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @vpnmasi | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | GB🇬🇧 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @vpnmasi | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -291,34 +301,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "49.13.69.46",
-            "server_port": 56078,
-            "uuid": "dbff34ab-eb96-441d-9f07-30f0a7776037",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "canva.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SUCJ94wKPUdfkBJw8VnANql6kevueb6EyA71C3AfKFs",
-                    "short_id": "bf44fc2c"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "68.183.79.49",
@@ -354,7 +336,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @vpnmasi | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | GB🇬🇧 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "143.47.241.46",
+            "server_port": 16097,
+            "uuid": "378387d5-4370-4e38-9661-25796e8630ba",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.amazon.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qMH_7IYKzR0mOLN35mnQijwzN8IiWdudhryTHaQzWS0",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @vpnmasi | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "all.savagev2ray.site",
             "server_port": 2087,
