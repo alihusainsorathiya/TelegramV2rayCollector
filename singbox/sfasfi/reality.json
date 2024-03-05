@@ -110,6 +110,7 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "TR🇹🇷",
+                "RELAY🚩",
                 "US🇺🇸"
             ]
         },
@@ -121,9 +122,9 @@
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @iP_CF | TR🇹🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @vpnmasi | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @vpnmasi | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,8 +137,7 @@
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -154,10 +154,20 @@
             "tolerance": 50
         },
         {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @vpnmasi | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @vpnmasi | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -304,41 +314,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "167.99.130.148",
-            "server_port": 443,
-            "uuid": "6c8ef4af-04c7-4a85-af1a-d667453a7e49",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "*.spiderermes.it",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zUjEdJBAjv-A-j9blSCSbBe15xZSvKP5SUGIg8-etBE",
-                    "short_id": "9ba0ab2a"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @iP_CF | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "abadis.ir.mmdargon.top",
@@ -374,7 +349,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @vpnmasi | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @vpnmasi | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "all.savagev2ray.site",
             "server_port": 2087,
@@ -403,6 +378,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Vpnmasi,@Vpnmasi,@Vpnmasi,@Vpnmasi,@Vpnmasi,@Vpnmasi,@Vpnmasi,@Vpnmasi,@Vpnmasi",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "64.23.198.141",
+            "server_port": 443,
+            "uuid": "a9bd02d0-5b7b-44c5-bfe0-1c965f9f1f1f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5g9es6lOoOCcJm9VZFwluzFlaxWe5B33Q97vjNYlPAw",
+                    "short_id": "c462d285"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
