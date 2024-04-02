@@ -113,6 +113,7 @@
                 "RELAY🚩",
                 "DE🇩🇪",
                 "SE🇸🇪",
+                "TW🇹🇼",
                 "RU🇷🇺"
             ]
         },
@@ -125,7 +126,8 @@
                 "رایگان | TROJAN | @PrivateVPNs | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | SE🇸🇪 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | TW🇹🇼 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,10 +166,20 @@
             "tolerance": 50
         },
         {
+            "tag": "TW🇹🇼",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | TW🇹🇼 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -293,7 +305,28 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | TW🇹🇼 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "ty11t.twty.dynu.net",
+            "server_port": 13761,
+            "password": "3bedceff-1956-4f2c-a9c1-45c74568a560",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com",
             "server_port": 1007,
