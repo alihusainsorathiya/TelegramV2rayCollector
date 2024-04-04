@@ -111,6 +111,7 @@
                 "DE🇩🇪",
                 "AL🇦🇱",
                 "FI🇫🇮",
+                "TR🇹🇷",
                 "NL🇳🇱"
             ]
         },
@@ -121,6 +122,7 @@
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | AL🇦🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollectorDonate | FI🇫🇮 | 1️⃣0️⃣",
+                "رایگان | REALITY | @proxyymeliii | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -152,6 +154,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2rayCollectorDonate | FI🇫🇮 | 1️⃣0️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxyymeliii | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -260,6 +272,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers-Telegram:@LegenderY_Servers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxyymeliii | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "mado3.maghzkadehturky.com.tr",
+            "server_port": 2053,
+            "uuid": "cc4d3871-e0ac-4024-b31c-18e630894016",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.discordapp.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "xyz",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
