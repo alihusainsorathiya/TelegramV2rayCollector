@@ -108,22 +108,52 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @Helix_Servers | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @vless_vmess | DE🇩🇪 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Helix_Servers | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @vless_vmess | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @Helix_Servers | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "lvl2.helixservers.chvrsi.ir",
+            "server_port": 443,
+            "uuid": "35f0755b-0ea2-4e6e-af68-1dba20ce64b6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xnLXDcGVZwMsFOjXT6SFK1cPJO66a1kfgn94x2Ih6UA",
+                    "short_id": "122efac9"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
@@ -189,12 +219,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @vless_vmess | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "91.107.160.71",
-            "server_port": 32912,
-            "uuid": "6101d81f-4cf6-40e6-81ae-7d30dd1f7a4a",
-            "flow": "",
+            "server": "5.75.207.215",
+            "server_port": 49830,
+            "uuid": "2104b29c-130d-4138-b6e5-cda78a11ff79",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -203,7 +233,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "github.io",
+                "server_name": "ftp.debian.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -211,8 +241,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "yDP19KgLJ0B8K73kObrTWo_N4pcFedyJ5MRuCdisHnk",
-                    "short_id": "6e4d5ce0"
+                    "public_key": "Dqs9RsG4pc8GWjiOZ1TYEm7Xt33g8OhcYDgfgQzhwho",
+                    "short_id": "2980368d"
                 }
             }
         },
