@@ -106,6 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @customv2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Capital_NET | DE🇩🇪 | 0️⃣1️⃣"
             ]
         },
@@ -114,6 +115,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @customv2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Capital_NET | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -150,6 +152,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @customv2ray | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "[::ffff:310d:452e]",
+            "server_port": 35689,
+            "uuid": "f0815d23-7a73-49ff-b3e5-2dbd787eeddd",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ea.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4ShiXcO4VVtmlyWzNE2DAtIwkeD7KKZgwgY-lfkNm3w",
+                    "short_id": "11b12101"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
