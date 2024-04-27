@@ -108,14 +108,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @CloudCityy | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,6 +153,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-Id-telegram-@CloudCityy-",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | TR🇹🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "154.53.164.147",
+            "server_port": 49015,
+            "uuid": "bc96fc46-141d-41b4-b627-c10c42c90f07",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lOiOGZ9yPUTnCcSEiUJbr1boJ6-QCNXScr-T3-5jtxo",
+                    "short_id": "a50291dd"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
