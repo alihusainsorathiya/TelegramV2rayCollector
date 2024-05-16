@@ -113,7 +113,7 @@
                 "RELAY🚩",
                 "GB🇬🇧",
                 "US🇺🇸",
-                "DE🇩🇪"
+                "SE🇸🇪"
             ]
         },
         {
@@ -133,11 +133,12 @@
                 "رایگان | VMESS | @yaney_01 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VMESS | @vless_vmess | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2rayng_config_amin | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,7 +160,8 @@
                 "رایگان | VMESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -188,10 +190,10 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -654,6 +656,42 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @v2Line | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.67.131.108",
+            "server_port": 443,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "185.146.173.94",
@@ -759,11 +797,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | SE🇸🇪 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.67.131.108",
-            "server_port": 443,
-            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "server": "se1.vpnjantit.com",
+            "server_port": 10000,
+            "uuid": "68737d4a-12d6-11ef-b1df-00163c623140",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -774,21 +812,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "glweidf.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/vpnjantit",
                 "headers": {
-                    "Host": "glweidf.cfd"
+                    "Host": "se1.vpnjantit.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
