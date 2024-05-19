@@ -105,20 +105,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "IR🇮🇷",
                 "RELAY🚩",
                 "SE🇸🇪",
                 "DE🇩🇪",
                 "LU🇱🇺",
                 "LT🇱🇹",
                 "US🇺🇸",
-                "NL🇳🇱",
-                "IR🇮🇷"
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VLESS | @Helix_Servers | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @shopingv2ray | RELAY🚩 | 0️⃣1️⃣",
@@ -258,7 +261,17 @@
                 "رایگان | VLESS | @bright_vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Capital_NET | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @frev2ray | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2RayTz | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @V2RayTz | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @Helix_Servers | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣"
             ],
@@ -470,15 +483,46 @@
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "رایگان | VLESS | @Helix_Servers | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "clients.helixservices.fun",
+            "server_port": 28219,
+            "uuid": "243008f17925188ae9935a58745558ed",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "jomo.arnoldonline.shop",
+            "server_port": 23760,
+            "uuid": "8f59a7fb-f2ea-40ee-a280-6233533e7c91",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.140.31.105",
+            "server_port": 48480,
+            "uuid": "e53b1131-d033-4c8d-bb32-ce47b720827c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣1️⃣",
@@ -1599,29 +1643,6 @@
         {
             "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "104.18.15.19",
-            "server_port": 8080,
-            "uuid": "Parsashonam-68",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "Parsashonam.我们累了.tech."
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vless",
             "server": "198.41.198.76",
             "server_port": 443,
             "uuid": "38a2070d-a256-48f3-891b-c9b68b01c8f7",
@@ -1652,7 +1673,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
+            "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "198.41.198.76",
             "server_port": 443,
@@ -1680,6 +1701,38 @@
                     "Host": "jd.wxgqlfx.top"
                 },
                 "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "172.67.204.39",
+            "server_port": 443,
+            "uuid": "7f3b2f37-819e-49ee-9f5c-215467bfde61",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "turkmenistan.armanibash.Shop.",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "turkmenistan.armanibash.Shop."
+                },
+                "max_early_data": 2048,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
@@ -4214,34 +4267,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "jomo.arnoldonline.shop",
-            "server_port": 23760,
-            "uuid": "8f59a7fb-f2ea-40ee-a280-6233533e7c91",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "45.140.31.105",
-            "server_port": 48480,
-            "uuid": "e53b1131-d033-4c8d-bb32-ce47b720827c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
