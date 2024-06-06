@@ -114,6 +114,7 @@
                 "NL🇳🇱",
                 "AM🇦🇲",
                 "LU🇱🇺",
+                "IR🇮🇷",
                 "US🇺🇸"
             ]
         },
@@ -273,6 +274,7 @@
                 "رایگان | VLESS | @frev2ray | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @frev2ray | AM🇦🇲 | 0️⃣2️⃣",
                 "رایگان | VLESS | @iP_CF | LU🇱🇺 | 0️⃣1️⃣",
+                "رایگان | VLESS | @vless_vmess | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @bright_vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayng_vpnrog | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Capital_NET | US🇺🇸 | 0️⃣1️⃣"
@@ -482,6 +484,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @iP_CF | LU🇱🇺 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @vless_vmess | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -4542,6 +4554,29 @@
                 "path": "\/bb",
                 "headers": {
                     "Host": "pronkmax.org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vless_vmess | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "176.97.220.168",
+            "server_port": 15338,
+            "uuid": "0125494a-67b1-4262-a758-dee5abe8ac66",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
