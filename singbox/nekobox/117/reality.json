@@ -105,38 +105,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪",
                 "US🇺🇸",
                 "FR🇫🇷",
-                "CY🇨🇾"
+                "CY🇨🇾",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | CY🇨🇾 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @VmessProtocol | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,8 +134,7 @@
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -177,109 +161,14 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @ipV2Ray | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "c2.vact.ir",
-            "server_port": 2083,
-            "uuid": "fbc852de-50f4-49c1-a2b5-2d7960723e7b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "IXXrQcqXgzopBeSGpCO_u53keeKZaN1AoOzdyLA-Mzo",
-                    "short_id": "11a4b6bca8"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "c1.vact.ir",
-            "server_port": 2083,
-            "uuid": "2f6a2a02-df12-47e3-8c69-15356f90d44e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Re7kdDBxVgsI4VmCHrcsPeKD4CBoB6Oc8fqxtWJ6m18",
-                    "short_id": "90278dfc"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "c2.vact.ir",
-            "server_port": 2083,
-            "uuid": "0ec9f944-136f-40d6-a126-4fafc0f479d5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "IXXrQcqXgzopBeSGpCO_u53keeKZaN1AoOzdyLA-Mzo",
-                    "short_id": "11a4b6bca8"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣1️⃣",
@@ -394,34 +283,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @fnet00 | US🇺🇸 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "156.229.163.157",
-            "server_port": 12328,
-            "uuid": "10ade744-d103-40d8-83e0-77a9bc343c07",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.swift.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "0YSYFeihg5eJSBANonnWjrMl4SrWsZ0bdPOKhPdFpFI",
-                    "short_id": "6ba85179e30d4fc2"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.95.233.8",
@@ -475,6 +336,41 @@
                     "public_key": "cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "c2.vact.ir",
+            "server_port": 2083,
+            "uuid": "0ec9f944-136f-40d6-a126-4fafc0f479d5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IXXrQcqXgzopBeSGpCO_u53keeKZaN1AoOzdyLA-Mzo",
+                    "short_id": "11a4b6bca8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
