@@ -108,7 +108,8 @@
                 "RELAY🚩",
                 "DE🇩🇪",
                 "CA🇨🇦",
-                "US🇺🇸"
+                "US🇺🇸",
+                "IN🇮🇳"
             ]
         },
         {
@@ -119,7 +120,8 @@
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | IN🇮🇳 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,6 +163,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IN🇮🇳",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | IN🇮🇳 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -293,6 +305,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | IN🇮🇳 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "94.136.184.156",
+            "server_port": 38872,
+            "uuid": "220732cc-9e43-4453-83f1-c9435be25b5b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
