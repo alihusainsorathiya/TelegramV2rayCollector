@@ -114,8 +114,7 @@
                 "SE🇸🇪",
                 "RELAY🚩",
                 "DE🇩🇪",
-                "FI🇫🇮",
-                "NL🇳🇱"
+                "FI🇫🇮"
             ]
         },
         {
@@ -166,14 +165,14 @@
                 "رایگان | VLESS | @ShadowProxy66 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣3️⃣",
-                "رایگان | VLESS | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -245,6 +244,7 @@
                 "رایگان | VLESS | @ShadowProxy66 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣"
@@ -270,16 +270,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -611,7 +601,7 @@
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
-            "uuid": "387edaa5-aac3-49e5-b826-4d3e46b68054",
+            "uuid": "15a5a638-8447-4b98-bae1-a136da81c316",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1419,9 +1409,9 @@
         {
             "tag": "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "104.16.132.207",
-            "server_port": 443,
-            "uuid": "42f36835-730c-4ecc-9daf-20121ae7ba47",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1429,20 +1419,34 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "gozargah.validbv7996.ir",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+            "transport": {
+                "type": "ws",
+                "path": "\/LwW5jwrnymnOdqki?ed=2560",
+                "headers": {
+                    "Host": "redw.pooriam.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "172.67.73.163",
+            "server_port": 80,
+            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=MARAMBASHI_MARAMBASHI\/?ed=2560",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "gozargah.validbv7996.ir"
+                    "Host": "a.xn--i-sx6a60i.us.kg."
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1633,29 +1637,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "gsmvpx.info",
-            "server_port": 80,
-            "uuid": "1c94ed6e-7114-5190-a2f7-8645e0c68c7c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless",
-                "headers": {
-                    "Host": "iranfastvpn.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
