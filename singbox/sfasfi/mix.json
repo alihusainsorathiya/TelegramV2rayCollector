@@ -113,10 +113,9 @@
                 "DE🇩🇪",
                 "US🇺🇸",
                 "SE🇸🇪",
-                "AE🇦🇪",
                 "FI🇫🇮",
                 "FR🇫🇷",
-                "IN🇮🇳",
+                "HK🇭🇰",
                 "LT🇱🇹"
             ]
         },
@@ -141,7 +140,7 @@
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
@@ -193,14 +192,14 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @prrofile_purple | AE🇦🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | SS | @DeamNet_Proxy | IN🇮🇳 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @VmessProtocol | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | SS | @VmessProtocol | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | SS | @VmessProtocol | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -228,7 +227,7 @@
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -322,16 +321,6 @@
             "tolerance": 50
         },
         {
-            "tag": "AE🇦🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @prrofile_purple | AE🇦🇪 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
@@ -356,10 +345,11 @@
             "tolerance": 50
         },
         {
-            "tag": "IN🇮🇳",
+            "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @DeamNet_Proxy | IN🇮🇳 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @VmessProtocol | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | SS | @VmessProtocol | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -440,9 +430,9 @@
         {
             "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.31.16.9",
-            "server_port": 2053,
-            "uuid": "ad3d0eb7-24a6-403b-9225-feeacb8219b9",
+            "server": "172.67.183.56",
+            "server_port": 80,
+            "uuid": "4bf074f4-7e9c-4e4b-a10d-156e26199729",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -453,21 +443,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "qurantv.quranir.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "qurantv.quranir.com"
+                    "Host": "us03s.5d8ecf82.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -884,7 +864,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "japan.com",
             "server_port": 443,
@@ -2131,20 +2111,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @prrofile_purple | AE🇦🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "uaev4-vip.digitalldns.com",
-            "server_port": 9314,
-            "uuid": "f1c66385-dcb3-4e03-aa31-6adf6708b146",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣1️⃣",
             "type": "vless",
             "server": "638758760053118998.zagreb-mpl-eai.info",
@@ -2271,12 +2237,33 @@
             }
         },
         {
-            "tag": "رایگان | SS | @DeamNet_Proxy | IN🇮🇳 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @VmessProtocol | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "104.251.227.182",
+            "server_port": 443,
+            "password": "43e5eeacbad3032bfe4c25a2f011b6b7",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hezijiasuqi.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | SS | @VmessProtocol | HK🇭🇰 | 0️⃣2️⃣",
             "type": "shadowsocks",
-            "server": "64.227.144.190",
-            "server_port": 50690,
+            "server": "hk.fastsoonlink.com",
+            "server_port": 40000,
             "method": "chacha20-ietf-poly1305",
-            "password": "AbkZdd2F8nEUp4o6M3FA1M",
+            "password": "3FB23A19-9424-40C7-9139-3540228283FA7",
             "plugin": "",
             "plugin_opts": ""
         },
