@@ -105,7 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣"
             ]
@@ -114,7 +116,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣"
             ],
@@ -123,11 +127,74 @@
             "tolerance": 50
         },
         {
+            "tag": "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "join.beshin.be.nanosecurity.pvfrn.com",
+            "server_port": 443,
+            "uuid": "0b0d503b-2cf8-4338-b077-42ab9522e33b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FFJkfWW-Kb0nZaT5QVNdfGBwLMGovaah_0w7H8-WIho",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "s1.vact.ir",
             "server_port": 443,
             "uuid": "47418bfd-d50e-4a23-bac9-ab2de615ef5b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "32v2F8Ymo35CC3Q9D-T0uUMCoz-bvtvl5aMYQ-kvCV8",
+                    "short_id": "33a68471e114bb72"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "s1.vact.ir",
+            "server_port": 443,
+            "uuid": "b33c4f41-be1b-47e3-baae-7617e3df3e7f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
