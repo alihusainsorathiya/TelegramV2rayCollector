@@ -173,11 +173,12 @@
                 "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowSocks_s | FI🇫🇮 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | PH🇵🇭 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -257,8 +258,7 @@
                 "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -268,6 +268,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -279,7 +280,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @ShadowSocks_s | FI🇫🇮 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣1️⃣"
+                "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -289,7 +290,8 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | VLESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1644,11 +1646,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "104.17.148.22",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "cld1.niassa.ir",
+            "server_port": 443,
+            "uuid": "d49b7b53-6697-4165-afb6-dce05a65a3c1",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1656,14 +1658,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/LwW5jwrnymnOdqki?ed=2560",
-                "headers": {
-                    "Host": "redw.pooriam.ir"
+            "tls": {
+                "enabled": true,
+                "server_name": "eset.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Xy0AQpRkBFWIWzRiG1czWTXok98URMhRt1xBE7jiTWw",
+                    "short_id": "2f"
+                }
             }
         },
         {
@@ -1702,7 +1709,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @Outlinev2rayNG | FI🇫🇮 | 0️⃣2️⃣",
             "type": "vless",
             "server": "157.180.22.144",
             "server_port": 8880,
@@ -1734,6 +1741,41 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outlinev2rayNG | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "78.111.85.90",
+            "server_port": 8443,
+            "uuid": "4b7afb59-f41e-4a6e-b05a-dfc095ee570d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "unKvcZldpRok5JpMQB4UJ-8PAQJTeMBhmVnVQe4CcHY",
+                    "short_id": "b0d0eaf3b0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "JoinBadeChannel@antimeli",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
