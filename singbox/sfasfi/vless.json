@@ -111,8 +111,10 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "RELAY🚩",
+                "DE🇩🇪",
                 "NL🇳🇱",
-                "PH🇵🇭"
+                "PH🇵🇭",
+                "AE🇦🇪"
             ]
         },
         {
@@ -172,8 +174,10 @@
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ShadowProxy66 | PH🇵🇭 | 0️⃣3️⃣"
+                "رایگان | VLESS | @ShadowProxy66 | PH🇵🇭 | 0️⃣3️⃣",
+                "رایگان | VLESS | @free1_vpn | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -260,6 +264,16 @@
             "tolerance": 50
         },
         {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
@@ -280,11 +294,21 @@
             "tolerance": 50
         },
         {
+            "tag": "AE🇦🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @free1_vpn | AE🇦🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
             "server": "Zmaoz.Faculty.Ucdavis.Edu",
             "server_port": 80,
-            "uuid": "Parsashonam-183",
+            "uuid": "Parsashonam-184",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -961,6 +985,52 @@
         {
             "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
+            "server": "speedtest.net",
+            "server_port": 80,
+            "uuid": "8645d842-0d10-4d4c-a7a7-8d3e14d2dca2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "foffmelo.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "zmaoz.faculty.ucdavis.edu",
+            "server_port": 80,
+            "uuid": "8645d842-0d10-4d4c-a7a7-8d3e14d2dca2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "foffmelo.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣3️⃣",
+            "type": "vless",
             "server": "zmaoz.faculty.ucdavis.edu",
             "server_port": 443,
             "uuid": "ad35c88b-8e6c-4dac-d29b-f04b42210d33",
@@ -991,57 +1061,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "NUFiLTER.fastly80-3.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "TELEGRAM-NUFiLTER-244a7f93292a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080",
-                "headers": {
-                    "Host": "4.nufilter-telegram.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "NUFiLTER.fastly80-2.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "TELEGRAM-NUFiLTER-ca5a845fdfca",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080",
-                "headers": {
-                    "Host": "3.nufilter-telegram.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @Parsashonam | SE🇸🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "185.146.173.39",
             "server_port": 8880,
-            "uuid": "Parsashonam-183",
+            "uuid": "Parsashonam-184",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1632,6 +1656,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @vpn_xw | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "cld1.niassa.ir",
+            "server_port": 443,
+            "uuid": "d49b7b53-6697-4165-afb6-dce05a65a3c1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eset.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Xy0AQpRkBFWIWzRiG1czWTXok98URMhRt1xBE7jiTWw",
+                    "short_id": "2f"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @ShadowProxy66 | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "5.56.133.42",
@@ -1666,6 +1718,20 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @free1_vpn | AE🇦🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "uaev4-vip.digitalldns.com",
+            "server_port": 9314,
+            "uuid": "a93bf8ef-0b48-4c49-95ff-03d20d211025",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
