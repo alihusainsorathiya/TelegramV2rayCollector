@@ -105,7 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VLESS | @Helix_Servers | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Helix_Servers | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣1️⃣",
@@ -155,16 +156,15 @@
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @Helix_Servers | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Helix_Servers | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣1️⃣",
@@ -214,16 +214,44 @@
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | VLESS | @vpnmasi | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VLESS | @Helix_Servers | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "csgo-news.film2serial.cloud",
+            "server_port": 443,
+            "uuid": "936698ea-58bf-4b19-8cd5-ffd73cc44c91",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "csgo-news.film2serial.cloud",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "6k9LhPdmkFyy7eL4dZlhBC",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Helix_Servers | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "cs2.film2serial.cloud",
             "server_port": 443,
@@ -450,7 +478,7 @@
             "type": "vless",
             "server": "ww.speedmeter.life",
             "server_port": 80,
-            "uuid": "3b0174c4-8429-411b-af9d-1ec5eb411bd0",
+            "uuid": "a9e037c7-6174-4956-a168-fc70cc688df0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -473,7 +501,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "c1686de2-d4c7-4c12-a455-7de47bfea23a",
+            "uuid": "3b0174c4-8429-411b-af9d-1ec5eb411bd0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -496,7 +524,7 @@
             "type": "vless",
             "server": "ww.speedmeter.life",
             "server_port": 80,
-            "uuid": "c1686de2-d4c7-4c12-a455-7de47bfea23a",
+            "uuid": "3b0174c4-8429-411b-af9d-1ec5eb411bd0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1528,52 +1556,6 @@
                     "Host": "joinxvproxybedeeeeee.ir"
                 },
                 "max_early_data": 2048,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "NUFiLTER.fastly80-2.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "TELEGRAM-NUFiLTER-fc54df693e22",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080",
-                "headers": {
-                    "Host": "2.nuf-telegram.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @flyv2ray | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "NUF.fastly80-2.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "TELEGRAM-NUFiLTER-d4ee05a3dcc5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080",
-                "headers": {
-                    "Host": "1.nuf-telegram.ir"
-                },
-                "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
