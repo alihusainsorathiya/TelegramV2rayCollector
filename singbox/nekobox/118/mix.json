@@ -119,6 +119,7 @@
                 "NL🇳🇱",
                 "CH🇨🇭",
                 "IE🇮🇪",
+                "IN🇮🇳",
                 "CA🇨🇦",
                 "BH🇧🇭"
             ]
@@ -205,6 +206,7 @@
                 "رایگان | SS | @free4allVPN | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @VmessProtocol | IN🇮🇳 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | CA🇨🇦 | 0️⃣2️⃣",
                 "رایگان | SS | @VmessProtocol | BH🇧🇭 | 0️⃣1️⃣"
             ],
@@ -366,6 +368,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @PrivateVPNs | IE🇮🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IN🇮🇳",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @VmessProtocol | IN🇮🇳 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -2263,6 +2275,27 @@
             "tls": {
                 "enabled": true,
                 "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @VmessProtocol | IN🇮🇳 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "185.67.125.177",
+            "server_port": 443,
+            "password": "3747000103274291200",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "quality-albacore.adder289.quest",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
