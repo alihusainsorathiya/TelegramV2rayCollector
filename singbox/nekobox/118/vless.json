@@ -114,7 +114,6 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "RELAY🚩",
-                "NL🇳🇱",
                 "DE🇩🇪"
             ]
         },
@@ -124,7 +123,6 @@
             "outbounds": [
                 "رایگان | VLESS | @Helix_Servers | LT🇱🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Helix_Servers | LT🇱🇹 | 0️⃣3️⃣",
-                "رایگان | VLESS | @prrofile_purple | LT🇱🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @XsV2ray | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2pedia | US🇺🇸 | 0️⃣1️⃣",
@@ -183,7 +181,6 @@
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣1️⃣"
@@ -197,8 +194,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @Helix_Servers | LT🇱🇹 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Helix_Servers | LT🇱🇹 | 0️⃣3️⃣",
-                "رایگان | VLESS | @prrofile_purple | LT🇱🇹 | 0️⃣1️⃣"
+                "رایگان | VLESS | @Helix_Servers | LT🇱🇹 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -290,16 +286,6 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
@@ -366,27 +352,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "6k9LhPdmkFyy7eL4dZlhBC",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @prrofile_purple | LT🇱🇹 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "88.216.187.28",
-            "server_port": 8880,
-            "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1853,34 +1818,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "194.49.53.185",
-            "server_port": 443,
-            "uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maviks.eu",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-                    "short_id": "21181028b56c8702"
-                }
             }
         },
         {
