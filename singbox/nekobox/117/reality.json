@@ -106,6 +106,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "NL🇳🇱",
+                "FI🇫🇮",
                 "CH🇨🇭"
             ]
         },
@@ -115,6 +117,8 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -127,6 +131,26 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -195,6 +219,62 @@
                     "enabled": true,
                     "public_key": "Aa3FogZ9ohTiRHsdnoyiMg7TFARWEeZs_m290juxEzs",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "a.nl.maviks.eu",
+            "server_port": 443,
+            "uuid": "3691f715-024c-411b-b269-d4a593f04ff2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
+                    "short_id": "21181028b56c8702"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "37.27.15.167",
+            "server_port": 2089,
+            "uuid": "7a24dbf2-455a-480e-ae03-f99d436d43c6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg",
+                    "short_id": "e3c5c005cae07eb8"
                 }
             }
         },
