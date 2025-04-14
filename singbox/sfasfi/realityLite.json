@@ -108,7 +108,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ]
@@ -117,48 +116,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @vpnmasi | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "188.245.34.12",
-            "server_port": 2087,
-            "uuid": "cbb4251b-9b20-4c42-b09d-df77666bda12",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.target.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_Qos-LNNG2nnPEFrTHSotINN3VcKWcVF7sCaw1HUElM",
-                    "short_id": "e6"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "رایگان | REALITY | @FreakConfig | CH🇨🇭 | 0️⃣1️⃣",
