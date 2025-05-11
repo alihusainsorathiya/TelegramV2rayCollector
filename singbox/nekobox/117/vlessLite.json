@@ -143,8 +143,9 @@
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @MsV2ray | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VLESS | @v2ray1_ng | CY🇨🇾 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
@@ -208,8 +209,9 @@
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @MsV2ray | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VLESS | @v2ray1_ng | CY🇨🇾 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
@@ -1164,39 +1166,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @v2ray1_ng | CY🇨🇾 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "154.92.9.2",
-            "server_port": 8443,
-            "uuid": "de537efd-4d7c-4f3c-aea5-19d3f36c7b1b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "txmt.conetcdata.dpdns.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed",
-                "headers": {
-                    "Host": ""
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "lv01.abvpn.ru",
             "server_port": 443,
@@ -1222,6 +1192,59 @@
                 "path": "\/websocket",
                 "headers": {
                     "Host": "lv01.abvpn.ru"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "78.47.141.72",
+            "server_port": 8880,
+            "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "104.24.251.4",
+            "server_port": 443,
+            "uuid": "15cc8d40-f0c0-4e5c-9f43-da04c368353c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "66.sgfc.dpdns.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
+                "headers": {
+                    "Host": "66.sgfc.dpdns.org"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
