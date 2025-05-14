@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "RELAY🚩",
                 "FR🇫🇷",
+                "GB🇬🇧",
                 "US🇺🇸"
             ]
         },
@@ -114,12 +115,11 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Awlix_ir | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -130,8 +130,6 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣"
             ],
@@ -151,6 +149,16 @@
             "tolerance": 50
         },
         {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
@@ -159,68 +167,6 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.18.149.76",
-            "server_port": 443,
-            "uuid": "de94cc0a-0592-4969-b1fc-97ea8f0ea0b3",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "us.kkp.me.eu.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/aa",
-                "headers": {
-                    "Host": "us.kkp.me.eu.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "104.17.221.248",
-            "server_port": 80,
-            "uuid": "e6543319-0574-42ac-b778-1c4325d626f5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "chunchuan.kejixiaoqi666.store"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
         },
         {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
@@ -345,6 +291,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "37.221.125.159",
+            "server_port": 33940,
+            "uuid": "353e0787-71bc-442d-9c9d-902f90359eb5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
