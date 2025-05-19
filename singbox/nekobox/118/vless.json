@@ -112,11 +112,13 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "SE🇸🇪",
+                "IR🇮🇷",
                 "RELAY🚩",
                 "DE🇩🇪",
                 "GB🇬🇧",
                 "FR🇫🇷",
                 "NL🇳🇱",
+                "LT🇱🇹",
                 "FI🇫🇮"
             ]
         },
@@ -148,7 +150,8 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2_team | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2logy | RELAY🚩 | 0️⃣3️⃣",
@@ -172,6 +175,8 @@
                 "رایگان | VLESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VmessProtocol | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Outlinev2rayNG | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Outlinev2rayNG | LT🇱🇹 | 0️⃣3️⃣",
                 "رایگان | VLESS | @flyv2ray | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -221,10 +226,20 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @v2_team | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2logy | RELAY🚩 | 0️⃣3️⃣",
@@ -284,6 +299,17 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @VmessProtocol | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "LT🇱🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @Outlinev2rayNG | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | VLESS | @Outlinev2rayNG | LT🇱🇹 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -866,7 +892,21 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @v2_team | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "78.157.44.88",
+            "server_port": 27574,
+            "uuid": "ce20a6c7-c069-4bec-bd39-8201c49e31f2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
             "server": "172.67.73.163",
             "server_port": 80,
@@ -1474,6 +1514,48 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Outlinev2rayNG | LT🇱🇹 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "84.32.9.20",
+            "server_port": 8880,
+            "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Outlinev2rayNG | LT🇱🇹 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "84.32.9.212",
+            "server_port": 8880,
+            "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
