@@ -105,7 +105,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "PL🇵🇱",
                 "FR🇫🇷",
                 "US🇺🇸",
                 "GB🇬🇧"
@@ -115,22 +114,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | GB🇬🇧 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "PL🇵🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,8 +129,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -152,6 +140,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
+                "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -169,37 +159,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | PL🇵🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "3h-poland1.09vpn.com",
-            "server_port": 80,
-            "uuid": "10e2ff65-0e20-462d-a282-164e48b955a9",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess\/",
-                "headers": {
-                    "Host": "3h-poland1.09vpn.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "172.67.154.84",
+            "server": "172.67.136.233",
             "server_port": 443,
-            "uuid": "e537f2f5-2a0c-4f59-92c9-832ca6433bf3",
+            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -212,7 +176,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "irvideo.cfd",
+                "server_name": "az05.beyondy.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -222,45 +186,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/link",
                 "headers": {
-                    "Host": "irvideo.cfd"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | FR🇫🇷 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "104.21.48.160",
-            "server_port": 443,
-            "uuid": "e537f2f5-2a0c-4f59-92c9-832ca6433bf3",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "irvideo.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "irvideo.cfd"
+                    "Host": "az05.beyondy.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -272,6 +200,40 @@
             "server": "speedtest.net.google.com.bmi.ir.altinstart.ir",
             "server_port": 8874,
             "uuid": "8371146b-a577-4ffb-bd04-bfcc42fdd10a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "15.204.86.120",
+            "server_port": 35696,
+            "uuid": "cad0504a-a9dc-4d29-8844-b11b69f14a8d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "15.204.248.92",
+            "server_port": 30562,
+            "uuid": "82466715-6a58-4046-a363-a0d18e5b2ab4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
