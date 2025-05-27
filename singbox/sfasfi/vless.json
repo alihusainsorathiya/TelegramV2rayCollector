@@ -110,8 +110,8 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "SE🇸🇪",
-                "RELAY🚩",
                 "IR🇮🇷",
+                "RELAY🚩",
                 "DE🇩🇪",
                 "FI🇫🇮",
                 "NL🇳🇱",
@@ -151,7 +151,9 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2logy | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣2️⃣",
@@ -167,9 +169,6 @@
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ShadowProxy66 | FI🇫🇮 | 0️⃣3️⃣",
@@ -228,10 +227,21 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | RELAY🚩 | 0️⃣2️⃣",
@@ -247,18 +257,6 @@
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -991,11 +989,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "172.67.73.163",
-            "server_port": 80,
-            "uuid": "6fbfa6cd-cfae-4d8b-a9ce-dba2cafccb28",
+            "server": "185.143.233.120",
+            "server_port": 443,
+            "uuid": "675537c4-5916-446f-b90d-15f64f3ccf67",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1003,11 +1001,84 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "mydigipay.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/hajmi?ed=2050",
+                "path": "\/wp-admin",
                 "headers": {
-                    "Host": "dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Nb-De.85858569.xYz."
+                    "Host": "blog.artapendar.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.143.233.120",
+            "server_port": 443,
+            "uuid": "c92348f4-1ebb-4232-b546-c056f3721ffb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mydigipay.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/wp-content?ed=2020",
+                "headers": {
+                    "Host": "geolinker.sbs"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "185.143.233.120",
+            "server_port": 443,
+            "uuid": "c92348f4-1ebb-4232-b546-c056f3721ffb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mydigipay.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/wp-content?ed=2020",
+                "headers": {
+                    "Host": "mrpooya3.sbs"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1414,102 +1485,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "18.6na7PY43IT.zuLaiR.Org."
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "185.143.233.120",
-            "server_port": 443,
-            "uuid": "675537c4-5916-446f-b90d-15f64f3ccf67",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mydigipay.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/wp-admin",
-                "headers": {
-                    "Host": "blog.artapendar.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "185.143.233.120",
-            "server_port": 443,
-            "uuid": "c92348f4-1ebb-4232-b546-c056f3721ffb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mydigipay.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/wp-content?ed=2020",
-                "headers": {
-                    "Host": "geolinker.sbs"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @vpn_xw | IR🇮🇷 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "185.143.233.120",
-            "server_port": 443,
-            "uuid": "c92348f4-1ebb-4232-b546-c056f3721ffb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mydigipay.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/wp-content?ed=2020",
-                "headers": {
-                    "Host": "mrpooya3.sbs"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
