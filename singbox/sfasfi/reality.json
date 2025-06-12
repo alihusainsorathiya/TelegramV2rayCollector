@@ -110,7 +110,8 @@
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
                 "NL🇳🇱",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "GB🇬🇧"
             ]
         },
         {
@@ -121,7 +122,9 @@
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @flyv2ray | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +156,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @flyv2ray | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -296,6 +310,62 @@
                     "enabled": true,
                     "public_key": "-4S95rjoZIG_AeUxIlwedx89e7C_X4jnePY3RsiF4io",
                     "short_id": "f8fcb589"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "de.serverfreedom.com",
+            "server_port": 5050,
+            "uuid": "60c9baa3-0241-45e3-9faa-d91f50e4b142",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SIZUCP8kFTMNONyzojhPmYWM_530dU3MEJVsJAV_604",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.168.194.59",
+            "server_port": 41445,
+            "uuid": "3d8d5627-62c0-491a-ad68-0079983f95e1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tesla.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eb0fWFAevT3a_BqrfJ2dLhY_Hv910o9LSmaumdZpIyQ",
+                    "short_id": "f8a537"
                 }
             }
         },
