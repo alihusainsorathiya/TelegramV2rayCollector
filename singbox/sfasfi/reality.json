@@ -107,16 +107,64 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST | رایگان"
+                "URL-TEST | رایگان",
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "89.34.230.130",
+            "server_port": 443,
+            "uuid": "4880b0ff-963e-49bf-9174-e657720c5dc0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kc9EHs9UXsCn42r88iPSkIC7gQomKoPC9D9mabtkcks",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "direct",
