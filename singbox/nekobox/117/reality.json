@@ -104,57 +104,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST | رایگان",
-                "AT🇦🇹"
+                "URL-TEST | رایگان"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2ray_vpn_ir | AT🇦🇹 | 0️⃣1️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "AT🇦🇹",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2ray_vpn_ir | AT🇦🇹 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @v2ray_vpn_ir | AT🇦🇹 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "62.60.239.225",
-            "server_port": 21207,
-            "uuid": "fa-7076832873-1750069405490582",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "steampowered.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "COPMKX1kdm0kkkGf1TutiFm9sSJFkGyjlJ5C_7AC_SA",
-                    "short_id": "f36a084a534e"
-                }
-            }
         },
         {
             "tag": "direct",
