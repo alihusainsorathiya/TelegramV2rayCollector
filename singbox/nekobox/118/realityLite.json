@@ -108,15 +108,78 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST | رایگان",
+                "رایگان | REALITY | @ShadowProxy66 | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ShadowProxy66 | KZ🇰🇿 | 0️⃣2️⃣"
+            ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "رایگان | REALITY | @ShadowProxy66 | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ShadowProxy66 | KZ🇰🇿 | 0️⃣2️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @ShadowProxy66 | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "146.19.90.10",
+            "server_port": 443,
+            "uuid": "a0de1607-5b63-fab8-a759-9f98706b6125",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ShadowProxy66 | KZ🇰🇿 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "83.222.23.113",
+            "server_port": 443,
+            "uuid": "9a8a52d6-f24b-4f03-bf6f-f4854717f54e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Jwam5OBjXf4bffZzA3IqzfcNONIMhYMgjysXPU44XFU",
+                    "short_id": "c4da507c203b545a"
+                }
+            }
         },
         {
             "tag": "direct",
