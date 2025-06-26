@@ -108,15 +108,48 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST | رایگان",
+                "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "5.75.192.185",
+            "server_port": 35487,
+            "uuid": "1c808cce-3f2a-4f4a-b8fe-e99e06e258f4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GGsieU5yiXWsMeO0StA4mTO2s8OLLvt0hUivZJkJG2k",
+                    "short_id": "0b886008af8942c3"
+                }
+            }
         },
         {
             "tag": "direct",
