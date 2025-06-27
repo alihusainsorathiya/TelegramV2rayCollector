@@ -110,7 +110,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "JP🇯🇵",
+                "HK🇭🇰",
+                "US🇺🇸",
                 "LT🇱🇹"
             ]
         },
@@ -118,7 +119,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣",
+                "رایگان | SS | @free4allVPN | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | SS | @DeamNet_Proxy | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -126,10 +128,20 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | SS | @free4allVPN | HK🇭🇰 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,9 +158,19 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | SS | @free4allVPN | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @free4allVPN | HK🇭🇰 | 0️⃣1️⃣",
             "type": "shadowsocks",
-            "server": "149.22.87.240",
+            "server": "156.225.22.213",
+            "server_port": 552,
+            "method": "aes-128-gcm",
+            "password": "rGDbiF7gtx5TWt4r4VjneQ==",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "37.19.198.244",
             "server_port": 443,
             "method": "aes-128-gcm",
             "password": "shadowsocks7",
