@@ -110,14 +110,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "US🇺🇸"
+                "US🇺🇸",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | SS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,12 +136,32 @@
             "tolerance": 50
         },
         {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "37.19.198.244",
             "server_port": 443,
             "method": "aes-128-gcm",
             "password": "shadowsocks7",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "81.19.141.45",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "3TnQdgm2mVJQbuSCXmR5Vc",
             "plugin": "",
             "plugin_opts": ""
         },
