@@ -105,6 +105,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "SG🇸🇬",
                 "RELAY🚩",
                 "DE🇩🇪",
                 "US🇺🇸"
@@ -114,9 +115,23 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,7 +141,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +169,41 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "192.53.113.156",
+            "server_port": 10002,
+            "uuid": "036a28c3-5c8d-4df3-a79b-9da622640f2b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free4allVPN | SG🇸🇬 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "194.233.72.228",
+            "server_port": 27575,
+            "uuid": "16509262-dbe2-43ba-99ce-07913d2a18b4",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free4allVPN | RELAY🚩 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -173,6 +223,32 @@
                 "path": "\/nasnet\/cdn",
                 "headers": {
                     "Host": "ke7hz36ewz-4515017473.mashallahbet.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.19.45.15",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.19.45.15"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
