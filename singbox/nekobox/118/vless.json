@@ -115,6 +115,7 @@
                 "IT🇮🇹",
                 "US🇺🇸",
                 "SE🇸🇪",
+                "IR🇮🇷",
                 "LT🇱🇹",
                 "RO🇷🇴",
                 "NL🇳🇱"
@@ -125,6 +126,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2_team | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ipV2Ray | RELAY🚩 | 0️⃣1️⃣",
@@ -168,6 +170,7 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | LT🇱🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | RO🇷🇴 | 0️⃣3️⃣",
                 "رایگان | VLESS | @flyv2ray | NL🇳🇱 | 0️⃣2️⃣",
@@ -181,7 +184,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -267,6 +271,16 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
@@ -330,6 +344,20 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "91.99.198.191",
+            "server_port": 443,
+            "uuid": "2eaef053-5fd6-4def-b234-d760690355ff",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -1274,6 +1302,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "smart4.oxygen-server.site",
+            "server_port": 2111,
+            "uuid": "2cfce1af-cfb4-4a73-9676-35fbcdc40964",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2112vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
