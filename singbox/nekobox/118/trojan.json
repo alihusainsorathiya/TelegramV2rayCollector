@@ -110,16 +110,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "ES🇪🇸",
-                "CZ🇨🇿"
+                "CZ🇨🇿",
+                "ES🇪🇸"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | CZ🇨🇿 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @iP_CF | CZ🇨🇿 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CZ🇨🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @iP_CF | CZ🇨🇿 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,14 +146,25 @@
             "tolerance": 50
         },
         {
-            "tag": "CZ🇨🇿",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | CZ🇨🇿 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "رایگان | TROJAN | @iP_CF | CZ🇨🇿 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "85.255.9.247",
+            "server_port": 1935,
+            "password": "mZMgM1vKw5",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1-czech-aruba-v2.devefun.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "رایگان | TROJAN | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
@@ -170,27 +191,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "store.timimi.dpdns.org"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | CZ🇨🇿 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "85.255.9.247",
-            "server_port": 1935,
-            "password": "mZMgM1vKw5",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "x1-czech-aruba-v2.devefun.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
