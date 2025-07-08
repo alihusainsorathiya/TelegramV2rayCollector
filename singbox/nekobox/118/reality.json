@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "DE🇩🇪",
                 "LT🇱🇹"
             ]
         },
@@ -117,7 +118,18 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | LT🇱🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,6 +144,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "real-all3.sdcards.ir",
+            "server_port": 8501,
+            "uuid": "8369bccd-ec80-4c73-ba46-17edbe003e87",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OJ0wA5wp55uZdD16dutlTZvx1x-rbMMXmiO9D_MMCHI",
+                    "short_id": "e701a013553059ba"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @proxystore11 | LT🇱🇹 | 0️⃣1️⃣",
