@@ -106,8 +106,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "DE🇩🇪",
                 "IR🇮🇷",
+                "DE🇩🇪",
                 "RELAY🚩",
                 "IT🇮🇹",
                 "GB🇬🇧",
@@ -149,6 +149,10 @@
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vmessorg | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ARv2ray | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣1️⃣",
@@ -159,8 +163,6 @@
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣3️⃣",
@@ -265,6 +267,19 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vmessorg | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
@@ -278,17 +293,6 @@
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -950,6 +954,68 @@
             "plugin_opts": ""
         },
         {
+            "tag": "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "prom.learn-new.ir",
+            "server_port": 80,
+            "uuid": "ff453ef4-1c89-4045-a42f-603f4e5850fb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "sr10.minhost.sbs",
+            "server_port": 2052,
+            "uuid": "f793ac81-4ab2-459c-833b-e6a6e34873a2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vmessorg | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "irc.testvp2.sbs",
+            "server_port": 443,
+            "uuid": "1c72fdec-75c1-41fa-a4ca-7bd4b0509140",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "185.243.51.67",
+            "server_port": 21760,
+            "uuid": "73e10f2a-bb9a-40c1-8e2c-ebfe0dac1dac",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "panel3.ipyar.org",
@@ -1169,37 +1235,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "sr10.minhost.sbs",
-            "server_port": 2052,
-            "uuid": "f793ac81-4ab2-459c-833b-e6a6e34873a2",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "185.243.51.67",
-            "server_port": 21760,
-            "uuid": "73e10f2a-bb9a-40c1-8e2c-ebfe0dac1dac",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
