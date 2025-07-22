@@ -110,8 +110,8 @@
                 "IR🇮🇷",
                 "RELAY🚩",
                 "IT🇮🇹",
-                "SE🇸🇪",
                 "GB🇬🇧",
+                "SE🇸🇪",
                 "FR🇫🇷",
                 "FI🇫🇮",
                 "CA🇨🇦",
@@ -207,11 +207,12 @@
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @XsV2ray | IT🇮🇹 | 0️⃣1️⃣",
+                "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | FI🇫🇮 | 0️⃣1️⃣",
@@ -358,23 +359,24 @@
             "tolerance": 50
         },
         {
-            "tag": "SE🇸🇪",
+            "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣1️⃣"
+                "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣"
+                "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vless_vmess | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -2304,6 +2306,62 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "nv73.momdping.com",
+            "server_port": 443,
+            "uuid": "959eb33c-43f8-4f45-9de6-3ffd13319a79",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nv73.momdping.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "telegram-sellofvpn-telegram-sellofvpn-telegram-sellofvpn.selenarahmani.blog",
+            "server_port": 2067,
+            "uuid": "33e2acd7-bac7-4078-9617-e3b67d683104",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.varzesh360.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "185.146.173.237",
@@ -2362,30 +2420,6 @@
                 "protocol": "smux",
                 "max_streams": 32
             }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2rayngvpn | GB🇬🇧 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "telegram-sellofvpn-telegram-sellofvpn-telegram-sellofvpn.selenarahmani.blog",
-            "server_port": 2067,
-            "uuid": "33e2acd7-bac7-4078-9617-e3b67d683104",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.varzesh360.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "رایگان | VLESS | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣",
