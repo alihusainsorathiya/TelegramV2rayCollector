@@ -118,6 +118,7 @@
                 "NL🇳🇱",
                 "DE🇩🇪",
                 "TR🇹🇷",
+                "FR🇫🇷",
                 "CY🇨🇾",
                 "GB🇬🇧",
                 "LT🇱🇹",
@@ -134,7 +135,6 @@
                 "رایگان | VLESS | @NIM_VPN_ir | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @rxv2ray | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @DigiV2ray | US🇺🇸 | 0️⃣1️⃣",
@@ -224,6 +224,7 @@
                 "رایگان | VLESS | @ShadowProxy66 | TR🇹🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | TR🇹🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @iP_CF | LT🇱🇹 | 0️⃣2️⃣",
@@ -243,8 +244,7 @@
                 "رایگان | VLESS | @NIM_VPN_ir | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣3️⃣"
+                "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -421,6 +421,16 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
@@ -550,20 +560,6 @@
         },
         {
             "tag": "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "v2test.bing-net.com",
-            "server_port": 9820,
-            "uuid": "13a1c108-a919-44fb-a3bf-a9550db565cd",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣3️⃣",
             "type": "vless",
             "server": "v2test.bing-net.com",
             "server_port": 9820,
@@ -2662,6 +2658,34 @@
             "password": "iw8GoN42dciNxDBd0RwAdL",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "fr.safeline.12.afterhav.ir",
+            "server_port": 8880,
+            "uuid": "ServerNett",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.apple.com.cn",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XetKmjWtt6D08aG4I5F9tETkO4RogFgDaqW6F-HHoyA",
+                    "short_id": "64ede3f582de"
+                }
+            }
         },
         {
             "tag": "رایگان | VLESS | @flyv2ray | CY🇨🇾 | 0️⃣2️⃣",
