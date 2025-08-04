@@ -115,8 +115,8 @@
                 "NL🇳🇱",
                 "US🇺🇸",
                 "DE🇩🇪",
-                "IR🇮🇷",
                 "FR🇫🇷",
+                "IR🇮🇷",
                 "RU🇷🇺",
                 "TR🇹🇷",
                 "GB🇬🇧"
@@ -209,12 +209,11 @@
                 "رایگان | VLESS | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | GB🇬🇧 | 0️⃣2️⃣"
@@ -370,17 +369,6 @@
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
@@ -388,6 +376,16 @@
                 "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | FR🇫🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -2347,48 +2345,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @Watashi_VPN | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "v2test.bing-net.com",
-            "server_port": 9820,
-            "uuid": "fd8be8ca-e1e8-477f-9a97-d8d8e63455ed",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "62.60.178.200",
-            "server_port": 40792,
-            "uuid": "24d0e335-659e-45c7-8e61-0bd899c1d510",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.latimes.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "I2gX0RY5PEXPm6shWotiQ5bVwoBs4cmGV_sQUryQ63w",
-                    "short_id": "5a"
-                }
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "54.37.205.0",
@@ -2470,6 +2426,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "62.60.178.200",
+            "server_port": 40792,
+            "uuid": "24d0e335-659e-45c7-8e61-0bd899c1d510",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "I2gX0RY5PEXPm6shWotiQ5bVwoBs4cmGV_sQUryQ63w",
+                    "short_id": "5a"
+                }
             }
         },
         {
