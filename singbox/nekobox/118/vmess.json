@@ -110,34 +110,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "IR🇮🇷",
                 "LV🇱🇻",
                 "DE🇩🇪",
                 "US🇺🇸",
-                "CA🇨🇦"
+                "SG🇸🇬"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | LV🇱🇻 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | SG🇸🇬 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,7 +147,7 @@
             "outbounds": [
                 "رایگان | VMESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -176,31 +164,14 @@
             "tolerance": 50
         },
         {
-            "tag": "CA🇨🇦",
+            "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | SG🇸🇬 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "prom.learn-new.ir",
-            "server_port": 80,
-            "uuid": "ff453ef4-1c89-4045-a42f-603f4e5850fb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
         },
         {
             "tag": "رایگان | VMESS | @ShadowProxy66 | LV🇱🇻 | 0️⃣1️⃣",
@@ -272,7 +243,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "panel1.ipyar.org",
             "server_port": 42684,
@@ -315,11 +286,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | SG🇸🇬 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "23.162.200.227",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "62.146.235.193",
+            "server_port": 28011,
+            "uuid": "cfc5a87f-3c13-4e25-b556-176cdd6b5c6a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -329,25 +300,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "23.162.200.227",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "23.162.200.227"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
