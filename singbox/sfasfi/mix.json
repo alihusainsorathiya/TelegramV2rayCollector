@@ -139,6 +139,7 @@
                 "رایگان | VMESS | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2rayngvpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
@@ -168,8 +169,7 @@
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @VmessProtocol | AE🇦🇪 | 0️⃣2️⃣",
+                "رایگان | VLESS | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VPNCUSTOMIZE | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @VPNCUSTOMIZE | RELAY🚩 | 0️⃣2️⃣",
@@ -208,7 +208,7 @@
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VLESS | @v2rayngvpn | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2rayngvpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣2️⃣",
@@ -275,6 +275,7 @@
             "outbounds": [
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @v2rayngvpn | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
@@ -331,8 +332,7 @@
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2_team | AE🇦🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
-                "رایگان | VLESS | @VmessProtocol | AE🇦🇪 | 0️⃣2️⃣"
+                "رایگان | VLESS | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -380,7 +380,7 @@
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VLESS | @v2rayngvpn | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @v2rayngvpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @MsV2ray | RELAY🚩 | 0️⃣2️⃣",
@@ -637,6 +637,20 @@
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @v2rayngvpn | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "91.99.85.185",
+            "server_port": 8443,
+            "uuid": "e66beedb-dd44-47f0-baf8-7ba947d919d0",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1330,54 +1344,17 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "31.56.146.132",
-            "server_port": 56583,
-            "uuid": "1ae71b47-30f4-47a3-f961-d5e438e5bf9f",
+            "server_port": 54099,
+            "uuid": "7897c4a6-7556-431d-b3e0-9965580efef4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "P2ZwmZkn0t1oar2m9n_iWXUNVN01CSOaMzaIbscu5xI",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @VmessProtocol | AE🇦🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "31.56.146.132",
-            "server_port": 24002,
-            "uuid": "e8661019-72cb-4e48-c3c2-4da75f99e3bc",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tgju.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -2336,7 +2313,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @v2rayngvpn | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @v2rayngvpn | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
             "server": "104.26.15.69",
             "server_port": 2096,
