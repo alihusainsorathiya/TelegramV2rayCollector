@@ -109,6 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "GB🇬🇧",
+                "IR🇮🇷",
                 "FR🇫🇷",
                 "DE🇩🇪",
                 "US🇺🇸",
@@ -121,7 +122,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
@@ -142,10 +144,20 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -218,7 +230,24 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @prrofile_purple | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "prom.learn-new.ir",
+            "server_port": 80,
+            "uuid": "ff453ef4-1c89-4045-a42f-603f4e5850fb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.68.191.233",
             "server_port": 80,
