@@ -113,6 +113,7 @@
                 "FR🇫🇷",
                 "RU🇷🇺",
                 "AM🇦🇲",
+                "AT🇦🇹",
                 "DE🇩🇪"
             ]
         },
@@ -123,6 +124,8 @@
                 "رایگان | REALITY | @DarkTeam_VPN | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | AM🇦🇲 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -160,9 +163,20 @@
             "tolerance": 50
         },
         {
+            "tag": "AT🇦🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -250,6 +264,62 @@
                     "enabled": true,
                     "public_key": "xfzizKASi1RDkMp0lU9CKVNbcKCL5KzdgIzZjF1d_AI",
                     "short_id": "6b"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "graygoat.fonixapp.org",
+            "server_port": 45846,
+            "uuid": "534c8834-d096-462c-8c16-37571a798ef3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "17q39_glGtdUgFWkKwjxnBG0PxYkJbgt9bfkotaj7yg",
+                    "short_id": "ac"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "91.107.128.99",
+            "server_port": 443,
+            "uuid": "4577c520-59c0-4edf-99f9-a131758aecad",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lG2emtmtOMj1MRRYNQnHfH7p5IHkOyGWXvaCe0kwS0Q",
+                    "short_id": "598b09fa644710f5"
                 }
             }
         },
