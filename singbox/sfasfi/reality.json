@@ -113,6 +113,7 @@
                 "DE🇩🇪",
                 "RU🇷🇺",
                 "NL🇳🇱",
+                "FI🇫🇮",
                 "GB🇬🇧"
             ]
         },
@@ -127,10 +128,10 @@
                 "رایگان | REALITY | @DarkTeam_VPN | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | GB🇬🇧 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -166,7 +167,6 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -188,6 +188,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -435,34 +445,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "91.99.16.244",
-            "server_port": 443,
-            "uuid": "Parsashonam-297",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sa5RHNjAAD3hYv4OU_YYU08gRUsmPs5JdZES5Xy3pn8",
-                    "short_id": "61e683d41fdb"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
@@ -544,6 +526,41 @@
                     "public_key": "ng4h6xKU-cqoC_T4U9_wGbYlFqpj9RJbsWVR4AJ_MSo",
                     "short_id": "e2"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "abzartun2.divartehran.online",
+            "server_port": 23737,
+            "uuid": "debf2a42-1ff4-4ea6-92a4-f6ac49595cc7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "varzesh3.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "i5nssGunCVG0W2CI3OM-wGXJwCn9W5Xvm0-tQw_SgEQ",
+                    "short_id": "7c0b6c88fe5c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
