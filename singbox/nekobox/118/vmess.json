@@ -113,8 +113,7 @@
                 "US🇺🇸",
                 "FI🇫🇮",
                 "DE🇩🇪",
-                "LV🇱🇻",
-                "RELAY🚩"
+                "FR🇫🇷"
             ]
         },
         {
@@ -126,8 +125,9 @@
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | VMESS | @SafeNet_Server | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | LV🇱🇻 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,20 +166,12 @@
             "tolerance": 50
         },
         {
-            "tag": "LV🇱🇻",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | LV🇱🇻 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -299,11 +291,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | LV🇱🇻 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "91.218.143.133",
+            "server": "45.67.139.225",
             "server_port": 20086,
-            "uuid": "a440e0d3-d39a-4bd8-a2c4-e22a6aef96e0",
+            "uuid": "d3928330-4050-47f6-9d1c-df1fd801c568",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -316,20 +308,46 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY",
+                "path": "\/",
                 "headers": {
-                    "Host": "91.218.143.133"
+                    "Host": "45.67.139.225"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "aio.unlimited.biz.id",
+            "server": "51.254.21.193",
+            "server_port": 20086,
+            "uuid": "9bcecb26-920a-4e68-b296-88526310bff6",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "51.254.21.193"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "irvideo.cfd",
             "server_port": 443,
-            "uuid": "f282b878-8711-45a1-8c69-5564172123c1",
+            "uuid": "e537f2f5-2a0c-4f59-92c9-832ca6433bf3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -342,7 +360,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "aio.unlimited.biz.id",
+                "server_name": "irvideo.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -352,9 +370,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/aioproxybot\/129.150.49.58-18650?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "aio.unlimited.biz.id"
+                    "Host": "irvideo.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
