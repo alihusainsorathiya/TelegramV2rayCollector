@@ -112,8 +112,7 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "GB🇬🇧",
-                "AT🇦🇹",
-                "RU🇷🇺"
+                "AT🇦🇹"
             ]
         },
         {
@@ -124,9 +123,9 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | REALITY | @customv2ray | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | AT🇦🇹 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | AT🇦🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,6 +148,7 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣",
                 "رایگان | REALITY | @customv2ray | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -160,16 +160,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | AT🇦🇹 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -302,6 +292,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | GB🇬🇧 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "primarypin.kimjo.ir",
+            "server_port": 2083,
+            "uuid": "83cb4057-4791-407d-86ba-cf98e1e03094",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "B8FswH2bq-Te2rihKSyjn5eda9Z2MLVK6pi5WCF6ZTM",
+                    "short_id": "86dfebd4b5406d7a"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @customv2ray | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
             "server": "eng13.netliberated.org",
@@ -354,34 +372,6 @@
                     "enabled": true,
                     "public_key": "rhEEZAZBX-seWl5f0JmyE19Iwxb5zTNH5yT-FhaS8Hw",
                     "short_id": "200f99e321"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "109.73.206.90",
-            "server_port": 443,
-            "uuid": "4eff2388-2092-4b0a-aa74-0e464889ffaf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c",
-                    "short_id": ""
                 }
             }
         },
