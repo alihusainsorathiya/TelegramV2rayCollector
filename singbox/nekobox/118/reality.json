@@ -113,8 +113,7 @@
                 "DE🇩🇪",
                 "TR🇹🇷",
                 "AT🇦🇹",
-                "PL🇵🇱",
-                "US🇺🇸"
+                "PL🇵🇱"
             ]
         },
         {
@@ -124,10 +123,11 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | TR🇹🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | AT🇦🇹 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,7 +139,8 @@
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -169,17 +170,8 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @Outlinev2rayNG | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -284,6 +276,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "deu246.bypassall.org",
+            "server_port": 443,
+            "uuid": "b4b8aa1f-77d2-4851-a5a4-f78886f3e997",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @ShadowProxy66 | TR🇹🇷 | 0️⃣3️⃣",
             "type": "vless",
             "server": "45.12.143.191",
@@ -368,11 +388,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "159.203.141.231",
-            "server_port": 2053,
-            "uuid": "6d5afbb4-450c-4798-91ab-71a792b487bb",
+            "server": "2.56.125.209",
+            "server_port": 49868,
+            "uuid": "be015dd2-30b4-4fcf-a9ee-080c13ac13fb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -382,7 +402,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "openstreetmap.org",
+                "server_name": "yahoo.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -390,8 +410,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "lHqhMsZfvb_xaxQPKOyIDlaSREGM9tFWjVxl4k9aiBg",
-                    "short_id": "60f78c"
+                    "public_key": "joEKL4Itljxodt1SOe1itSMrAH9bk_udpPtXgIjdu10",
+                    "short_id": "6d638e"
                 }
             }
         },
