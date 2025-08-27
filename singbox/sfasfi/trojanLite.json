@@ -124,13 +124,29 @@
         {
             "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.17.148.22",
-            "server_port": 2052,
-            "password": "4b0915d7-8544-5d48-946a-a708d7288447",
+            "server": "162.159.152.42",
+            "server_port": 443,
+            "password": "tg-dns68",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip.putata.eu.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vip.putata.eu.org"
+                }
             }
         },
         {
