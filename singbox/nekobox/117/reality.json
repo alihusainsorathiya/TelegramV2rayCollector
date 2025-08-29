@@ -106,7 +106,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "RU🇷🇺"
+                "RU🇷🇺",
+                "US🇺🇸",
+                "CA🇨🇦"
             ]
         },
         {
@@ -116,10 +118,10 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣3️⃣"
+                "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | CA🇨🇦 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,9 +133,7 @@
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,6 +145,26 @@
             "outbounds": [
                 "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | CA🇨🇦 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -249,62 +269,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "ab.iranlit.ir",
-            "server_port": 1611,
-            "uuid": "202ac83e-9012-4283-8acb-9af2c2a2dfeb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zhaket.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3EWvgfHUv-7aKL47dJL1WiIHY43aeWo8QUZRjzCw0RI",
-                    "short_id": "6f84e8adb893b4bd"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "91.98.38.6",
-            "server_port": 8443,
-            "uuid": "96be492b-3388-4693-be03-9caefe6dfff5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "r3FLw76bxhgit74mzJTglRM-ujPZ9f-HemByQ-uZqms",
-                    "short_id": "27e6b66aa77662fb"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "194.55.235.202",
@@ -357,6 +321,62 @@
                     "enabled": true,
                     "public_key": "J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8",
                     "short_id": "16895459a2c7768d"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "138.197.215.108",
+            "server_port": 443,
+            "uuid": "dead1bb8-e95a-4517-8ed2-e0694de80ba6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.icloud.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YyHLH09FoCQ7NvAPFcjXfjIiKU7wRTi-Ri8ahnqaoGU",
+                    "short_id": "5175dd3850"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | CA🇨🇦 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "40.233.102.224",
+            "server_port": 42557,
+            "uuid": "2429bee3-e0c1-47dd-b420-75e6512b184b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo",
+                    "short_id": "f430927d"
                 }
             }
         },
