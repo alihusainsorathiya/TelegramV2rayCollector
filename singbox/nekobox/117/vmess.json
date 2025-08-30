@@ -110,7 +110,7 @@
                 "NL🇳🇱",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "GB🇬🇧"
+                "RELAY🚩"
             ]
         },
         {
@@ -124,10 +124,12 @@
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣3️⃣",
-                "رایگان | VMESS | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,7 +154,8 @@
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -172,7 +175,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | VMESS | @ShadowProxy66 | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -189,10 +193,10 @@
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -431,6 +435,42 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "209.126.84.189",
+            "server_port": 443,
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "209.126.84.189",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmessws",
+                "headers": {
+                    "Host": "209.126.84.189"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "92.112.126.22",
@@ -493,6 +533,42 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "57.129.25.20",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "57.129.25.20",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "57.129.25.20"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @ShadowProxy66 | FR🇫🇷 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "135.125.182.74",
@@ -510,11 +586,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "51.38.64.209",
-            "server_port": 44023,
-            "uuid": "7da457da-ed0f-437d-c81d-6c35885bbea3",
+            "server": "104.16.68.38",
+            "server_port": 8880,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -524,6 +600,15 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linde06.indiavideo.sbs\/linkws",
+                "headers": {
+                    "Host": "subhk.osafari599.workers.dev"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
