@@ -106,15 +106,78 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST | رایگان",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+            ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "135.84.79.80",
+            "server_port": 443,
+            "password": "dns68",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.putata.us.kg",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed",
+                "headers": {
+                    "Host": "trojan.putata.us.kg"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.20.21.112",
+            "server_port": 443,
+            "password": "auto",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "b96ef9ae.trojanfree-76s.pages.dev",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/b96ef9ae.trojanfree-76s.pages.dev\/",
+                "headers": {
+                    "Host": "b96ef9ae.trojanfree-76s.pages.dev"
+                }
+            }
         },
         {
             "tag": "direct",
