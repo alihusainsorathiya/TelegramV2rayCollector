@@ -108,87 +108,15 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": [
-                "URL-TEST | رایگان",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣3️⃣"
-            ]
+            "outbounds": null
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣3️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "108.165.152.202",
-            "server_port": 2083,
-            "password": "Aimer",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "epgb.aimercc.dpdns.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "104.18.158.83",
-            "server_port": 443,
-            "password": "blue2024",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ha.lii2010.us.kg",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "198.23.229.250",
-            "server_port": 443,
-            "password": "2ee85121-31de-4581-a492-eb00f606e392",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rc6.freeguard.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "direct",
