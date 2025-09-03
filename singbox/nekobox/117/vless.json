@@ -110,6 +110,7 @@
                 "RELAY🚩",
                 "IT🇮🇹",
                 "GB🇬🇧",
+                "IR🇮🇷",
                 "NL🇳🇱",
                 "FR🇫🇷",
                 "TR🇹🇷",
@@ -180,7 +181,6 @@
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -190,6 +190,9 @@
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @XsV2ray | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | VLESS | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | VLESS | @XsV2ray | IR🇮🇷 | 0️⃣3️⃣",
+                "رایگان | VLESS | @customv2ray | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣",
@@ -303,7 +306,6 @@
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -330,7 +332,19 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | VLESS | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @XsV2ray | IR🇮🇷 | 0️⃣3️⃣",
+                "رایگان | VLESS | @customv2ray | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1811,9 +1825,9 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "172.66.40.99",
-            "server_port": 8880,
-            "uuid": "d447f445-8ac8-46ad-8f93-474a8c57c738",
+            "server": "www.speedtest.net",
+            "server_port": 8443,
+            "uuid": "ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1821,34 +1835,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420",
-                "headers": {
-                    "Host": "s6.inFo.laLezaRanegomaNandish.suB420-mohaMad.online."
-                },
-                "max_early_data": 2048,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tls": {
+                "enabled": true,
+                "server_name": "lease-19.access.name.ng",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "redfree8.pooriashop.ir"
+                    "Host": "lease-19.access.name.ng"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1857,15 +1857,33 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "104.17.21.157",
-            "server_port": 2095,
-            "uuid": "09e75b61-5371-4e63-8ef9-1eb656fb9ed2",
+            "server": "zula.ir",
+            "server_port": 2096,
+            "uuid": "97909ffd-6da0-4893-9d63-00e72ad55256",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "frAgteSt.JaHANGiRKh.eU.orG",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "frAgteSt.JaHANGiRKh.eU.orG"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -2068,6 +2086,73 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "94.247.142.103",
+            "server_port": 443,
+            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pqh23v5.hiddendom.shop",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @XsV2ray | IR🇮🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "video-streaming.comtent-delivery.poshtibani.4b3a.com",
+            "server_port": 23410,
+            "uuid": "9718b260-03c9-4313-af0f-d08a0b5c859e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @customv2ray | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "zarin8i.alireza031.pw",
+            "server_port": 26734,
+            "uuid": "c9032a96-614a-4e8c-bc01-c96aa2ef749c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
