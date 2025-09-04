@@ -110,6 +110,7 @@
                 "RU🇷🇺",
                 "IR🇮🇷",
                 "US🇺🇸",
+                "CA🇨🇦",
                 "FI🇫🇮"
             ]
         },
@@ -123,13 +124,13 @@
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | CA🇨🇦 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -154,7 +155,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -165,8 +167,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | RU🇷🇺 | 0️⃣2️⃣"
             ],
@@ -189,6 +189,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @VmessProtocol | CA🇨🇦 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -408,12 +418,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "94.26.228.10",
+            "server": "62.60.247.164",
             "server_port": 443,
-            "uuid": "1a6fe500-59da-4598-8576-256f06765ffb",
-            "flow": "xtls-rprx-vision",
+            "uuid": "c7191333-8078-4d65-bc84-ae92ab1eea49",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -422,7 +432,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ru.sfasti.ru",
+                "server_name": "tgju.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -430,13 +440,20 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8",
-                    "short_id": "16895459a2c7768d"
+                    "public_key": "Q5wQ-CFit2wmpY4ACfqdZI8CClmPn4sfLXXdpW73PS0",
+                    "short_id": "d5c5c558ee0132"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @ShadowProxy66 | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "ru.sfasti.ru",
             "server_port": 443,
@@ -460,34 +477,6 @@
                     "enabled": true,
                     "public_key": "J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8",
                     "short_id": "16895459a2c7768d"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "5.181.171.2",
-            "server_port": 443,
-            "uuid": "8e6acce9-8b56-7190-d491-7d84f8189e26",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y",
-                    "short_id": ""
                 }
             }
         },
@@ -600,6 +589,34 @@
                     "enabled": true,
                     "public_key": "YyHLH09FoCQ7NvAPFcjXfjIiKU7wRTi-Ri8ahnqaoGU",
                     "short_id": "5175dd3850"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @VmessProtocol | CA🇨🇦 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "40.233.102.224",
+            "server_port": 42557,
+            "uuid": "2429bee3-e0c1-47dd-b420-75e6512b184b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo",
+                    "short_id": "f430927d"
                 }
             }
         },
