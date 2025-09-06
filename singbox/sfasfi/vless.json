@@ -119,7 +119,6 @@
                 "RU🇷🇺",
                 "FI🇫🇮",
                 "CA🇨🇦",
-                "PH🇵🇭",
                 "SC🇸🇨"
             ]
         },
@@ -183,6 +182,7 @@
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
@@ -220,7 +220,6 @@
                 "رایگان | VLESS | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | CA🇨🇦 | 0️⃣3️⃣",
-                "رایگان | VLESS | @ConfigsHUB | PH🇵🇭 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outlinev2rayNG | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -332,6 +331,7 @@
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @Outlinev2rayNG | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
@@ -414,16 +414,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | CA🇨🇦 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "PH🇵🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VLESS | @ConfigsHUB | PH🇵🇭 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1692,8 +1682,22 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "162.159.20.126",
-            "server_port": 8880,
+            "server": "104.16.157.108",
+            "server_port": 8080,
+            "uuid": "85de686c-3502-4de1-b071-5842f496e6f0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "104.17.21.157",
+            "server_port": 2095,
             "uuid": "85de686c-3502-4de1-b071-5842f496e6f0",
             "flow": "",
             "packet_encoding": "xudp",
@@ -1706,31 +1710,15 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "all.tellmethetrue.shop",
-            "server_port": 443,
-            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+            "server": "162.159.20.126",
+            "server_port": 8880,
+            "uuid": "85de686c-3502-4de1-b071-5842f496e6f0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pqh23v2.hiddendom.shop",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -2597,36 +2585,6 @@
                     "public_key": "LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo",
                     "short_id": "f430927d"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @ConfigsHUB | PH🇵🇭 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "154.83.2.167",
-            "server_port": 443,
-            "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pqh23v4.hiddendom.shop",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
