@@ -110,6 +110,7 @@
                 "DE🇩🇪",
                 "NL🇳🇱",
                 "US🇺🇸",
+                "HK🇭🇰",
                 "TW🇹🇼"
             ]
         },
@@ -128,7 +129,8 @@
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VMESS | @Hope_Net | TW🇹🇼 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | TW🇹🇼 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -191,10 +193,20 @@
             "tolerance": 50
         },
         {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "TW🇹🇼",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | TW🇹🇼 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | TW🇹🇼 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -567,7 +579,43 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | TW🇹🇼 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "gzog.runjustfast.com",
+            "server_port": 35004,
+            "uuid": "58bb35bc-8c58-4065-8c5f-9eeedb237eb1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/31k64xkea01x",
+                "headers": {
+                    "Host": "hk1.runjustfast.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | TW🇹🇼 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "gzog.runjustfast.com",
             "server_port": 30003,
