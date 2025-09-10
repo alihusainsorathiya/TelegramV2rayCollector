@@ -105,27 +105,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "195.13.44.87",
-            "server_port": 2096,
-            "password": "slch2024",
+            "server": "51.44.37.164",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -133,27 +135,20 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ocost-dy.wmlefl.cc",
+                "server_name": "trojan.burgerip.co.uk",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram",
-                "headers": {
-                    "Host": "ocost-dy.wmlefl.cc"
                 }
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "199.68.156.195",
-            "server_port": 2096,
-            "password": "slch2024",
+            "server": "154.3.37.9",
+            "server_port": 443,
+            "password": "745654",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -161,7 +156,28 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ocost-dy.wmlefl.cc",
+                "server_name": "hk.cestbon.work",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "aio.proxybox.dpdns.org",
+            "server_port": 443,
+            "password": "318cab24-ec99-40a6-a54a-0db9c661a3d0",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "aio.proxybox.dpdns.org",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -170,9 +186,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/由零开始",
+                "path": "\/188.34.160.97-2053",
                 "headers": {
-                    "Host": "ocost-dy.wmlefl.cc"
+                    "Host": "aio.proxybox.dpdns.org"
                 }
             }
         },
