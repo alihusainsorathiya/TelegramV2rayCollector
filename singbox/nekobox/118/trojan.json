@@ -110,35 +110,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱"
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "82.192.82.226",
-            "server_port": 443,
-            "password": "4863e1b2-ec2f-4c71-b862-ce533028e57e",
+            "server": "gercdn.bm04.xyz",
+            "server_port": 2053,
+            "password": "94cf288d-f764-4ce9-a547-a7228144f056",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -146,11 +146,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trus.moonfree.top",
+                "server_name": "gercdn.bm04.xyz",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/project\/activity\/ws\/",
+                "headers": {
+                    "Host": "gercdn.bm04.xyz"
                 }
             }
         },
