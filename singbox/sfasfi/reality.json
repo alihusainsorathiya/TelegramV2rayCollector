@@ -109,8 +109,10 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "NL🇳🇱",
                 "RU🇷🇺",
-                "MD🇲🇩"
+                "MD🇲🇩",
+                "GB🇬🇧"
             ]
         },
         {
@@ -118,11 +120,14 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free_v2rayyy | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,8 +138,19 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free_v2rayyy | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,7 +178,52 @@
             "tolerance": 50
         },
         {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "magazine.sentry-warrunner.xyz",
+            "server_port": 443,
+            "uuid": "14eba471-4623-4ed1-b937-f5b2206749bf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "miro.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UrGT7bAn2UND3kx81QHACf_6qReN8V6_o70kZerONk4",
+                    "short_id": "1c547814"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers-@HELIX_Servers",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "magazine.sentry-warrunner.xyz",
             "server_port": 443,
@@ -253,6 +314,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @free_v2rayyy | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "netherlanda.motorbazan.com",
+            "server_port": 8443,
+            "uuid": "cf556419-247c-4d04-969e-8742b836f364",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nn2Vf-5Q8DqxunZXrhIXUr329pkYvLyEb10zRVjpIxk",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @customv2ray | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "176.114.86.241",
@@ -333,6 +422,34 @@
                     "enabled": true,
                     "public_key": "LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw",
                     "short_id": "81e0b568"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "uka.motorbazan.com",
+            "server_port": 8443,
+            "uuid": "cf556419-247c-4d04-969e-8742b836f364",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nn2Vf-5Q8DqxunZXrhIXUr329pkYvLyEb10zRVjpIxk",
+                    "short_id": ""
                 }
             }
         },
