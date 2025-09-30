@@ -105,77 +105,37 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "pubg.ac",
-            "server_port": 8443,
-            "password": "93d6ba39-0f7d-4961-a414-2e393ec56499",
+            "server": "t.ctrip-oss-fc-amazon.52forest.com",
+            "server_port": 12525,
+            "password": "3ffb1eee-2e70-4fe7-ada2-51760b06a600",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/profile\/telegram@ssrsub",
-                "headers": {
-                    "Host": "cdn-node-oss-92.paofu.de"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "fastcup.net",
-            "server_port": 8443,
-            "password": "93d6ba39-0f7d-4961-a414-2e393ec56499",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/profile\/telegram@ssrsub",
-                "headers": {
-                    "Host": "cdn-node-oss-92.paofu.de"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "104.18.20.69",
-            "server_port": 8443,
-            "password": "93d6ba39-0f7d-4961-a414-2e393ec56499",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/profile\/telegram@ssrsub",
-                "headers": {
-                    "Host": "cdn-node-oss-92.paofu.de"
+            "tls": {
+                "enabled": true,
+                "server_name": "m.ctrip.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
