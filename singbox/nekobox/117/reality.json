@@ -106,7 +106,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "CH🇨🇭"
+                "CH🇨🇭",
+                "FR🇫🇷",
+                "RO🇷🇴"
             ]
         },
         {
@@ -115,7 +117,9 @@
             "outbounds": [
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣"
+                "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RO🇷🇴 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,6 +141,26 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RO🇷🇴",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | RO🇷🇴 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -237,6 +261,69 @@
                     "enabled": true,
                     "public_key": "wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk",
                     "short_id": "910aab"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "kiliyanmbappe10.vtuix.online",
+            "server_port": 7033,
+            "uuid": "7005979f-6b25-43db-935c-4cfa27d44a27",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.telewebion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE",
+                    "short_id": "16b6cda7ab793526"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "7034vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | RO🇷🇴 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "31.6.1.186",
+            "server_port": 48900,
+            "uuid": "a1f51e2b-cc02-4eb6-938c-ba3d147d6bef",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Jw3O-jHc_8zh0MBeIoodZZr8f6zCBDRlm4MU56WkWmg",
+                    "short_id": "45a64f6db317adcd"
                 }
             }
         },
