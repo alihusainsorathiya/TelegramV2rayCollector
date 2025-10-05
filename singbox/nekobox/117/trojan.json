@@ -105,7 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "RELAY🚩"
+                "RELAY🚩",
+                "RU🇷🇺"
             ]
         },
         {
@@ -114,7 +115,8 @@
             "outbounds": [
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,6 +129,16 @@
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,37 +175,9 @@
         {
             "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.20.20.84",
+            "server": "104.18.14.8",
             "server_port": 443,
-            "password": "auto",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "b96ef9ae.trojanfree-76s.pages.dev",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/b96ef9ae.trojanfree-76s.pages.dev\/",
-                "headers": {
-                    "Host": "b96ef9ae.trojanfree-76s.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "104.17.97.5",
-            "server_port": 2053,
-            "password": "channel-daily-configs",
+            "password": "Telegram-DailyConfigs",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -210,9 +194,56 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/TELEGRAM:@Daily_Configs?ed=2560",
+                "path": "\/?ed=2560",
                 "headers": {
                     "Host": "kanale-daily-configs.blackoutconnection.ir"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.17.148.22",
+            "server_port": 8880,
+            "password": "d4ff43e1-3131-4c32-e41b-716303c8ee49",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/melo\/",
+                "headers": {
+                    "Host": "ch.我的名字伊斯梅洛.site."
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "185.148.107.195",
+            "server_port": 2096,
+            "password": "slch2024",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ocost-dy.wmlefl.cc",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@ShadowProxy66",
+                "headers": {
+                    "Host": "ocost-dy.wmlefl.cc"
                 }
             }
         },
