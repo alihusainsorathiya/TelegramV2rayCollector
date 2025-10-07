@@ -111,8 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "CH🇨🇭",
-                "NL🇳🇱"
+                "CH🇨🇭"
             ]
         },
         {
@@ -120,8 +119,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +130,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,16 +142,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -186,6 +176,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "157.173.127.228",
+            "server_port": 443,
+            "uuid": "d50f50ef-20ff-47a1-a922-f476c2b83eb4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "analytics.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XIDvViESjfi-zRq4bdvHK7EyeT7vjJcA_MZO0QGTFhI",
+                    "short_id": "7fb3b0"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @NIM_VPN_ir | CH🇨🇭 | 0️⃣1️⃣",
             "type": "vless",
             "server": "5.182.36.251",
@@ -210,34 +228,6 @@
                     "enabled": true,
                     "public_key": "wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk",
                     "short_id": "910aab"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "usa53.openbypass.org",
-            "server_port": 443,
-            "uuid": "6e567f58-f981-486a-beae-cdefc2d86dd2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
-                    "short_id": ""
                 }
             }
         },
