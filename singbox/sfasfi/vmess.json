@@ -112,6 +112,7 @@
                 "DE🇩🇪",
                 "US🇺🇸",
                 "HK🇭🇰",
+                "JP🇯🇵",
                 "CN🇨🇳"
             ]
         },
@@ -129,6 +130,7 @@
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Awlix_ir | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2Line | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | CN🇨🇳 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -176,6 +178,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2Line | HK🇭🇰 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2Line | JP🇯🇵 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -480,6 +492,32 @@
                     "Host": "8.218.175.64"
                 },
                 "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2Line | JP🇯🇵 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.211.164.215",
+            "server_port": 20522,
+            "uuid": "73193cce-7ca1-4b08-93ff-4ee8b0147374",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram_@sswia",
+                "headers": {
+                    "Host": "8.211.164.215"
+                },
+                "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
