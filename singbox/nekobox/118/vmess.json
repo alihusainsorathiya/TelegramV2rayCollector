@@ -112,6 +112,7 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "ES🇪🇸",
+                "SG🇸🇬",
                 "BZ🇧🇿",
                 "DE🇩🇪",
                 "HK🇭🇰"
@@ -130,11 +131,11 @@
                 "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VMESS | @Awlix_ir | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | ES🇪🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2Line | HK🇭🇰 | 0️⃣2️⃣",
-                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -168,10 +169,20 @@
             "tolerance": 50
         },
         {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | SG🇸🇬 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "BZ🇧🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -181,8 +192,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -192,8 +203,7 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2Line | HK🇭🇰 | 0️⃣2️⃣",
-                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -485,11 +495,37 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | SG🇸🇬 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "203.30.190.190",
+            "server": "15.235.184.36",
+            "server_port": 80,
+            "uuid": "7ce525f5-3a9b-4627-ae0e-3ca0b57519e3",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "15.235.184.36"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "203.30.188.189",
             "server_port": 443,
-            "uuid": "40d496a6-ceeb-4096-baeb-4cc52b205621",
+            "uuid": "56a2188b-2ab7-402c-b9b8-34847fdf0958",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -514,33 +550,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "203.30.190.190"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "45.80.111.169",
-            "server_port": 8880,
-            "uuid": "e3dba91f-b31c-473a-8f17-92e1dedda38f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "45.80.111.169"
+                    "Host": "203.30.188.189"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -573,11 +583,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2Line | HK🇭🇰 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "8.218.71.140",
-            "server_port": 57714,
-            "uuid": "a2e3f41e-97a6-4dbb-b926-7093ff574f74",
+            "server": "cpanel.navar1.ir",
+            "server_port": 100,
+            "uuid": "26402bc7-7895-4dd0-ae6e-151a00c71145",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -587,19 +597,10 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/arki",
-                "headers": {
-                    "Host": "8.218.71.140"
-                },
-                "max_early_data": 2048,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "8.218.120.209",
             "server_port": 15160,
