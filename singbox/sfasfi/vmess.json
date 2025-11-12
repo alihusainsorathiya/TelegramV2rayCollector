@@ -109,10 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "RELAY🚩",
-                "DE🇩🇪",
-                "CN🇨🇳",
-                "HK🇭🇰"
+                "DE🇩🇪"
             ]
         },
         {
@@ -127,10 +124,7 @@
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Awlix_ir | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | CN🇨🇳 | 0️⃣2️⃣",
-                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣3️⃣"
+                "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -154,16 +148,6 @@
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
@@ -174,31 +158,11 @@
             "tolerance": 50
         },
         {
-            "tag": "CN🇨🇳",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @FreakConfig | CN🇨🇳 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "149.30.232.103",
-            "server_port": 31469,
-            "uuid": "5381445d-6ae4-4948-b61a-a16d9498d21b",
+            "server": "57.129.64.157",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -209,13 +173,23 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/arki",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "149.30.232.103"
+                    "Host": "lammaland.org"
                 },
-                "max_early_data": 2048,
+                "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
@@ -434,42 +408,6 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "162.159.243.133",
-            "server_port": 443,
-            "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "foxlux.fovi.tk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/eisasqa",
-                "headers": {
-                    "Host": "foxlux.fovi.tk"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | VMESS | @v2Line | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "185.146.173.25",
@@ -493,49 +431,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | CN🇨🇳 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "119.29.98.43",
-            "server_port": 20521,
-            "uuid": "682b8828-6cb4-476b-99ea-33ac91e30c77",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "119.29.98.43"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "8.218.120.209",
-            "server_port": 15160,
-            "uuid": "540a9fd9-9dc8-434f-c971-a10e9befd7fa",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
