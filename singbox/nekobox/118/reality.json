@@ -114,7 +114,9 @@
                 "RU🇷🇺",
                 "GB🇬🇧",
                 "NL🇳🇱",
-                "IT🇮🇹"
+                "LT🇱🇹",
+                "AL🇦🇱",
+                "AT🇦🇹"
             ]
         },
         {
@@ -129,7 +131,9 @@
                 "رایگان | REALITY | @NIM_VPN_ir | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2rayngvpn | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | LT🇱🇹 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | AL🇦🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -180,10 +184,30 @@
             "tolerance": 50
         },
         {
-            "tag": "IT🇮🇹",
+            "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | LT🇱🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AL🇦🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | AL🇦🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AT🇦🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -428,11 +452,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayngvpn | IT🇮🇹 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | LT🇱🇹 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "italy.pocomacho.ru",
+            "server": "lts.jykvpn.com",
             "server_port": 443,
-            "uuid": "678bbdc1-7307-4cf2-bec1-bcdbd8efdbe5",
+            "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -442,7 +466,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.google.com",
+                "server_name": "cdnjs.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -450,8 +474,64 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "w8fmqaWzMuOLi9qoV5ueSdrVel8xgr2R2Z1ayUE48EI",
-                    "short_id": "40b4681581dae8"
+                    "public_key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+                    "short_id": "c2a0b2d60a7fc300"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | AL🇦🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.177.238.80",
+            "server_port": 443,
+            "uuid": "1762a070-294a-4999-9c59-05aa4922feed",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl3.truservice.top",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VA5-XSH73WyopK0i8jc2i-23N0VPVwmN8w7TX1MnVyg",
+                    "short_id": "9df18b8856e52959"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "152.53.142.129",
+            "server_port": 35580,
+            "uuid": "d511b732-ade2-43dd-b2b9-76b215782326",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "expedia.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gZ5Jr2vSi47aGdLo3321fO_bH7Kv3_Pdv6ZjQAEY7Vs",
+                    "short_id": "3ab4"
                 }
             }
         },
