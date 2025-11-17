@@ -105,9 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "c@66.245.193.152:17126?type=tcp&security=tls&sni=ctaldikgfyw.uefahpgsyz.click#رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
+                "c@66.245.193.152:17126?type=tcp&security=tls&sni=ctaldikgfyw.uefahpgsyz.click#رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ]
@@ -116,9 +116,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "c@66.245.193.152:17126?type=tcp&security=tls&sni=ctaldikgfyw.uefahpgsyz.click#رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
+                "c@66.245.193.152:17126?type=tcp&security=tls&sni=ctaldikgfyw.uefahpgsyz.click#رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ],
@@ -127,7 +127,35 @@
             "tolerance": 50
         },
         {
-            "tag": "c@66.245.193.152:17126?type=tcp&security=tls&sni=ctaldikgfyw.uefahpgsyz.click#رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "145.239.88.255",
+            "server_port": 8443,
+            "password": "823f57d2-d271-48a6-859e-d041179e1c6b",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "joss.gpj.web.id",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Free-VPN-CF-Geo-Project\/145.239.88.255=8443",
+                "headers": {
+                    "Host": "joss.gpj.web.id"
+                }
+            }
+        },
+        {
+            "tag": "c@66.245.193.152:17126?type=tcp&security=tls&sni=ctaldikgfyw.uefahpgsyz.click#رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "tpCznR-P5=jZUb",
             "server_port": 0,
@@ -139,7 +167,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "217.69.10.156",
             "server_port": 16288,
@@ -156,34 +184,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "107.174.82.102.sslip.io",
-            "server_port": 443,
-            "password": "bb824a22-b7ce-427b-9ed6-1adf0751da02",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "107.174.82.102.sslip.io",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/gXKGj8a1tp1nNbZEcRugowKV",
-                "headers": {
-                    "Host": "107.174.82.102.sslip.io"
                 }
             }
         },
