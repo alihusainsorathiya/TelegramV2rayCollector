@@ -110,8 +110,8 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "EE🇪🇪",
                 "US🇺🇸",
+                "EE🇪🇪",
                 "NL🇳🇱"
             ]
         },
@@ -124,9 +124,8 @@
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -150,8 +149,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,16 +170,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -342,12 +340,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "104.238.189.224",
-            "server_port": 11204,
-            "uuid": "e85bb8f0-0baf-40f9-a012-3be7b4755715",
-            "flow": "",
+            "server": "usa82.freednet.org",
+            "server_port": 443,
+            "uuid": "4e5a0939-483c-4571-a1b1-fccbfe053923",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -356,7 +354,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zula.ir",
+                "server_name": "www.utexas.edu",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -364,8 +362,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "DtHwCwgTYNZKGYIMV4qY9lVfU4Yi2ZcRnOPAE3lQXiQ",
-                    "short_id": "c6931d91"
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
                 }
             }
         },
@@ -394,34 +392,6 @@
                     "enabled": true,
                     "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
                     "short_id": "86e999a2cdc2"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "usa82.freednet.org",
-            "server_port": 443,
-            "uuid": "4e5a0939-483c-4571-a1b1-fccbfe053923",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.utexas.edu",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
-                    "short_id": ""
                 }
             }
         },
