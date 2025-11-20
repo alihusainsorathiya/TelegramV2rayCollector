@@ -106,8 +106,10 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "NL🇳🇱",
+                "EE🇪🇪",
                 "US🇺🇸",
-                "EE🇪🇪"
+                "TR🇹🇷"
             ]
         },
         {
@@ -118,8 +120,10 @@
                 "رایگان | REALITY | @Helix_Servers | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,10 +143,10 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,6 +157,26 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -285,11 +309,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "usa82.freednet.org",
+            "server": "deu163.unboundworld.org",
             "server_port": 443,
-            "uuid": "4e5a0939-483c-4571-a1b1-fccbfe053923",
+            "uuid": "06fbbb8d-43b5-4ede-a0fe-417df04824cc",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -299,7 +323,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.utexas.edu",
+                "server_name": "www.bing.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -337,6 +361,62 @@
                     "enabled": true,
                     "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
                     "short_id": "86e999a2cdc2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | US🇺🇸 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "usa82.freednet.org",
+            "server_port": 443,
+            "uuid": "4e5a0939-483c-4571-a1b1-fccbfe053923",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.utexas.edu",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "tu.soreanapanel.com",
+            "server_port": 31724,
+            "uuid": "a308ddf6-cf9a-49ac-b128-27cf52052853",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-rqtKEhyEldsxEbNVfdTr9kjVH507vQnDXpHLcgpYQE",
+                    "short_id": "27"
                 }
             }
         },
