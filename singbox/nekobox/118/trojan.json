@@ -126,7 +126,6 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | CL🇨🇱 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | KR🇰🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣",
@@ -160,8 +159,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -271,25 +269,6 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "145.223.70.115",
-            "server_port": 25365,
-            "password": "eDHWaPzxcl",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "160.16.150.76",
@@ -362,20 +341,22 @@
         {
             "tag": "رایگان | TROJAN | @ConfigsHUB | CA🇨🇦 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "209.200.246.53",
-            "server_port": 10785,
-            "password": "D3OJA7xY5U",
+            "server": "198.57.27.27",
+            "server_port": 12990,
+            "password": "6pRjKQJ0CWyFtG.9",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+            "tls": {
+                "enabled": true,
+                "server_name": "diningtable.electricbanana.click",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
