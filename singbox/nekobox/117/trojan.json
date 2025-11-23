@@ -105,37 +105,48 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "JP🇯🇵",
-                "ES🇪🇸",
+                "DE🇩🇪",
                 "FR🇫🇷",
+                "ES🇪🇸",
+                "JP🇯🇵",
                 "RELAY🚩",
                 "PL🇵🇱",
-                "DE🇩🇪"
+                "CL🇨🇱"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | ES🇪🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | CL🇨🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,10 +163,10 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -182,22 +193,21 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "CL🇨🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | CL🇨🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "os-2.rise-fuji.com",
-            "server_port": 443,
-            "password": "Fn9TZuYXiFYhsyp65T",
+            "server": "57.129.16.72",
+            "server_port": 2053,
+            "password": "38af00d3-7c80-49fe-b91a-34d0d8044ee2",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -205,7 +215,35 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "os-2.rise-fuji.com",
+                "server_name": "joss.gpj1.web.id",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Free-VPN-CF-Geo-Project\/57.129.16.72=2053",
+                "headers": {
+                    "Host": "joss.gpj1.web.id"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "217.69.10.156",
+            "server_port": 16288,
+            "password": "5fbEkKmVOdAY 8_-",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sweetdream.sweetthunder.click",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -214,11 +252,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "160.16.150.76",
-            "server_port": 3093,
-            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb",
+            "server": "162.19.246.187",
+            "server_port": 2053,
+            "password": "83794b09-d50a-4e6e-9559-1372b6299e89",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -226,11 +264,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.nintendogames.net",
+                "server_name": "joss.gpj1.web.id",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Free-VPN-CF-Geo-Project\/162.19.246.187=2053",
+                "headers": {
+                    "Host": "joss.gpj1.web.id"
                 }
             }
         },
@@ -263,11 +308,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "162.19.246.187",
-            "server_port": 2053,
-            "password": "83794b09-d50a-4e6e-9559-1372b6299e89",
+            "server": "160.16.150.76",
+            "server_port": 3093,
+            "password": "dd2f25b4c70689de8bc0f7fa9d6591cb",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -275,18 +320,11 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "joss.gpj1.web.id",
+                "server_name": "www.nintendogames.net",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Free-VPN-CF-Geo-Project\/162.19.246.187=2053",
-                "headers": {
-                    "Host": "joss.gpj1.web.id"
                 }
             }
         },
@@ -340,11 +378,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | CL🇨🇱 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "35.159.144.1",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
+            "server": "64.176.18.21",
+            "server_port": 18415,
+            "password": "e9GP-sYzrxL2RBjl",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -352,28 +390,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "35.159.144.1",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
+                "server_name": "quietplace.lazymountain.click",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
