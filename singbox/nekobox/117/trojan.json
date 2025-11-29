@@ -105,8 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NO🇳🇴",
                 "FR🇫🇷",
+                "NO🇳🇴",
                 "RELAY🚩",
                 "PL🇵🇱"
             ]
@@ -115,20 +115,10 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
+                "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NO🇳🇴",
-            "type": "urltest",
-            "outbounds": [
-                "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,7 +128,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NO🇳🇴",
+            "type": "urltest",
+            "outbounds": [
+                "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -165,7 +165,35 @@
             "tolerance": 50
         },
         {
-            "tag": "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "141.94.222.214",
+            "server_port": 2053,
+            "password": "17178783-0dd7-4544-bf6b-e0694a1e3da7",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "joss.gpj.web.id",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Free-VPN-CF-Geo-Project\/141.94.222.214=2053",
+                "headers": {
+                    "Host": "joss.gpj.web.id"
+                }
+            }
+        },
+        {
+            "tag": "6bctokYl@217.170.194.223:24591?type=tcp&security=tls&sni=bldgmy.nejzftlubrig.click&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "pHEiSqez.13",
             "server_port": 0,
@@ -174,27 +202,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "217.69.10.156",
-            "server_port": 16288,
-            "password": "5fbEkKmVOdAY 8_-",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sweetdream.sweetthunder.click",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
