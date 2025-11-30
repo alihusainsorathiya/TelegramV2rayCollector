@@ -110,7 +110,6 @@
                 "FR🇫🇷",
                 "AE🇦🇪",
                 "EE🇪🇪",
-                "AT🇦🇹",
                 "RU🇷🇺"
             ]
         },
@@ -123,9 +122,9 @@
                 "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | AE🇦🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣"
             ],
@@ -159,7 +158,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -180,16 +180,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AT🇦🇹",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -347,6 +337,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "Evay-vpn.octacityroleplay.ir",
+            "server_port": 1122,
+            "uuid": "309c80a1-0966-470b-892a-4b1a5bc56473",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.slideshare.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4iCkO1B_tdvJY7x_v9izvkoNDfdGIFiL2LQX2Nqv5RI",
+                    "short_id": "4c7b0ea36fc7f0c4"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @v2rayngvpn | AE🇦🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "UAE.TORPROSPEED.IR",
@@ -399,34 +417,6 @@
                     "enabled": true,
                     "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
                     "short_id": "86e999a2cdc2"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | AT🇦🇹 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "ezalor.fonixapp.org",
-            "server_port": 51481,
-            "uuid": "7bd25979-cbc3-4184-83b8-3b6a14deb010",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ilovepdf.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "7X3ayYDMuYR4Vz8Px8hDjOIxOMnRncjapXpWIzaKyls",
-                    "short_id": "47"
                 }
             }
         },
