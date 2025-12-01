@@ -110,7 +110,8 @@
                 "FI🇫🇮",
                 "US🇺🇸",
                 "EE🇪🇪",
-                "GB🇬🇧"
+                "GB🇬🇧",
+                "FR🇫🇷"
             ]
         },
         {
@@ -125,8 +126,10 @@
                 "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -170,7 +173,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -191,6 +195,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @free1_vpn | GB🇬🇧 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -421,6 +435,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "109.248.160.166",
+            "server_port": 51266,
+            "uuid": "e82f4274-a732-4017-9e8b-ddb208c223f9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gameup.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "6Atzw8uazp2vtZRPWwc9pamnYLIg6Top2qVomYdhRl8",
+                    "short_id": "911d"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "est-0001-xr.packet-drop-society.net",
@@ -481,6 +523,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "FRANCE.TORPROSPEED.IR",
+            "server_port": 223,
+            "uuid": "57234258-f291-49b0-9574-9526f8acf825",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JOKX-kH_SOPrdPG26TdJzO6YSDItrRGXKhtv70Bn81o",
+                    "short_id": "c7f175a94bd79f8d"
+                }
             }
         },
         {
