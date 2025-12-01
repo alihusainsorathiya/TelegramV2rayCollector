@@ -111,10 +111,11 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
+                "FR🇫🇷",
                 "US🇺🇸",
                 "DE🇩🇪",
                 "EE🇪🇪",
-                "GB🇬🇧"
+                "CY🇨🇾"
             ]
         },
         {
@@ -122,11 +123,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @rxv2ray | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,6 +138,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @rxv2ray | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,8 +167,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -174,10 +184,10 @@
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -207,6 +217,34 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "fr.atlanta-internet.ru",
+            "server_port": 8443,
+            "uuid": "669be00c-67b4-4b87-b08f-311c45abced2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pingless.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI",
                     "short_id": ""
                 }
             }
@@ -268,34 +306,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "179.61.251.78",
-            "server_port": 443,
-            "uuid": "fabc8a38-76c5-48fe-ada7-a9e52dd16225",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "esHsu3-Fj0aZ0xuNBV6qW1zu1hLbas8YDn7AO0QGsBw",
-                    "short_id": "0ff58d687a4c6c"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @VmessProtocol | EE🇪🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "est-0001-xr.packet-drop-society.net",
@@ -324,12 +334,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | GB🇬🇧 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | CY🇨🇾 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "194.46.59.171",
-            "server_port": 2080,
-            "uuid": "684ead3d-43b1-4707-904a-24e3e9e91fb1",
-            "flow": "",
+            "server": "171.22.114.248",
+            "server_port": 27394,
+            "uuid": "00b0d4de-b126-4511-87c1-8f1feb462fa6",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -346,16 +356,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "9jcs1L8alkKMjyWZh0b0TNaPV53ilNkMIJGLtMU-2S4",
-                    "short_id": "722ee6b369"
+                    "public_key": "TZO1nvxk-x90cL3v9ixowQNC56sQ8k76_KaGU6jczks",
+                    "short_id": "c2fa"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
