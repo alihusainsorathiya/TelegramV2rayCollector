@@ -106,9 +106,10 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "AT🇦🇹",
                 "US🇺🇸",
+                "FR🇫🇷",
                 "NL🇳🇱",
-                "FI🇫🇮",
                 "TR🇹🇷"
             ]
         },
@@ -117,9 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | AT🇦🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -137,6 +139,16 @@
             "tolerance": 50
         },
         {
+            "tag": "AT🇦🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | AT🇦🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
@@ -147,20 +159,20 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FI🇫🇮",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -205,6 +217,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | AT🇦🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "aut-0001-xr.packet-drop-society.net",
+            "server_port": 443,
+            "uuid": "e71e700c-3751-4362-92a0-817ae5ec7fa4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hls-svod.itunes.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
+                    "short_id": "31"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "47.253.226.114",
@@ -233,9 +273,37 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "202.148.53.117",
+            "server": "fr.atlanta-internet.ru",
+            "server_port": 8443,
+            "uuid": "669be00c-67b4-4b87-b08f-311c45abced2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pingless.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "nl-3.atlanta-internet.ru",
             "server_port": 8443,
             "uuid": "669be00c-67b4-4b87-b08f-311c45abced2",
             "flow": "xtls-rprx-vision",
@@ -257,34 +325,6 @@
                     "enabled": true,
                     "public_key": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI",
                     "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | FI🇫🇮 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "185.42.163.177",
-            "server_port": 1888,
-            "uuid": "0f3c5d1e-21e7-4f5d-b57e-a308686e22f3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.kernel.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "GaVpyGU5Xqyd5SYmchrCIajjTiXF69bmCnUdftmrwTM",
-                    "short_id": "16b7f8a207cda6e3"
                 }
             }
         },
