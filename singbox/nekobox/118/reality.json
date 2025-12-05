@@ -113,7 +113,8 @@
                 "DE🇩🇪",
                 "US🇺🇸",
                 "GB🇬🇧",
-                "NL🇳🇱"
+                "FR🇫🇷",
+                "AE🇦🇪"
             ]
         },
         {
@@ -123,8 +124,9 @@
                 "رایگان | REALITY | @CUSTOMVPNSERVER | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,11 +163,21 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AE🇦🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -256,7 +268,70 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "pj2.bestirstorei.top",
+            "server_port": 51714,
+            "uuid": "TelPJ65",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "35EJSVcyfkkXYQ8b7jp1NA-yXPm43CPL9iwxVTY4ZUY",
+                    "short_id": "0dcf095d23b3a490"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@ProxyPJ--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN--@FuseVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "Evay-vpn.octacityroleplay.ir",
+            "server_port": 1122,
+            "uuid": "28212275-7589-4993-8075-fa415c6b2d1e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.slideshare.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4iCkO1B_tdvJY7x_v9izvkoNDfdGIFiL2LQX2Nqv5RI",
+                    "short_id": "4c7b0ea36fc7f0c4"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "nl-3.atlanta-internet.ru",
             "server_port": 8443,
@@ -280,34 +355,6 @@
                     "enabled": true,
                     "public_key": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI",
                     "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "noda1.topconnected.ru",
-            "server_port": 443,
-            "uuid": "90c9c25c-df6c-4438-83d3-ef97166a9184",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sun6-22.userapi.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "yP1V_oAX1Sehc_102nMHuQgTOYk7T9KbJQmTlK4maVE",
-                    "short_id": "d88b8adda0f82083"
                 }
             }
         },
