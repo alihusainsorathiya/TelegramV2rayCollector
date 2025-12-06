@@ -110,8 +110,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "JP🇯🇵",
+                "HK🇭🇰",
                 "CA🇨🇦",
+                "JP🇯🇵",
                 "RELAY🚩",
                 "PL🇵🇱"
             ]
@@ -120,9 +121,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | CA🇨🇦 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣"
             ],
@@ -131,11 +132,10 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,6 +146,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | CA🇨🇦 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -172,11 +182,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "160.16.144.208",
-            "server_port": 3145,
-            "password": "79314e99f0a473fe86efc7827942ad00",
+            "server": "47.242.225.242",
+            "server_port": 443,
+            "password": "92690597d6298061459918a371e8d77d",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -184,28 +194,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.nintendogames.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "160.16.150.76",
-            "server_port": 1596,
-            "password": "79314e99f0a473fe86efc7827942ad00",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.nintendogames.net",
+                "server_name": "hezijiasuqi.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -227,6 +216,27 @@
             "tls": {
                 "enabled": true,
                 "server_name": "diningtable.electricbanana.click",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | JP🇯🇵 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "160.16.150.76",
+            "server_port": 1596,
+            "password": "79314e99f0a473fe86efc7827942ad00",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nintendogames.net",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
