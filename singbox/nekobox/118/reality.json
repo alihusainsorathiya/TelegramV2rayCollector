@@ -111,10 +111,12 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RU🇷🇺",
-                "NL🇳🇱",
+                "FI🇫🇮",
+                "SE🇸🇪",
                 "DE🇩🇪",
                 "JP🇯🇵",
-                "CH🇨🇭"
+                "CH🇨🇭",
+                "NL🇳🇱"
             ]
         },
         {
@@ -122,16 +124,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayngvpn | CH🇨🇭 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,19 +144,28 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -186,8 +197,17 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | CH🇨🇭 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2rayngvpn | CH🇨🇭 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -222,6 +242,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "turkey8.yourbot.me",
+            "server_port": 443,
+            "uuid": "041b0e57-d4f6-4332-8296-a06a046241fc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OBKACuWea1rLl-_caAlsIu_V40AGwisGpq84qQwWRks",
+                    "short_id": "a26808"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "51.250.109.47",
@@ -250,35 +298,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "45.92.176.55",
-            "server_port": 2243,
-            "uuid": "d7e2c1ec-b2ba-4a4c-a73a-c08f5bd7923b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rontgen.fasssst.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_ee-ouMazAzx7Q4_cYhWbu6pw53-8VVpt7tuBuCXziU",
-                    "short_id": "e3cbc70477"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣1️⃣",
             "type": "vless",
             "server": "auto.happvpn.com",
             "server_port": 443,
@@ -306,11 +326,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "hels3.vlessok.store",
+            "server": "sweden11.clearorbitllc.com",
             "server_port": 443,
-            "uuid": "7405cd73-01d9-48d5-ada9-6905378d3975",
+            "uuid": "26c99015-b58e-47d2-a4ce-4f4b05b70400",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -320,16 +340,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "disk.yandex.ru",
+                "server_name": "sweden11.clearorbitllc.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
-                    "short_id": "9ec7e0"
+                    "public_key": "6i0TALpH7qy8-xzwJkI13mRsgi2e7lHqKQyAcDSg8Uc",
+                    "short_id": "4af2"
                 }
             }
         },
@@ -474,11 +494,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "swiss.intfreed.ru",
+            "server": "hels3.vlessok.store",
             "server_port": 443,
-            "uuid": "bf92bdef-ab8d-4481-8798-2d39023357b2",
+            "uuid": "7405cd73-01d9-48d5-ada9-6905378d3975",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -488,16 +508,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "swiss.video.intfreed.ru",
+                "server_name": "disk.yandex.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "qq"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw",
-                    "short_id": "7755e972daf8eec8"
+                    "public_key": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
+                    "short_id": "9ec7e0"
                 }
             }
         },
