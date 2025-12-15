@@ -108,26 +108,54 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | AT🇦🇹 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | AT🇦🇹 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "157.90.114.255",
+            "server_port": 443,
+            "uuid": "Parsashonam-323",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Jn4o_Z04hFKbSObmrHi3rGiPXLpSNFjmSjEGOGFN_FY",
+                    "short_id": "09373829"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @prrofile_purple | SE🇸🇪 | 0️⃣2️⃣",
@@ -186,34 +214,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "net2.intfreed.ru",
-            "server_port": 443,
-            "uuid": "bf92bdef-ab8d-4481-8798-2d39023357b2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "video.intfreed.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw",
-                    "short_id": "7755e972daf8eec8"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @VmessProtocol | AT🇦🇹 | 0️⃣1️⃣",
             "type": "vless",
             "server": "at.monkeyisland.life",
@@ -242,11 +242,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "51.158.206.103",
-            "server_port": 23576,
-            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+            "server": "net2.intfreed.ru",
+            "server_port": 443,
+            "uuid": "bf92bdef-ab8d-4481-8798-2d39023357b2",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -256,16 +256,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fuck.rkn",
+                "server_name": "video.intfreed.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "qq"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-                    "short_id": "01"
+                    "public_key": "JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw",
+                    "short_id": "7755e972daf8eec8"
                 }
             }
         },
