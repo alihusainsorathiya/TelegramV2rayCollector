@@ -106,8 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "NL🇳🇱",
-                "FR🇫🇷"
+                "NL🇳🇱"
             ]
         },
         {
@@ -117,9 +116,9 @@
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2rayngvpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2rayngvpn | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +130,8 @@
             "outbounds": [
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,16 +143,6 @@
             "outbounds": [
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayngvpn | NL🇳🇱 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -243,6 +233,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "94.156.114.200",
+            "server_port": 38395,
+            "uuid": "0f8e2cfc-fdf2-46c7-bfcd-ce8273d5ff13",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vk.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA",
+                    "short_id": "ab12cd34"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "213.176.16.74",
@@ -295,34 +313,6 @@
                     "enabled": true,
                     "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
                     "short_id": "01"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "Evay-vpn.octacityroleplay.ir",
-            "server_port": 1122,
-            "uuid": "cf804de9-d65f-4b49-9990-ea611fdcbc10",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.zhaket.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4iCkO1B_tdvJY7x_v9izvkoNDfdGIFiL2LQX2Nqv5RI",
-                    "short_id": "4c7b0ea36fc7f0c4"
                 }
             }
         },
