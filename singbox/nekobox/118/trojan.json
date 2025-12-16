@@ -110,7 +110,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "IE🇮🇪",
+                "SE🇸🇪",
+                "GB🇬🇧",
                 "RELAY🚩",
                 "PL🇵🇱"
             ]
@@ -119,9 +120,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣3️⃣",
+                "6BEwUSNsI@70.34.223.58:29730?type=tcp&security=tls&sni=ads.x5.ru&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣"
             ],
@@ -130,12 +131,21 @@
             "tolerance": 50
         },
         {
-            "tag": "IE🇮🇪",
+            "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣3️⃣"
+                "6BEwUSNsI@70.34.223.58:29730?type=tcp&security=tls&sni=ads.x5.ru&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,11 +172,23 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣1️⃣",
+            "tag": "6BEwUSNsI@70.34.223.58:29730?type=tcp&security=tls&sni=ads.x5.ru&allowInsecure=1#رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "146.70.90.194",
-            "server_port": 57452,
-            "password": "t1k169n5zmvvwn96r9ft",
+            "server": "fapgdGnC=-b",
+            "server_port": 0,
+            "password": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "194.59.250.53",
+            "server_port": 58499,
+            "password": "57ilz74461jfayyqbb83",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -174,7 +196,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.vk.com",
+                "server_name": "ads.x5.ru",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -183,11 +205,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | GB🇬🇧 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "146.70.90.198",
-            "server_port": 57452,
-            "password": "t1k169n5zmvvwn96r9ft",
+            "server": "64.176.189.166",
+            "server_port": 17219,
+            "password": "a1sQe6Zbpxf0LyhdkBjlr",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -195,28 +217,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.vk.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "146.70.90.197",
-            "server_port": 57452,
-            "password": "t1k169n5zmvvwn96r9ft",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.vk.com",
+                "server_name": "ads.x5.ru",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
