@@ -111,8 +111,9 @@
                 "DE🇩🇪",
                 "SE🇸🇪",
                 "PL🇵🇱",
+                "KZ🇰🇿",
                 "NL🇳🇱",
-                "GB🇬🇧"
+                "CH🇨🇭"
             ]
         },
         {
@@ -124,8 +125,9 @@
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,20 +166,30 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "KZ🇰🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -324,7 +336,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "178.236.16.98",
+            "server_port": 35728,
+            "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+                    "short_id": "69a2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
             "type": "vless",
             "server": "213.176.16.74",
             "server_port": 443,
@@ -352,11 +392,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "5.181.21.72",
-            "server_port": 443,
-            "uuid": "e4b8df56-b680-4a34-ab47-5bf5738ed718",
+            "server": "ch.srv.oplcdn.link",
+            "server_port": 8443,
+            "uuid": "3116cc23-0c39-4bb6-8154-d3f332e9017e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -366,16 +406,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.google.com",
+                "server_name": "ign.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "qq"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "v9CxKfIPtkKH1cTGKEer-1i-3JL31vZPpPl2Ujnbjh8",
-                    "short_id": "85225c27630d023f"
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": "6ba85179e30d4fc2"
                 }
             }
         },
