@@ -111,8 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "NL🇳🇱",
-                "PL🇵🇱"
+                "KZ🇰🇿",
+                "NL🇳🇱"
             ]
         },
         {
@@ -122,8 +122,8 @@
                 "رایگان | REALITY | @Parsashonam | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,20 +142,20 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "KZ🇰🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "PL🇵🇱",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -246,7 +246,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "178.236.16.98",
+            "server_port": 35728,
+            "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+                    "short_id": "69a2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
             "type": "vless",
             "server": "213.176.16.74",
             "server_port": 443,
@@ -270,34 +298,6 @@
                     "enabled": true,
                     "public_key": "XNL_xB1Spd09CQQQGnjeMPPK6_tPnFuYI_nLKk3EiWc",
                     "short_id": "aabbccdd"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | PL🇵🇱 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "poland.geodema.network",
-            "server_port": 8443,
-            "uuid": "eb7c7631-6c7c-4f34-a65a-974b4565d01d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "music.yandex.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ",
-                    "short_id": "5540e44a53c3d01c"
                 }
             }
         },
