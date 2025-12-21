@@ -107,6 +107,7 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "RU🇷🇺",
+                "KZ🇰🇿",
                 "TR🇹🇷"
             ]
         },
@@ -116,7 +117,8 @@
             "outbounds": [
                 "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayngvpn | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -138,7 +140,17 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | RU🇷🇺 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "KZ🇰🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -211,7 +223,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | RU🇷🇺 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.8.145.61",
+            "server_port": 443,
+            "uuid": "309fa273-6579-4cb2-9143-7cad50401eba",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY",
+                    "short_id": "7cad5040"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | KZ🇰🇿 | 0️⃣1️⃣",
             "type": "vless",
             "server": "third-legend.atlanta-internet.ru",
             "server_port": 443,
