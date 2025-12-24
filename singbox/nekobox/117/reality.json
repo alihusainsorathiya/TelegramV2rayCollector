@@ -106,8 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "RU🇷🇺",
-                "CH🇨🇭"
+                "RU🇷🇺"
             ]
         },
         {
@@ -117,8 +116,9 @@
                 "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | CH🇨🇭 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +130,8 @@
             "outbounds": [
                 "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,17 +141,8 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "CH🇨🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | CH🇨🇭 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -241,6 +233,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "deusup.dashping1.ir",
+            "server_port": 8101,
+            "uuid": "f4ed3891-9b35-442f-ba1d-6473d2cf0b45",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "preview.redd.it",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DG2WqjfT9HFqCfHzaYAVNEayiJN8yGQ64YT9-9eV5Fs",
+                    "short_id": "bbddcffa7270"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "176.125.240.166",
@@ -269,11 +289,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayngvpn | CH🇨🇭 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "ch3.tunnely.ru",
-            "server_port": 443,
-            "uuid": "c42e4667-ca09-4769-b544-89a8da730daf",
+            "server": "193.160.209.95",
+            "server_port": 4443,
+            "uuid": "f228db24-3602-4dd2-bdec-2d7faa61e70b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -283,7 +303,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ch3.tunnely.ru",
+                "server_name": "github.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -291,8 +311,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM",
-                    "short_id": "2e40144ddc07e8e1"
+                    "public_key": "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE",
+                    "short_id": "aa7e96542880027a"
                 }
             }
         },
