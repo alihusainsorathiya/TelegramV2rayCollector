@@ -108,19 +108,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "DE🇩🇪",
                 "MD🇲🇩",
-                "RU🇷🇺",
-                "NL🇳🇱"
+                "NL🇳🇱",
+                "RU🇷🇺"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ARv2ray | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,17 +149,6 @@
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
@@ -156,6 +157,45 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @v2_team | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "parsonline.aparat-movies-download.ir",
+            "server_port": 4450,
+            "uuid": "681b011e-dd2a-4efb-a571-6d61f0078636",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @ARv2ray | MD🇲🇩 | 0️⃣1️⃣",
@@ -193,11 +233,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayngvpn | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "130.193.35.232",
+            "server": "nl5.tunnely.ru",
             "server_port": 443,
-            "uuid": "97dd83ab-b3b7-43e4-9002-c6bdcae0729d",
+            "uuid": "c42e4667-ca09-4769-b544-89a8da730daf",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -207,7 +247,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tradingview.com",
+                "server_name": "nl5.tunnely.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -215,8 +255,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
-                    "short_id": "6419bed7fd0a2cff"
+                    "public_key": "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM",
+                    "short_id": "2e40144ddc07e8e1"
                 }
             }
         },
@@ -249,11 +289,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "nl5.tunnely.ru",
+            "server": "185.130.114.219",
             "server_port": 443,
-            "uuid": "c42e4667-ca09-4769-b544-89a8da730daf",
+            "uuid": "309fa273-6579-4cb2-9143-7cad50401eba",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -263,7 +303,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "nl5.tunnely.ru",
+                "server_name": "www.cloudflare.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -271,8 +311,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM",
-                    "short_id": "2e40144ddc07e8e1"
+                    "public_key": "gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY",
+                    "short_id": "7cad5040"
                 }
             }
         },
