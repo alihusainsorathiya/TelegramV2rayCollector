@@ -112,7 +112,8 @@
                 "URL-TEST | رایگان",
                 "IS🇮🇸",
                 "SE🇸🇪",
-                "RELAY🚩"
+                "RELAY🚩",
+                "IT🇮🇹"
             ]
         },
         {
@@ -121,7 +122,8 @@
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | IS🇮🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | IT🇮🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,6 +154,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IT🇮🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | IT🇮🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -224,6 +236,27 @@
                 "path": "\/yamtekodasayahhh",
                 "headers": {
                     "Host": "kotlet.arshiacomplus.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | IT🇮🇹 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "172.238.229.254",
+            "server_port": 14051,
+            "password": "OdgHycGphesfLmPMYolUF",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api.avito.ru",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
