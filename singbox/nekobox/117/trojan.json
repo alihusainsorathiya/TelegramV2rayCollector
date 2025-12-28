@@ -105,6 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "US🇺🇸",
+                "RU🇷🇺",
                 "RELAY🚩"
             ]
         },
@@ -112,10 +114,30 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,8 +147,6 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ],
@@ -135,11 +155,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "bisque.qzz.io",
-            "server_port": 443,
-            "password": "e86364fb-a5e3-42c3-b7fa-6ce8097fe19f",
+            "server": "144.202.8.250",
+            "server_port": 23239,
+            "password": "25IYE1_dhFCBi6omM3qf9",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -147,27 +167,20 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "bisque.qzz.io",
+                "server_name": "api-maps.yandex.ru",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/66.135.4.222:8443",
-                "headers": {
-                    "Host": "bisque.qzz.io"
                 }
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RU🇷🇺 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "cf.090227.xyz",
+            "server": "verarussia1.uspn.io",
             "server_port": 443,
-            "password": "87d1bfd4-574e-4c96-ad42-0426f27461ff",
+            "password": "VjXsgvA0s4",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -175,7 +188,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "_acme-challenge.2go.cloudns.be",
+                "server_name": "verarussia1.uspn.io",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -184,18 +197,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/trojan",
                 "headers": {
-                    "Host": "_acme-challenge.2go.cloudns.be"
+                    "Host": "verarussia1.uspn.io"
                 }
             }
         },
         {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "saas.sin.fan",
+            "server": "mfyousheng.nl.eu.org",
             "server_port": 443,
-            "password": "87d1bfd4-574e-4c96-ad42-0426f27461ff",
+            "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -203,7 +216,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "_acme-challenge.2go.cloudns.be",
+                "server_name": "mfyousheng.nl.eu.org",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -212,9 +225,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/tjwsLhx0SFASG4l9FERJ1g",
                 "headers": {
-                    "Host": "_acme-challenge.2go.cloudns.be"
+                    "Host": "mfyousheng.nl.eu.org"
                 }
             }
         },
