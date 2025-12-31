@@ -124,6 +124,7 @@
                 "CH🇨🇭",
                 "RU🇷🇺",
                 "IE🇮🇪",
+                "CY🇨🇾",
                 "LT🇱🇹",
                 "BG🇧🇬"
             ]
@@ -166,7 +167,6 @@
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @iP_CF | US🇺🇸 | 0️⃣2️⃣",
@@ -206,12 +206,12 @@
                 "رایگان | VLESS | @Outline_Vpn | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | AT🇦🇹 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayngvpn | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | IE🇮🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | LT🇱🇹 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | LT🇱🇹 | 0️⃣2️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | BG🇧🇬 | 0️⃣3️⃣"
@@ -267,7 +267,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @iP_CF | US🇺🇸 | 0️⃣2️⃣",
@@ -379,7 +378,6 @@
                 "رایگان | VLESS | @Outline_Vpn | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray1_ng | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ConfigsHUB | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | SS | @OutlineVpnOfficial | MD🇲🇩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -421,6 +419,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @flyv2ray | IE🇮🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CY🇨🇾",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1282,42 +1290,6 @@
                     "Host": "tms.dingtalk.com"
                 },
                 "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "151.101.194.219",
-            "server_port": 443,
-            "uuid": "2052dca2-008b-4f54-9bbb-dbac90dd54a5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ws\/",
-                "headers": {
-                    "Host": "Dbdjhiw72ebsu272hs519j.com"
-                },
-                "max_early_data": 2048,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
@@ -2192,18 +2164,6 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | MD🇲🇩 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "trunker.cc",
-            "server_port": 8080,
-            "password": "nYzYreUpD4dDjzjFcgf6Fe3oaw4QFN",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "رایگان | SS | @OutlineVpnOfficial | MD🇲🇩 | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "103.35.189.136",
@@ -2309,6 +2269,18 @@
                     "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": "6ba85179e30d4fc2"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CY🇨🇾 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "trunker.cc",
+            "server_port": 8080,
+            "password": "nYzYreUpD4dDjzjFcgf6Fe3oaw4QFN",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
