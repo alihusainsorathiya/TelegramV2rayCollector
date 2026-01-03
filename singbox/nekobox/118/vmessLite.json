@@ -110,7 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @customv2ray | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | JP🇯🇵 | 0️⃣1️⃣",
@@ -122,7 +122,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @customv2ray | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | JP🇯🇵 | 0️⃣1️⃣",
@@ -134,11 +134,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "154.201.76.172",
-            "server_port": 20521,
-            "uuid": "496cec71-a0fd-4f25-bba1-cba9e9d5a52f",
+            "server": "162.159.243.133",
+            "server_port": 443,
+            "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -149,11 +149,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "foxpol.fovi.tk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/eisasqa",
                 "headers": {
-                    "Host": null
+                    "Host": "foxpol.fovi.tk"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
