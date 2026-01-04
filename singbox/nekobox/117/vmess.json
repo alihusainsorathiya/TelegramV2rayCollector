@@ -105,10 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "IR🇮🇷",
                 "FR🇫🇷",
-                "US🇺🇸",
                 "RELAY🚩",
+                "US🇺🇸",
                 "JP🇯🇵",
                 "CA🇨🇦"
             ]
@@ -117,24 +116,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @customv2ray | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | CA🇨🇦 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,22 +138,21 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -193,23 +179,6 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "s8.rookari.com",
-            "server_port": 9016,
-            "uuid": "cf1d3cd8-c544-47db-b074-49641b026e83",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "رایگان | VMESS | @customv2ray | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.19.248.238",
@@ -227,11 +196,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "46.254.106.77",
-            "server_port": 10000,
-            "uuid": "a6d83a36-e46b-11f0-83c8-066c57b94770",
+            "server": "zula.ir",
+            "server_port": 8080,
+            "uuid": "nasnet",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -244,9 +213,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/vpnjantit",
+                "path": "\/nasnet\/cdn?ed=2560",
                 "headers": {
-                    "Host": "46.254.106.77"
+                    "Host": "nasnet-511952424.mcitel.co"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -309,32 +278,6 @@
                 "path": "\/vmessws",
                 "headers": {
                     "Host": "209.126.84.189"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "zula.ir",
-            "server_port": 8080,
-            "uuid": "nasnet",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/nasnet\/cdn?ed=2560",
-                "headers": {
-                    "Host": "nasnet-511952424.mcitel.co"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
