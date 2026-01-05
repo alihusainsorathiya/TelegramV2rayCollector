@@ -106,8 +106,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "MD🇲🇩",
+                "AU🇦🇺",
                 "FR🇫🇷",
-                "KZ🇰🇿",
+                "EE🇪🇪",
                 "PL🇵🇱"
             ]
         },
@@ -117,8 +118,9 @@
             "outbounds": [
                 "رایگان | REALITY | @ARv2ray | MD🇲🇩 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣2️⃣",
-                "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | KZ🇰🇿 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayNGn | AU🇦🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @customv2ray | EE🇪🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -137,20 +139,30 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "AU🇦🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @V2rayNGn | AU🇦🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "KZ🇰🇿",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | KZ🇰🇿 | 0️⃣2️⃣"
+                "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "EE🇪🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @customv2ray | EE🇪🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -230,7 +242,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @V2rayNGn | AU🇦🇺 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "82.115.13.63",
+            "server_port": 43912,
+            "uuid": "c799d2d8-7ad1-4e42-94b6-f9a50a0ab0c7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "s0JyZwSWWQLCYzANXXJhlKlbpof65SiAtcIDBoylHGQ",
+                    "short_id": "0123456789abcdef"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayNGn | FR🇫🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "maxb08.musicdoon.ir",
             "server_port": 8080,
@@ -258,11 +298,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | KZ🇰🇿 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @customv2ray | EE🇪🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "37.151.92.38",
-            "server_port": 14297,
-            "uuid": "d59cf172-f818-42dd-b3bb-086f34b27b38",
+            "server": "144.31.178.168",
+            "server_port": 443,
+            "uuid": "eb162ab1-a006-4931-b1b3-8fc88a22b10e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -272,16 +312,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "google.com",
+                "server_name": "tbankru.outlinekeys.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": null
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "hfsB_yoAK5udF1CEOMRoEAZNfWZkYX8W40cSHd2ozGo",
-                    "short_id": "3bfb35ef"
+                    "public_key": "WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA",
+                    "short_id": ""
                 }
             }
         },
