@@ -113,6 +113,7 @@
                 "DE🇩🇪",
                 "MD🇲🇩",
                 "FI🇫🇮",
+                "FR🇫🇷",
                 "RU🇷🇺"
             ]
         },
@@ -125,7 +126,10 @@
                 "رایگان | REALITY | @ARv2ray | MD🇲🇩 | 0️⃣3️⃣",
                 "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowSocks_s | FI🇫🇮 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -159,7 +163,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ShadowSocks_s | FI🇫🇮 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -169,6 +184,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -323,7 +339,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | FI🇫🇮 | 0️⃣3️⃣",
             "type": "vless",
             "server": "free12.shomboli.blog",
             "server_port": 443,
@@ -347,6 +363,90 @@
                     "enabled": true,
                     "public_key": "YLSRUKO-sm6In4ckqgVjagHKrWcA5r2aV7khO5brOUQ",
                     "short_id": "e3c5c005cae07eb7"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @vmessorg | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "maxb17.musicdoon.ir",
+            "server_port": 8080,
+            "uuid": "2c7a2b04-ad16-484b-b0e4-739cd06b650f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "chatgpt.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw",
+                    "short_id": "b7b70c104ad267b8"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "fr-gt-01.com",
+            "server_port": 8443,
+            "uuid": "298a5e17-6af7-43ec-8582-c6f7312e3592",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA",
+                    "short_id": "364994a6f61fc955"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "176.109.109.58",
+            "server_port": 8443,
+            "uuid": "bc32639e-100a-40ad-b064-b0829a0bd197",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+                    "short_id": "6419bed7fd0a2cff"
                 }
             }
         },
