@@ -105,20 +105,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪",
                 "RU🇷🇺",
-                "MD🇲🇩"
+                "DE🇩🇪",
+                "MD🇲🇩",
+                "IN🇮🇳"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | IN🇮🇳 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,17 +151,6 @@
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "MD🇲🇩",
             "type": "urltest",
             "outbounds": [
@@ -157,11 +161,21 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
+            "tag": "IN🇮🇳",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | IN🇮🇳 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "191.96.94.33",
-            "server_port": 8080,
-            "uuid": "afa05b4a-edd3-4017-8852-9e6f4c0cc0cb",
+            "server": "51.250.88.6",
+            "server_port": 446,
+            "uuid": "c495cf08-e046-4311-aa4b-82cc16576992",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -171,35 +185,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.latimes.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "h5wefNkT9fSiGEIa23EXaPo0pLaTyAsmkx7c9BpwLyc",
-                    "short_id": "6b46"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "portal.ofmdirect.com",
-            "server_port": 23200,
-            "uuid": "69a397ac-1a30-455f-a0ad-7c45c4c8ad16",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "ads.x5.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -207,9 +193,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "LE95sS4Nr-eLLLKM6g7VXQ3zpnL_kVI9QJVirYPhYhc",
-                    "short_id": "1147e7aa17cb87aa"
+                    "public_key": "mMaSUsOC5i3ErLDcaWW9UOOjG0fcKPCwVjzGS1wXQx8",
+                    "short_id": "0512567389abcdef"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ads.x5.ru",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -269,6 +262,62 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "191.96.94.33",
+            "server_port": 8080,
+            "uuid": "afa05b4a-edd3-4017-8852-9e6f4c0cc0cb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "h5wefNkT9fSiGEIa23EXaPo0pLaTyAsmkx7c9BpwLyc",
+                    "short_id": "6b46"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "portal.ofmdirect.com",
+            "server_port": 23200,
+            "uuid": "69a397ac-1a30-455f-a0ad-7c45c4c8ad16",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LE95sS4Nr-eLLLKM6g7VXQ3zpnL_kVI9QJVirYPhYhc",
+                    "short_id": "1147e7aa17cb87aa"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "94.232.247.168",
@@ -293,6 +342,34 @@
                     "enabled": true,
                     "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
                     "short_id": "1aab45"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | IN🇮🇳 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "103.111.115.161",
+            "server_port": 443,
+            "uuid": "adab9268-f742-407b-8cbc-cf0b643c5e9f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fdw3RhTEan_ZYiBDFzP6bP2cBBWHiE0z0gu85JH38GE",
+                    "short_id": "1e28103829cd69b6"
                 }
             }
         },
