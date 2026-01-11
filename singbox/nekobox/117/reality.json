@@ -107,7 +107,8 @@
                 "URL-TEST | رایگان",
                 "RU🇷🇺",
                 "DE🇩🇪",
-                "MD🇲🇩"
+                "MD🇲🇩",
+                "GB🇬🇧"
             ]
         },
         {
@@ -119,8 +120,9 @@
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,8 +145,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,6 +156,17 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -308,34 +320,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "r1.iran-mehrbu.ir",
-            "server_port": 3060,
-            "uuid": "3acc0e1f-0b1e-4aa3-aff6-a883292cb196",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "use.fontawesome.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "LnJ4SXxNsRigl5MVmGlQ5_I0G1fT3DYEYiL7KUEihxo",
-                    "short_id": "c7d80f2b01a1d1fe"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "94.232.247.168",
@@ -360,6 +344,62 @@
                     "enabled": true,
                     "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
                     "short_id": "1aab45"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "uk1.miyazono-kaori.com",
+            "server_port": 443,
+            "uuid": "582f44d4-4511-402c-a0b7-b5771a2a5c9d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bp.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA",
+                    "short_id": "d923"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | GB🇬🇧 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "uk2.miyazono-kaori.com",
+            "server_port": 443,
+            "uuid": "582f44d4-4511-402c-a0b7-b5771a2a5c9d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bp.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk",
+                    "short_id": "20"
                 }
             }
         },
