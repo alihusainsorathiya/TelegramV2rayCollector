@@ -112,17 +112,22 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "RU🇷🇺",
-                "MD🇲🇩"
+                "MD🇲🇩",
+                "EE🇪🇪",
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | EE🇪🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,6 +137,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -158,6 +164,54 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "EE🇪🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | EE🇪🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayNGn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "191.96.94.33",
+            "server_port": 8080,
+            "uuid": "afa05b4a-edd3-4017-8852-9e6f4c0cc0cb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "h5wefNkT9fSiGEIa23EXaPo0pLaTyAsmkx7c9BpwLyc",
+                    "short_id": "6b46"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣2️⃣",
@@ -269,6 +323,69 @@
                     "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
                     "short_id": "1aab45"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | EE🇪🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "87.121.86.31",
+            "server_port": 57516,
+            "uuid": "de2708c5-6e8e-4582-85ed-98f2554e5208",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ScCsL43AFwGSI8WvpjhAE6Y9PguU49ZLbwF-6YTbrTo",
+                    "short_id": "c1765dd26b1e70"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "194.87.219.24",
+            "server_port": 28723,
+            "uuid": "26c4884d-e265-4507-94bf-83f6a144fedc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dev.max.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wuev4Ui4vOUl43k_O9pB0i6W6IuGvoM13lTBcI_DGkk",
+                    "short_id": "0600"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
