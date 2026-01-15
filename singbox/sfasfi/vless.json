@@ -116,7 +116,8 @@
                 "SE🇸🇪",
                 "GB🇬🇧",
                 "MD🇲🇩",
-                "AM🇦🇲"
+                "AM🇦🇲",
+                "HK🇭🇰"
             ]
         },
         {
@@ -172,7 +173,6 @@
                 "رایگان | VLESS | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @lightning6 | DE🇩🇪 | 0️⃣1️⃣",
@@ -189,7 +189,8 @@
                 "رایگان | VLESS | @prrofile_purple | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | VLESS | @lrnbymaa | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | VLESS | @lrnbymaa | AM🇦🇲 | 0️⃣3️⃣"
+                "رایگان | VLESS | @lrnbymaa | AM🇦🇲 | 0️⃣3️⃣",
+                "رایگان | VLESS | @proxystore11 | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -275,7 +276,6 @@
             "outbounds": [
                 "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -338,6 +338,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @lrnbymaa | AM🇦🇲 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @proxystore11 | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1320,9 +1330,9 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "bastion.h3.speed.cloudflare.com",
-            "server_port": 80,
-            "uuid": "👉👉BanV2ray👈👈",
+            "server": "brenna.ns.cloudflare.com",
+            "server_port": 443,
+            "uuid": "1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1330,11 +1340,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "terazhedi.info",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.bunny.net-www.speedtest.net-www.bunny.net-www.speedtest.net?ed=32143",
+                "path": "\/sghiyws",
                 "headers": {
-                    "Host": "visvuev-272526281716252527717252.poshakhowdy.ir."
+                    "Host": "terazhedi.info"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1583,34 +1602,6 @@
                     "enabled": true,
                     "public_key": "qh9nH1TxDvVwwY3wSlVub3-R10IZQV1RDNqiYn1MgC4",
                     "short_id": "9632b3cdeab5be90"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "51.250.73.31",
-            "server_port": 443,
-            "uuid": "64bc8910-bc0f-453e-b3f3-a101a5dce03e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ads.x5.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
-                    "short_id": "87cc0414902bee2d"
                 }
             }
         },
@@ -2014,6 +2005,20 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @proxystore11 | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "46.8.226.192",
+            "server_port": 443,
+            "uuid": "1e0f493a-6251-4436-b986-2a76da21d4d6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
