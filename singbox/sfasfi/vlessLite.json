@@ -108,9 +108,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Parsashonam | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣1️⃣",
@@ -152,6 +151,7 @@
                 "رایگان | VLESS | @UnlimitedDev | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayngvpn | US🇺🇸 | 0️⃣1️⃣",
@@ -185,9 +185,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @Parsashonam | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @NIM_VPN_ir | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @XsV2ray | GB🇬🇧 | 0️⃣1️⃣",
@@ -229,6 +228,7 @@
                 "رایگان | VLESS | @UnlimitedDev | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2rayngvpn | US🇺🇸 | 0️⃣1️⃣",
@@ -262,45 +262,67 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "23.235.33.81",
-            "server_port": 80,
-            "uuid": "Parsashonam-338",
+            "server": "chatgpt.com",
+            "server_port": 443,
+            "uuid": "Parsashonam-0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "login.parsashonam.cfd.",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam",
+                "headers": {
+                    "Host": "login.parsashonam.cfd."
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VLESS | @Parsashonam | IE🇮🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @Parsashonam | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "199.232.24.2",
-            "server_port": 80,
-            "uuid": "Parsashonam-338",
+            "server": "104.18.32.47",
+            "server_port": 443,
+            "uuid": "Parsashonam-0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @Parsashonam | US🇺🇸 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "speedtest.net",
-            "server_port": 80,
-            "uuid": "Parsashonam-338",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "login.parsashonam.cfd.",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam",
+                "headers": {
+                    "Host": "login.parsashonam.cfd."
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -1384,7 +1406,7 @@
             "type": "vless",
             "server": "chatgpt.com",
             "server_port": 443,
-            "uuid": "2a0192eb-3cb5-4937-9ea6-65eac86c8457",
+            "uuid": "4c52761a-a2ac-42db-b08c-e5295525e01a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1394,7 +1416,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "temp.iranvatanam.com",
+                "server_name": "dead.imsoon.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1403,9 +1425,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/Telegram:@im_soon",
                 "headers": {
-                    "Host": ""
+                    "Host": "dead.imsoon.net."
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1414,9 +1436,9 @@
         {
             "tag": "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "chatgpt.com",
-            "server_port": 443,
-            "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+            "server": "104.18.32.47",
+            "server_port": 2053,
+            "uuid": "4d5be192-7420-4a34-a316-ac727c678286",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1426,7 +1448,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vless.hubp.de",
+                "server_name": "saveyoudear.ecoping2.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1437,7 +1459,39 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "vless.hubp.de"
+                    "Host": "saveyoudear.ecoping2.org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vmessorg | RELAY🚩 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "104.18.32.47",
+            "server_port": 443,
+            "uuid": "c94f3cf9-7aa5-4b6d-b153-baea45280c64",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1MKkQTEJX0hRuPvUN3tUIAmtffMutnLGgNRIjSXOW7JZV4K.sangar.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/test",
+                "headers": {
+                    "Host": ""
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1474,9 +1528,9 @@
         {
             "tag": "رایگان | VLESS | @v2rayngvpn | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "ip3-fast.tyryqyserver.ir",
+            "server": "ip1-fast.tyryqyserver.ir",
             "server_port": 80,
-            "uuid": "3635d064-b3bc-48e5-8f44-6dd76dca0fc0",
+            "uuid": "58f72986-da72-4942-bc88-59276dab411f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1488,7 +1542,7 @@
                 "type": "ws",
                 "path": "\/?ed=2052",
                 "headers": {
-                    "Host": "norbertde1.global.ssl.fastly.net"
+                    "Host": "norbertfn1.global.ssl.fastly.net"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1497,9 +1551,9 @@
         {
             "tag": "رایگان | VLESS | @v2rayngvpn | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "ip4-fas.tyryqyserver.ir",
+            "server": "ip2-fast.tyryqyserver.ir",
             "server_port": 80,
-            "uuid": "3635d064-b3bc-48e5-8f44-6dd76dca0fc0",
+            "uuid": "58f72986-da72-4942-bc88-59276dab411f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1511,7 +1565,7 @@
                 "type": "ws",
                 "path": "\/?ed=2052",
                 "headers": {
-                    "Host": "norbertde1.global.ssl.fastly.net"
+                    "Host": "norbertfn1.global.ssl.fastly.net"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1825,7 +1879,7 @@
             "type": "vless",
             "server": "chatgpt.com",
             "server_port": 443,
-            "uuid": "@Vip_fragment_v2ray",
+            "uuid": "e258977b-e413-4718-a3af-02d75492c349",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1835,7 +1889,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de01.u3er1.ir",
+                "server_name": "x-hk1.xaniusnippets.qzz.io",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1844,9 +1898,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/tanjazeroMenoximSoonPwrSuber11",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "de01.u3er1.ir"
+                    "Host": "x-hk1.xaniusnippets.qzz.io"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1855,9 +1909,9 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "chatgpt.com",
+            "server": "104.18.32.47",
             "server_port": 443,
-            "uuid": "d0298536-d670-4045-bbb1-ddd5ea68683e",
+            "uuid": "4307e484-6c8b-46d0-9df4-8b3983ab27b4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1867,7 +1921,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "a.azadnet003.ddns-ip.net",
+                "server_name": "029.eLeCtroCeLlco-CF-029.WOrkErs.DEv",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1876,9 +1930,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-@v2ray_alpha=?ed=2560",
+                "path": "\/eyJqdW5rIjoiTTdlbHJlMVVsVE4iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI3Ny4yMzguMjMxLjE3OSIsIjMxLjQ0LjIuNTciXX0=?ed=2560",
                 "headers": {
-                    "Host": "a.azadnet003.ddns-ip.net"
+                    "Host": "029.electrocellco-cf-029.workers.dev"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1887,9 +1941,9 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "chatgpt.com",
-            "server_port": 2053,
-            "uuid": "8a07740f-b932-4372-a3a2-ed91f184cd33",
+            "server": "openai.com",
+            "server_port": 443,
+            "uuid": "4c52761a-a2ac-42db-b08c-e5295525e01a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1899,7 +1953,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "KhAmeneI.DPdNs.OrG",
+                "server_name": "dead.imsoon.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1908,9 +1962,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560",
+                "path": "\/Telegram:@im_soon",
                 "headers": {
-                    "Host": ""
+                    "Host": "dead.imsoon.net."
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -2035,8 +2089,40 @@
             "tag": "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "chatgpt.com",
+            "server_port": 2087,
+            "uuid": "@natvpn_bot",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "chfree.mchmodiso.shop",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Ws",
+                "headers": {
+                    "Host": "chfree.mchmodiso.shop"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "chatgpt.com",
             "server_port": 443,
-            "uuid": "dab2a176-7715-448c-959c-6c07244bb72f",
+            "uuid": "a513154f-1d98-49dc-a280-004bf1682b6f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2064,11 +2150,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
             "type": "vless",
             "server": "104.18.32.47",
             "server_port": 2053,
-            "uuid": "dab2a176-7715-448c-959c-6c07244bb72f",
+            "uuid": "a513154f-1d98-49dc-a280-004bf1682b6f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2092,38 +2178,6 @@
                     "Host": ""
                 },
                 "max_early_data": 2048,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "chatgpt.com",
-            "server_port": 8443,
-            "uuid": "ffa70a95-b21a-425b-a09e-a9cea698b077",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "er.seniornetwork.sbs",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                },
-                "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
