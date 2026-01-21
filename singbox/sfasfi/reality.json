@@ -110,6 +110,7 @@
                 "URL-TEST | رایگان",
                 "RU🇷🇺",
                 "NL🇳🇱",
+                "MD🇲🇩",
                 "DE🇩🇪",
                 "TR🇹🇷"
             ]
@@ -121,8 +122,9 @@
                 "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollector | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollector | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | MD🇲🇩 | 0️⃣2️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | TR🇹🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,6 +152,16 @@
             "tolerance": 50
         },
         {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | MD🇲🇩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
@@ -163,7 +175,7 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | TR🇹🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayngvpn | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -261,6 +273,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | MD🇲🇩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "176.120.67.77",
+            "server_port": 8443,
+            "uuid": "d0dea598-9047-4567-a934-84c2797c0978",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ozon.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7HejPU15kdTl9QG_8AygEM3w0ythsbhG6q_SwUumyR0",
+                    "short_id": "f1071c148a5aefc4"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "de-dp-01.com",
@@ -289,7 +329,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayngvpn | TR🇹🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "tr.thepon.xyz",
             "server_port": 443,
