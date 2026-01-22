@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "GB🇬🇧",
                 "RU🇷🇺",
                 "DE🇩🇪"
             ]
@@ -118,8 +119,19 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @NIM_VPN_ir | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @NIM_VPN_ir | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,6 +156,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @NIM_VPN_ir | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "abpanirsonati.cookierp.ir",
+            "server_port": 1016,
+            "uuid": "72a9aff3-2899-4a11-bdf2-1bc57a348177",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "chess.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nPoRTmN_BkcqPXwqs8MiIEyzWIR4tKtONEDwEF5PpkU",
+                    "short_id": "bb4ba541434cb617"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣1️⃣",
