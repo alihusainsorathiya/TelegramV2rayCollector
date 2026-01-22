@@ -110,6 +110,7 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "RELAY🚩",
+                "FR🇫🇷",
                 "CA🇨🇦"
             ]
         },
@@ -123,7 +124,8 @@
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @prrofile_purple | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @vmessorg | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -148,8 +150,18 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @prrofile_purple | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @prrofile_purple | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @vmessorg | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -353,11 +365,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @vmessorg | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.18.24.232",
-            "server_port": 2083,
-            "uuid": "f07f8891-8ade-4d5d-d78e-68460d3954c5",
+            "server": "162.159.152.4",
+            "server_port": 443,
+            "uuid": "e510d718-26b8-4b0e-e768-600dd8db7321",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -370,7 +382,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "104.18.24.232",
+                "server_name": "amirzaplus.alsahoarvi.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -382,7 +394,43 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "ajyhgfjayetriuwygcinyuwegiywefgbcifsfgs.vajiko.ir"
+                    "Host": "amirzaplus.alsahoarvi.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "162.159.152.4",
+            "server_port": 443,
+            "uuid": "e510d718-26b8-4b0e-e768-600dd8db7321",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "amirzaplus.alsahoarvi.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "amirzaplus.alsahoarvi.cfd"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
