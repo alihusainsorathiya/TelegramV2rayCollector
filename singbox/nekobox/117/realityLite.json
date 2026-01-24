@@ -105,24 +105,54 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | EE🇪🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @vmessorg | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @vmessorg | RU🇷🇺 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | EE🇪🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @vmessorg | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @vmessorg | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ris.blackhoster.com",
+            "server_port": 340,
+            "uuid": "18ea0c3d-f28f-47d4-b933-6018aabb120c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "excoino.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
+                    "short_id": "fd1dff03520d8f56"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
@@ -181,6 +211,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "5germ.solonettochka.ru",
+            "server_port": 443,
+            "uuid": "8a56d7cc-e76b-48b0-a706-398f1019e3c9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HtqwPm99XZ72h6guDkP8Xjbfd-j4btmYYAWIK2553wE",
+                    "short_id": "403e3391"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @vmessorg | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "spb.jojack.ru",
@@ -205,34 +263,6 @@
                     "enabled": true,
                     "public_key": "su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24",
                     "short_id": "f78eee63f41b3ede"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "club.cocomelon.org",
-            "server_port": 443,
-            "uuid": "15fc2169-d6f4-4d2c-9933-a2c7305c4c84",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "blog.rubygems.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "xnsyJz7SeZKAEmgHz69xLdOrBLjR4ZhOJBWXeZT6JUI",
-                    "short_id": "d6fbe7cfb35245a9"
                 }
             }
         },
