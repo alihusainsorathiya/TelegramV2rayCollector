@@ -111,7 +111,7 @@
                 "RU🇷🇺",
                 "EE🇪🇪",
                 "NL🇳🇱",
-                "TR🇹🇷"
+                "IT🇮🇹"
             ]
         },
         {
@@ -121,7 +121,8 @@
                 "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | EE🇪🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | IT🇮🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,17 +152,18 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "TR🇹🇷",
+            "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | IT🇮🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -259,11 +261,39 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "tr-node.vopn.net",
+            "server": "club.cocomelon.org",
             "server_port": 443,
-            "uuid": "f4695c75-13cc-45d7-b06e-6d86c3165a42",
+            "uuid": "15fc2169-d6f4-4d2c-9933-a2c7305c4c84",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blog.rubygems.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xnsyJz7SeZKAEmgHz69xLdOrBLjR4ZhOJBWXeZT6JUI",
+                    "short_id": "d6fbe7cfb35245a9"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | IT🇮🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "83.136.107.171",
+            "server_port": 443,
+            "uuid": "1cc1fa50-ad16-4e22-81a0-e416f7a35f60",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -273,16 +303,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tr-node.vopn.net",
+                "server_name": "aws.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "qq"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "lBCt9m_PzWWdm1HvyZtJyCupmcySkfphwArSyPLPKXk",
-                    "short_id": "63c359bdc3f8562b"
+                    "public_key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
+                    "short_id": ""
                 }
             }
         },
