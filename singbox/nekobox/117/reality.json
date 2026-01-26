@@ -108,8 +108,7 @@
                 "ES🇪🇸",
                 "EE🇪🇪",
                 "NL🇳🇱",
-                "RU🇷🇺",
-                "BG🇧🇬"
+                "RU🇷🇺"
             ]
         },
         {
@@ -119,8 +118,8 @@
                 "رایگان | REALITY | @shh_proxy | ES🇪🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | EE🇪🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,7 +149,8 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @customv2ray | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,16 +161,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "BG🇧🇬",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -261,6 +251,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "club.cocomelon.org",
+            "server_port": 443,
+            "uuid": "15fc2169-d6f4-4d2c-9933-a2c7305c4c84",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blog.rubygems.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xnsyJz7SeZKAEmgHz69xLdOrBLjR4ZhOJBWXeZT6JUI",
+                    "short_id": "d6fbe7cfb35245a9"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @proxystore11 | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "spb.jojack.ru",
@@ -285,34 +303,6 @@
                     "enabled": true,
                     "public_key": "su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24",
                     "short_id": "f78eee63f41b3ede"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "club.cocomelon.org",
-            "server_port": 443,
-            "uuid": "15fc2169-d6f4-4d2c-9933-a2c7305c4c84",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "blog.rubygems.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "xnsyJz7SeZKAEmgHz69xLdOrBLjR4ZhOJBWXeZT6JUI",
-                    "short_id": "d6fbe7cfb35245a9"
                 }
             }
         },
