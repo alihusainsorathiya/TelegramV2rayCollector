@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "TR🇹🇷",
                 "EE🇪🇪",
                 "AL🇦🇱",
                 "GB🇬🇧",
@@ -120,10 +121,21 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @CUSTOMVPNSERVER | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | EE🇪🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @UnlimitedDev | AL🇦🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @proxystore11 | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @CUSTOMVPNSERVER | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -168,6 +180,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @CUSTOMVPNSERVER | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "tr-node.vopn.net",
+            "server_port": 443,
+            "uuid": "f4695c75-13cc-45d7-b06e-6d86c3165a42",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tr-node.vopn.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lBCt9m_PzWWdm1HvyZtJyCupmcySkfphwArSyPLPKXk",
+                    "short_id": "63c359bdc3f8562b"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @Outline_Vpn | EE🇪🇪 | 0️⃣1️⃣",
