@@ -108,6 +108,7 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "FR🇫🇷",
+                "RELAY🚩",
                 "NL🇳🇱",
                 "CA🇨🇦"
             ]
@@ -122,7 +123,8 @@
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -163,10 +165,20 @@
             "tolerance": 50
         },
         {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -370,7 +382,43 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "2.189.59.2",
+            "server_port": 443,
+            "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram\/XV2ray",
+                "headers": {
+                    "Host": "germany-linkws.pages.dev"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "45.76.33.120",
             "server_port": 443,
