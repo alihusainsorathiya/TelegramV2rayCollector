@@ -109,7 +109,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
+                "SE🇸🇪",
                 "FR🇫🇷",
+                "NL🇳🇱",
                 "CA🇨🇦"
             ]
         },
@@ -121,7 +123,9 @@
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @fnet00 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -142,10 +146,30 @@
             "tolerance": 50
         },
         {
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -296,7 +320,43 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @oneclickvpnkeys | SE🇸🇪 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "46.246.126.154",
+            "server_port": 443,
+            "uuid": "f2fd0786-1059-4f64-d54e-3f3a568c6c68",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "46.246.126.154",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "46.246.126.154"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @oneclickvpnkeys | FR🇫🇷 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "162.19.248.238",
             "server_port": 550,
@@ -310,6 +370,42 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "45.76.33.120",
+            "server_port": 443,
+            "uuid": "19c80ce9-0935-41b9-b077-277621316a87",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hidd2.afsharidempire.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/liUxUGJTGoPjd07ui73LZgwx8s",
+                "headers": {
+                    "Host": "hidd2.afsharidempire.uk"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
