@@ -105,16 +105,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "FI🇫🇮",
                 "TR🇹🇷",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @CUSTOMVPNSERVER | TR🇹🇷 | 0️⃣3️⃣",
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,6 +153,44 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "GRA.IPCL0UD.COM",
+            "server_port": 443,
+            "uuid": "70f7b45a-dbf8-42a1-adc3-3e9124591c98",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jetbrains.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ecfRlCGezg7UQ-iyJAdmtzhswMYOrXYO1ROLVdvhhl0",
+                    "short_id": "fd1dff035d0d8f56"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @CUSTOMVPNSERVER | TR🇹🇷 | 0️⃣3️⃣",
@@ -193,6 +245,34 @@
                     "enabled": true,
                     "public_key": "UvKVWWtHdyyEdj7_QvPTi0SYENAp1PaMWpPuSJi1LTA",
                     "short_id": "8e344050e2537240"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "132.226.147.10",
+            "server_port": 443,
+            "uuid": "b527363c-efb8-4a3f-9209-cdeb18349afd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "musicstatus.tv.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OEZ3C-1OCSYBikqcWudtPP3PpQq2RAI7rFPxWoTCDSc",
+                    "short_id": "bffe9292"
                 }
             }
         },
