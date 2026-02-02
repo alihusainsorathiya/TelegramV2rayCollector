@@ -109,6 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
+                "GB🇬🇧",
                 "EE🇪🇪",
                 "US🇺🇸"
             ]
@@ -117,7 +118,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | EE🇪🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣3️⃣"
             ],
@@ -129,7 +131,17 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,11 +168,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "109.122.197.47",
-            "server_port": 443,
-            "uuid": "4d94fa33-9462-48b4-b7de-8a2863560d19",
+            "server": "142.93.101.216",
+            "server_port": 7008,
+            "uuid": "a3ea154c-2827-4ceb-aae7-0fe743ce9f73",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -170,7 +182,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "wikiportal.su",
+                "server_name": "bebem.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -178,9 +190,44 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "UvKVWWtHdyyEdj7_QvPTi0SYENAp1PaMWpPuSJi1LTA",
-                    "short_id": "8e344050e2537240"
+                    "public_key": "OYuAdC90TNjvXbmJJyCsP0i9RXjdR1g8nBcjk421Aws",
+                    "short_id": "de5765"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | GB🇬🇧 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "79.72.90.132",
+            "server_port": 3366,
+            "uuid": "98256f2f-1a3e-4db8-ad9b-d553b6894d50",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "addons.mozilla.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jLPhroYnK4b3DmS7uijt_tgIy3I3uZPCG--eoIjwREw",
+                    "short_id": "63d28495"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
