@@ -105,10 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "JP🇯🇵",
-                "IS🇮🇸",
-                "NO🇳🇴",
+                "GB🇬🇧",
                 "RELAY🚩",
+                "NO🇳🇴",
                 "AE🇦🇪"
             ]
         },
@@ -116,11 +115,11 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | IS🇮🇸 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -128,20 +127,22 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | GB🇬🇧 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "IS🇮🇸",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | IS🇮🇸 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -158,17 +159,6 @@
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
@@ -179,39 +169,59 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | JP🇯🇵 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | GB🇬🇧 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "160.16.57.238",
-            "server_port": 1933,
-            "password": "c1d83c0c7d57cead4379ba14a82df69b",
+            "server": "hl-freedom-0.undef.network",
+            "server_port": 443,
+            "password": "76yTlnTIsjCTlmqnUJ5Tzc1rM",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hl-freedom-0.undef.network",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/f2fc2a1f",
+                "headers": {
+                    "Host": "hl-freedom-0.undef.network"
+                }
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | IS🇮🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "167.17.185.169",
-            "server_port": 10889,
-            "password": "cTv.9PDdCt-wybBrG1qlxI5UJuaEj",
+            "server": "chatgpt.com",
+            "server_port": 443,
+            "password": "humanity",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "80.173.230.196",
-            "server_port": 26279,
-            "password": "a5inYFE=JGV89 hjxIqgDp1tcWBd6",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.gossipglove.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.gossipglove.com"
+                }
             }
         },
         {
@@ -267,6 +277,27 @@
                 "path": "\/yamtekodasayahhh",
                 "headers": {
                     "Host": "kotlet.arshiacomplus.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | NO🇳🇴 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "80.173.230.196",
+            "server_port": 26279,
+            "password": "a5inYFE=JGV89 hjxIqgDp1tcWBd6",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "io.ozone.ru",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
