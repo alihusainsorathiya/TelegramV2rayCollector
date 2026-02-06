@@ -110,6 +110,7 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "HK🇭🇰",
+                "IR🇮🇷",
                 "RELAY🚩",
                 "CA🇨🇦",
                 "KR🇰🇷",
@@ -126,9 +127,9 @@
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @v2Line | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | KR🇰🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣3️⃣"
@@ -162,12 +163,21 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -391,11 +401,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "::ffff:ac40:9bd1",
-            "server_port": 443,
-            "uuid": "ffece2a9-0296-46a9-8db8-742d29d240ff",
+            "server": "81.12.33.180",
+            "server_port": 2078,
+            "uuid": "c92b7747-4222-4aa0-8c91-5753b8c759f4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -405,29 +415,10 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "bedrid.denizhosting.me",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ISwpYVR8SjxXcUZEUzVfNURTUC8lV29DXSgsKH1SN0g1JVpDHU1cWigKAC8QRltMCi86ABw4JV14HVMn",
-                "headers": {
-                    "Host": "bedrid.denizhosting.me"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.21.69.44",
             "server_port": 8080,
@@ -453,7 +444,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.204.84",
             "server_port": 8080,
