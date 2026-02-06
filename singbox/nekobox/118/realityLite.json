@@ -110,29 +110,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | SA🇸🇦 | 0️⃣3️⃣"
+                "رایگان | REALITY | @flyv2ray | IR🇮🇷 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | SA🇸🇦 | 0️⃣3️⃣"
+                "رایگان | REALITY | @flyv2ray | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "188.34.193.153",
+            "server": "217.154.254.198",
             "server_port": 443,
-            "uuid": "309fa273-6579-4cb2-9143-7cad50401eba",
+            "uuid": "278cdc8a-1c0c-4710-bc48-b8c6e5f36c24",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -142,7 +144,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cloudflare.com",
+                "server_name": "azure.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -150,8 +152,36 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY",
-                    "short_id": "7cad5040"
+                    "public_key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "ak2.vpnfreedom.tech",
+            "server_port": 443,
+            "uuid": "4af37467-bf79-4630-98d5-73e7dad60e90",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "l0saUZNgojrR6PjhL_fMHEBZlZ2TJypjRdQyy2mrFFI",
+                    "short_id": "58"
                 }
             }
         },
@@ -184,11 +214,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | SA🇸🇦 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @flyv2ray | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "81.208.170.142",
-            "server_port": 1500,
-            "uuid": "sGLzG6kUwBpZd73sW0nq",
+            "server": "gm.germany-14.com",
+            "server_port": 443,
+            "uuid": "11bbe394-c3ac-46ca-ac8c-66f4cb8f78ff",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -198,24 +228,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.ebay.com",
+                "server_name": "tgju.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
-                    "short_id": "775eb6408888248e"
+                    "public_key": "p8D0V1jYr98lK4kU8FlBYfQ1kMO6zgIx5qI_p5dr_Bc",
+                    "short_id": "6ba85179e30d4fc2"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
