@@ -108,8 +108,7 @@
                 "NL🇳🇱",
                 "US🇺🇸",
                 "DE🇩🇪",
-                "AT🇦🇹",
-                "RU🇷🇺"
+                "AT🇦🇹"
             ]
         },
         {
@@ -120,8 +119,8 @@
                 "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @FalconPolV2rayNG | AT🇦🇹 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FalconPolV2rayNG | AT🇦🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,7 +151,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,16 +163,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @FalconPolV2rayNG | AT🇦🇹 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -291,6 +281,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ak2.vpnfreedom.tech",
+            "server_port": 443,
+            "uuid": "4af37467-bf79-4630-98d5-73e7dad60e90",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "l0saUZNgojrR6PjhL_fMHEBZlZ2TJypjRdQyy2mrFFI",
+                    "short_id": "58"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @FalconPolV2rayNG | AT🇦🇹 | 0️⃣1️⃣",
             "type": "vless",
             "server": "at.asbndx.com",
@@ -315,34 +333,6 @@
                     "enabled": true,
                     "public_key": "hfJagZHzXLZaHqiyy59ZwnPFytw9WUMu1RGh29o3aVE",
                     "short_id": "2f4dacf62222e15f"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "146.185.240.23",
-            "server_port": 443,
-            "uuid": "7e2b2894-3b5c-4b65-acc5-e1784f4047f2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "m.vk.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
-                    "short_id": "205748bc0f24a747"
                 }
             }
         },
