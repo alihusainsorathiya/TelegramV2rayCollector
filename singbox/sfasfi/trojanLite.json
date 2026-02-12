@@ -109,8 +109,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | EE🇪🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ]
@@ -120,8 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | EE🇪🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣"
             ],
@@ -158,9 +158,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | EE🇪🇪 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "pl.nnvpn.io",
+            "server": "ee2.nnvpn.io",
             "server_port": 443,
             "password": "mk7J60Z9VYojAL44EPfaUEfsdCt8KFKo",
             "multiplex": {
@@ -179,21 +179,23 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "104.21.40.34",
+            "server": "pl.nnvpn.io",
             "server_port": 443,
-            "password": "humanity",
+            "password": "mk7J60Z9VYojAL44EPfaUEfsdCt8KFKo",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.gossipglove.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
