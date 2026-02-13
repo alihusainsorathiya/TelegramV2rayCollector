@@ -106,7 +106,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "RELAY🚩",
+                "SG🇸🇬",
                 "TR🇹🇷"
             ]
         },
@@ -117,7 +117,7 @@
                 "رایگان | VMESS | @DeamNet_Proxy | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | SG🇸🇬 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -137,10 +137,10 @@
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | VMESS | @DeamNet_Proxy | SG🇸🇬 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -255,11 +255,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | SG🇸🇬 | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "digitalocean.com",
-            "server_port": 8080,
-            "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+            "server": "singapore02.zgjok.com",
+            "server_port": 443,
+            "uuid": "780c7671-e8c8-45ab-922b-4fdfc4310aa0",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -270,11 +270,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/NASNET\/cdn",
+                "path": "\/",
                 "headers": {
-                    "Host": "nasnet-571299667.rahavard365.co"
+                    "Host": null
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
