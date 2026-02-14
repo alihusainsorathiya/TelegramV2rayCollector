@@ -105,9 +105,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "MD🇲🇩",
+                "RU🇷🇺",
                 "US🇺🇸",
                 "DE🇩🇪",
+                "MD🇲🇩",
                 "NL🇳🇱",
                 "FR🇫🇷"
             ]
@@ -116,10 +117,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -127,10 +130,10 @@
             "tolerance": 50
         },
         {
-            "tag": "MD🇲🇩",
+            "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,7 +153,18 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -160,7 +174,7 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -177,11 +191,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "nld14.freednet.org",
-            "server_port": 443,
-            "uuid": "6fd9f786-d974-49d0-b5c4-397678de69a2",
+            "server": "212.60.21.104",
+            "server_port": 4443,
+            "uuid": "65f98bdd-b437-4d7e-8bba-8ab70cc8ff37",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -191,7 +205,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cybo.com",
+                "server_name": "github.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -199,8 +213,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
-                    "short_id": ""
+                    "public_key": "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE",
+                    "short_id": "aa7e96542880027a"
                 }
             }
         },
@@ -261,7 +275,63 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "57.129.49.1",
+            "server_port": 23576,
+            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fuck.rkn",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+                    "short_id": "01"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "94.232.247.168",
+            "server_port": 41360,
+            "uuid": "e16a35ea-6715-4e75-9845-d20358bd0876",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
+                    "short_id": "1aab45"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @lrnbymaa | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "188.253.26.39",
             "server_port": 442,
