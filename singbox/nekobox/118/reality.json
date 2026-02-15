@@ -110,28 +110,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "MD🇲🇩",
                 "NL🇳🇱",
-                "GB🇬🇧"
+                "MD🇲🇩",
+                "GB🇬🇧",
+                "LT🇱🇹"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | GB🇬🇧 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "MD🇲🇩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣2️⃣",
+                "رایگان | REALITY | @lrnbymaa | GB🇬🇧 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,7 +134,18 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -158,7 +162,17 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
+            "tag": "LT🇱🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | LT🇱🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "nld14.freednet.org",
             "server_port": 443,
@@ -214,6 +228,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @FalconPolV2rayNG | MD🇲🇩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "94.232.247.168",
+            "server_port": 41360,
+            "uuid": "e16a35ea-6715-4e75-9845-d20358bd0876",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
+                    "short_id": "1aab45"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @lrnbymaa | GB🇬🇧 | 0️⃣2️⃣",
             "type": "vless",
             "server": "146.185.208.206",
@@ -238,6 +280,34 @@
                     "enabled": true,
                     "public_key": "do22ES2nDjO0EggET4H9Gf8_tEY7PwZv76zVXPrDojQ",
                     "short_id": "5f22"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | LT🇱🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "lt-cherry-01.com",
+            "server_port": 8443,
+            "uuid": "ff6fb512-147d-419a-9672-e131133f7189",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
+                    "short_id": "e0ef3d5c0aacb615"
                 }
             }
         },
