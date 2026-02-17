@@ -110,8 +110,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱",
                 "MD🇲🇩",
+                "NL🇳🇱",
                 "DE🇩🇪"
             ]
         },
@@ -119,23 +119,10 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowSocks_s | MD🇲🇩 | 0️⃣2️⃣",
-                "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FalconPolV2rayNG | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,7 +132,18 @@
             "tag": "MD🇲🇩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ShadowSocks_s | MD🇲🇩 | 0️⃣2️⃣"
+                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,14 +153,14 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | REALITY | @FalconPolV2rayNG | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "nld14.freednet.org",
             "server_port": 443,
@@ -246,11 +244,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ShadowSocks_s | MD🇲🇩 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FalconPolV2rayNG | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "93.185.165.50",
-            "server_port": 55211,
-            "uuid": "1a9b771a-b717-49c8-9e93-f6b3d508d637",
+            "server": "193.46.81.207",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -260,7 +258,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "de.cdn.stun.su",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -268,36 +266,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "5D6U_DRxkNF9I6Sa87j6jvHD_HvhZ9j53rAbZE8Y7lQ",
-                    "short_id": "1885"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @lrnbymaa | DE🇩🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "57.129.49.1",
-            "server_port": 23576,
-            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fuck.rkn",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-                    "short_id": "01"
+                    "public_key": "ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA",
+                    "short_id": "4daa022e84f8edf2"
                 }
             }
         },
