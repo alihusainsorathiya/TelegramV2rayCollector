@@ -105,31 +105,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "MD🇲🇩",
-                "DE🇩🇪",
                 "NL🇳🇱",
-                "RU🇷🇺"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "MD🇲🇩",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣"
+                "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,28 +145,7 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "nld14.freednet.org",
             "server_port": 443,
@@ -191,34 +169,6 @@
                     "enabled": true,
                     "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
                     "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "57.129.49.1",
-            "server_port": 23576,
-            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fuck.rkn",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-                    "short_id": "01"
                 }
             }
         },
@@ -251,7 +201,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "nl.roblugo.su",
             "server_port": 443,
@@ -279,11 +229,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "spb.roblugo.su",
-            "server_port": 443,
-            "uuid": "32561144-434f-4752-a731-f35cd191ba4a",
+            "server": "57.129.49.1",
+            "server_port": 23576,
+            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -293,16 +243,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "spb.roblugo.su",
+                "server_name": "fuck.rkn",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "qq"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24",
-                    "short_id": "bbfb4f7a53e22dd3"
+                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+                    "short_id": "01"
                 }
             }
         },
