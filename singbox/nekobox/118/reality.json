@@ -111,7 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "MD🇲🇩",
-                "RU🇷🇺"
+                "FI🇫🇮",
+                "DE🇩🇪"
             ]
         },
         {
@@ -119,7 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @DarkTeam_VPN | MD🇲🇩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,10 +138,20 @@
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
+            "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣"
+                "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -174,11 +186,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | RU🇷🇺 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @Outline_Vpn | FI🇫🇮 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "dd.node.nodegrimbird.top",
+            "server": "38.244.137.198",
             "server_port": 443,
-            "uuid": "a1f9d272-820a-4361-aad5-7340d7ddb71f",
+            "uuid": "09748875-9da3-440e-9809-9752e1dda1e4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -188,7 +200,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "static.cloudbird.top",
+                "server_name": "google.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -196,16 +208,37 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "9Jh5qNOFJIZgIvwCWerGMKa--KLA1jaR_Hc5hMrzCm8",
-                    "short_id": "ce4faf0ee869fce4"
+                    "public_key": "QXGsw1KqljvUiarkvFdBs3T1TeUQq4skwHFlsmbj31o",
+                    "short_id": "365c07ed"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "84.200.73.227",
+            "server_port": 443,
+            "uuid": "54aaf1d1-42bb-457a-be2e-c7f3ea583257",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+            "tls": {
+                "enabled": true,
+                "server_name": "cdnjs.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+                    "short_id": "4c02bbbfa833b3b6"
+                }
             }
         },
         {
