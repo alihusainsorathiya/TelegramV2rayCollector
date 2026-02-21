@@ -119,7 +119,8 @@
                 "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣"
             ]
         },
         {
@@ -135,7 +136,8 @@
                 "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VMESS | @free1_vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VMESS | @v2Line | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -367,11 +369,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.21.69.44",
-            "server_port": 8080,
-            "uuid": "nasnet",
+            "server": "seoul03.zgjok.com",
+            "server_port": 443,
+            "uuid": "72a0dac4-9689-4a57-b164-5c65bfa94772",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -382,14 +384,41 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "seoul03.zgjok.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/nasnet\/cdn",
+                "path": "\/",
                 "headers": {
-                    "Host": "nasnet-511952424.mcitel.co"
+                    "Host": "seoul03.zgjok.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.217.13.74",
+            "server_port": 31769,
+            "uuid": "cf1ad6c7-5987-4314-82bb-b4399040d047",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
