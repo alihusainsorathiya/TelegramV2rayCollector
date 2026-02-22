@@ -110,6 +110,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣3️⃣"
@@ -119,6 +121,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣3️⃣"
@@ -126,6 +130,62 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "netherland.boot-lee.ru",
+            "server_port": 8443,
+            "uuid": "05dc09d5-5c56-454b-a34e-6ef743d91e1a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28",
+                    "short_id": "abc123"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "57.129.49.1",
+            "server_port": 23576,
+            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fuck.rkn",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+                    "short_id": "01"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣1️⃣",
