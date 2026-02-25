@@ -108,27 +108,61 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | HU🇭🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | HU🇭🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "80.75.212.10",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl.jojack.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4",
+                    "short_id": "6bb3c7f9f97b45b8"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "57.129.49.1",
             "server_port": 23576,
@@ -236,6 +270,62 @@
                     "enabled": true,
                     "public_key": "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "109.172.55.157",
+            "server_port": 19547,
+            "uuid": "f9cdb2e1-939c-4470-b322-14b7313dec48",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-zsPOGrZY1Dlb6eypa5V_OPaLBpT66FX3cSo0mNX8SI",
+                    "short_id": "47ee5c592c1672cf"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "109.172.55.232",
+            "server_port": 13760,
+            "uuid": "5fad3ad2-1a94-40d0-85bb-51eb83f5c7df",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ktZ1lxOpDoIq3mk39kNAi1uK0z3qTA6f-6u2KbQmICg",
+                    "short_id": "58a8787420b6a153"
                 }
             }
         },
