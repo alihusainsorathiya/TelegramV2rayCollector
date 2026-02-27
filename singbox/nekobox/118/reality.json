@@ -112,7 +112,7 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "NL🇳🇱",
-                "TR🇹🇷"
+                "PL🇵🇱"
             ]
         },
         {
@@ -121,8 +121,10 @@
             "outbounds": [
                 "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +135,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @customv2ray | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,17 +146,18 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "TR🇹🇷",
+            "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @flyv2ray | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -216,6 +220,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "de-2.tconnect.services",
+            "server_port": 443,
+            "uuid": "ea9ba1ec-bfe7-407b-bd21-aeebc86da741",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "C0Vzk1hw72A-hLhp6sdo61WYdsJk9g0XPxtmDHWii20",
+                    "short_id": "71e87186710e710e"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "37.218.247.35",
@@ -244,12 +276,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @flyv2ray | TR🇹🇷 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @flyv2ray | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "103.231.75.185",
+            "server": "nl.tconnect.services",
             "server_port": 443,
-            "uuid": "c4e055e5-c9dd-44ae-8daf-2f0f344dcbdb",
-            "flow": "",
+            "uuid": "ea9ba1ec-bfe7-407b-bd21-aeebc86da741",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -258,7 +290,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "stackoverflow.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -266,8 +298,36 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "ve8spuAYBeV8j7QnofoqGecdYl1KZYYcykiyHHzNg1U",
-                    "short_id": "0bce"
+                    "public_key": "5P5lwGRGhGJATZMYduxof-ZR6eb5lzUpsbdDNddT4l4",
+                    "short_id": "71e87186710e710e"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "poland.tconnect.services",
+            "server_port": 443,
+            "uuid": "ea9ba1ec-bfe7-407b-bd21-aeebc86da741",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdnjs.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5P5lwGRGhGJATZMYduxof-ZR6eb5lzUpsbdDNddT4l4",
+                    "short_id": "71e87186710e710e"
                 }
             }
         },
