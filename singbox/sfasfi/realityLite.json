@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣3️⃣",
@@ -118,6 +119,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣3️⃣",
@@ -126,6 +128,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @NIM_VPN_ir | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "80.75.212.10",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl.jojack.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4",
+                    "short_id": "6bb3c7f9f97b45b8"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @frev2ray | RU🇷🇺 | 0️⃣1️⃣",
