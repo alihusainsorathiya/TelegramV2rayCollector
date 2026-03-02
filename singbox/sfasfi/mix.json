@@ -109,6 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
+                "CA🇨🇦",
                 "FR🇫🇷",
                 "CY🇨🇾",
                 "SC🇸🇨",
@@ -134,11 +135,13 @@
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | SS | @free4allVPN | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2Line | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @rxv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | RELAY🚩 | 0️⃣1️⃣",
@@ -193,6 +196,16 @@
             "tolerance": 50
         },
         {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
@@ -228,6 +241,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @rxv2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @CUSTOMVPNSERVER | RELAY🚩 | 0️⃣1️⃣",
@@ -507,6 +521,33 @@
             "plugin_opts": ""
         },
         {
+            "tag": "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "ca-v2ray.ipracevpn.com",
+            "server_port": 443,
+            "uuid": "1b3d460b-91cc-46f9-909d-73823128ee0a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @v2Line | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
@@ -626,7 +667,21 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8880,
-            "uuid": "4b75a44d-3c91-461e-b5a0-6060ac8aff68",
+            "uuid": "64abd4e7-59ad-4a74-e3df-cd5d87cc105a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 8880,
+            "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -640,7 +695,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8880,
-            "uuid": "f13e82ba-618f-4b5e-badf-c87d79217639",
+            "uuid": "4b75a44d-3c91-461e-b5a0-6060ac8aff68",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
