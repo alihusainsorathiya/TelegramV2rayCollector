@@ -115,11 +115,13 @@
                 "RELAY🚩",
                 "DE🇩🇪",
                 "SE🇸🇪",
+                "IR🇮🇷",
                 "BE🇧🇪",
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "GB🇬🇧",
                 "CH🇨🇭",
+                "UZ🇺🇿",
                 "MT🇲🇹"
             ]
         },
@@ -162,6 +164,7 @@
                 "رایگان | SS | @free4allVPN | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FalconPolV2rayNG | BE🇧🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
@@ -170,7 +173,8 @@
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | UZ🇺🇿 | 0️⃣1️⃣",
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -275,6 +279,16 @@
             "tolerance": 50
         },
         {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "BE🇧🇪",
             "type": "urltest",
             "outbounds": [
@@ -328,10 +342,20 @@
             "tolerance": 50
         },
         {
+            "tag": "UZ🇺🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @OutlineVpnOfficial | UZ🇺🇿 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1199,6 +1223,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "62.60.212.216",
+            "server_port": 443,
+            "uuid": "5703f5b9-d708-4443-b661-aae0c338e32c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.figma.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HiEn07HkK8FRuKgmNDATj9TsEh6z6QwozRADLvV8SEE",
+                    "short_id": "a4efab6a73"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @FalconPolV2rayNG | BE🇧🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "151.101.10.79",
@@ -1349,7 +1401,17 @@
             }
         },
         {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @OutlineVpnOfficial | UZ🇺🇿 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "93.174.164.89",
+            "server_port": 11201,
+            "method": "chacha20-ietf-poly1305",
+            "password": "0bc801a7cac5f134",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "171.22.254.129",
             "server_port": 990,
