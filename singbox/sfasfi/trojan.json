@@ -108,8 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "RELAY🚩",
-                "CH🇨🇭"
+                "RELAY🚩"
             ]
         },
         {
@@ -118,9 +117,9 @@
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,6 +131,7 @@
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣"
             ],
@@ -140,17 +140,26 @@
             "tolerance": 50
         },
         {
-            "tag": "CH🇨🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "www.calmlunch.com",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.calmlunch.com"
+                }
+            }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "172.64.152.23",
             "server_port": 443,
@@ -169,7 +178,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "172.64.152.23",
             "server_port": 443,
@@ -240,25 +249,6 @@
                 "path": "\/assignment",
                 "headers": {
                     "Host": "www.creationlong.org"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "185.18.250.245",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.calmlunch.com"
                 }
             }
         },
