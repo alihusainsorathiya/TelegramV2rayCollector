@@ -118,6 +118,7 @@
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "GB🇬🇧",
+                "UZ🇺🇿",
                 "MT🇲🇹"
             ]
         },
@@ -135,6 +136,7 @@
                 "رایگان | VMESS | @v2Line | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @rxv2ray | RELAY🚩 | 0️⃣1️⃣",
@@ -142,6 +144,8 @@
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
@@ -163,7 +167,8 @@
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | UZ🇺🇿 | 0️⃣1️⃣",
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -200,7 +205,8 @@
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣"
+                "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -217,6 +223,8 @@
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @DigiV2ray | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
@@ -298,10 +306,20 @@
             "tolerance": 50
         },
         {
+            "tag": "UZ🇺🇿",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @OutlineVpnOfficial | UZ🇺🇿 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -556,6 +574,20 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @prrofile_purple | SC🇸🇨 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "ip.xqnetwork.ir",
+            "server_port": 2095,
+            "uuid": "96196fc5-67a7-400f-9b1a-e8f2e530e411",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -723,6 +755,34 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ping.pe",
+            "server_port": 2086,
+            "uuid": "96196fc5-67a7-400f-9b1a-e8f2e530e411",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @prrofile_purple | RELAY🚩 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "chatgpt.com",
+            "server_port": 2086,
+            "uuid": "96196fc5-67a7-400f-9b1a-e8f2e530e411",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -1213,7 +1273,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @OutlineVpnOfficial | UZ🇺🇿 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "93.174.164.89",
+            "server_port": 11201,
+            "method": "chacha20-ietf-poly1305",
+            "password": "0bc801a7cac5f134",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "171.22.254.129",
             "server_port": 990,
