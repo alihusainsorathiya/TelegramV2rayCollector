@@ -115,9 +115,11 @@
                 "DE🇩🇪",
                 "SE🇸🇪",
                 "RU🇷🇺",
+                "IQ🇮🇶",
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "GB🇬🇧",
+                "SG🇸🇬",
                 "MT🇲🇹"
             ]
         },
@@ -151,6 +153,7 @@
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣2️⃣",
@@ -159,12 +162,14 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @vmessorg | IQ🇮🇶 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -227,6 +232,7 @@
                 "رایگان | VLESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣"
             ],
@@ -268,6 +274,16 @@
             "tolerance": 50
         },
         {
+            "tag": "IQ🇮🇶",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @vmessorg | IQ🇮🇶 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
@@ -300,10 +316,20 @@
             "tolerance": 50
         },
         {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -918,6 +944,25 @@
         {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
+            "server": "108.162.198.247",
+            "server_port": 443,
+            "password": "823cbccd-3a71-4248-ac3c-3c460de1552d",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "snll100.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
             "server": "www.multiplydose.com",
             "server_port": 443,
             "password": "humanity",
@@ -935,7 +980,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "www.shopify.com",
             "server_port": 2053,
@@ -1149,6 +1194,41 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @vmessorg | IQ🇮🇶 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "81.90.29.39",
+            "server_port": 2443,
+            "uuid": "44dc6ac1-6126-4627-b889-9792a8188012",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "academy.nvidia.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZMvMtsHKNd39qVM9CuPLMEXUL19ViL4Qqqk1y5mMjko",
+                    "short_id": "a1b2c3d4"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TestChatGRPC",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "206.71.158.10",
@@ -1234,7 +1314,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "194.233.94.119",
+            "server_port": 80,
+            "method": "aes-256-gcm",
+            "password": "8t2xeemUtyui4zAv",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "171.22.254.129",
             "server_port": 990,
