@@ -115,7 +115,6 @@
                 "DE🇩🇪",
                 "SE🇸🇪",
                 "RU🇷🇺",
-                "IQ🇮🇶",
                 "US🇺🇸",
                 "NL🇳🇱",
                 "CY🇨🇾",
@@ -147,7 +146,6 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @vmessorg | IQ🇮🇶 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | US🇺🇸 | 0️⃣1️⃣",
@@ -222,16 +220,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IQ🇮🇶",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @vmessorg | IQ🇮🇶 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -830,41 +818,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @vmessorg | IQ🇮🇶 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "81.90.29.39",
-            "server_port": 2443,
-            "uuid": "44dc6ac1-6126-4627-b889-9792a8188012",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "academy.nvidia.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ZMvMtsHKNd39qVM9CuPLMEXUL19ViL4Qqqk1y5mMjko",
-                    "short_id": "a1b2c3d4"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "TestChatGRPC",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
