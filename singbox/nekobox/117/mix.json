@@ -116,7 +116,6 @@
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "GB🇬🇧",
-                "SG🇸🇬",
                 "MT🇲🇹"
             ]
         },
@@ -134,6 +133,7 @@
                 "رایگان | VMESS | @v2Line | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @rxv2ray | RELAY🚩 | 0️⃣1️⃣",
@@ -165,8 +165,7 @@
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -203,7 +202,8 @@
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣"
+                "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -313,20 +313,10 @@
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -550,6 +540,38 @@
         },
         {
             "tag": "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "156.243.83.167",
+            "server_port": 443,
+            "uuid": "telegram-id-Arfilter",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn-alman1.arfilter2.blog",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEl--@Arfilter",
+                "headers": {
+                    "Host": "cdn-alman1.arfilter2.blog"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣2️⃣",
             "type": "vless",
             "server": "156.243.83.167",
             "server_port": 443,
@@ -1311,17 +1333,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "194.233.94.119",
-            "server_port": 80,
-            "method": "aes-256-gcm",
-            "password": "8t2xeemUtyui4zAv",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣",
+            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "171.22.254.129",
             "server_port": 990,
