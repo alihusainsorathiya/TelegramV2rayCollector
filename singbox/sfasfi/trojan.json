@@ -108,7 +108,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "RELAY🚩"
+                "RELAY🚩",
+                "CH🇨🇭"
             ]
         },
         {
@@ -116,10 +117,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +131,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣"
@@ -140,7 +140,36 @@
             "tolerance": 50
         },
         {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "172.66.47.45",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.multiplydose.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "cf.877774.xyz",
             "server_port": 2087,
@@ -155,44 +184,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "cm22-bgphhh.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "mfa.gov.ua",
-            "server_port": 2096,
-            "password": "22367c45-f6c4-4ca8-8d52-d9787d7bbe91",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cm22-bgphhh.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "190.93.244.43",
-            "server_port": 8443,
-            "password": "Nova-Proxy",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed",
-                "headers": {
-                    "Host": "small-morning-2668.drusavm.workers.dev"
                 }
             }
         },
@@ -249,6 +240,25 @@
                 "path": "\/assignment",
                 "headers": {
                     "Host": "www.creationlong.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "185.18.250.252",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.gossipglove.com"
                 }
             }
         },
