@@ -120,7 +120,6 @@
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "GB🇬🇧",
-                "SG🇸🇬",
                 "MT🇲🇹"
             ]
         },
@@ -130,6 +129,7 @@
             "outbounds": [
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
@@ -177,8 +177,7 @@
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -190,6 +189,7 @@
             "outbounds": [
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
@@ -324,20 +324,10 @@
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -345,6 +335,42 @@
         },
         {
             "tag": "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "15.235.85.156",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kampong.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kampong.org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "143.204.111.65",
             "server_port": 80,
@@ -370,7 +396,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @prrofile_purple | US🇺🇸 | 0️⃣3️⃣",
             "type": "vmess",
             "server": "snapp.ir.bmi.ir.mobato-mobile.com",
             "server_port": 80,
@@ -1491,17 +1517,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "194.233.94.119",
-            "server_port": 80,
-            "method": "aes-256-gcm",
-            "password": "8t2xeemUtyui4zAv",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣",
+            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "171.22.254.129",
             "server_port": 990,
