@@ -114,8 +114,8 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "RU🇷🇺",
-                "NO🇳🇴",
                 "FR🇫🇷",
+                "NO🇳🇴",
                 "NL🇳🇱",
                 "CY🇨🇾",
                 "RO🇷🇴",
@@ -145,6 +145,7 @@
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VLESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | US🇺🇸 | 0️⃣1️⃣",
@@ -153,10 +154,8 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣3️⃣",
                 "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣",
@@ -217,6 +216,7 @@
             "outbounds": [
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VLESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | US🇺🇸 | 0️⃣1️⃣",
@@ -249,22 +249,20 @@
             "tolerance": 50
         },
         {
-            "tag": "NO🇳🇴",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣3️⃣"
+                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "NO🇳🇴",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -781,6 +779,38 @@
             }
         },
         {
+            "tag": "رایگان | VLESS | @prrofile_purple | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "fastly3.hamrahflow.ir",
+            "server_port": 443,
+            "uuid": "be2557f7-a0df-4393-b71b-28013847059f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "default.ssl.fastly.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "Valsiin.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "speedtest.net",
@@ -992,90 +1022,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "89.185.81.169",
-            "server_port": 443,
-            "uuid": "1218c022-dca8-49e5-b7d4-a04f3023db81",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stats.vk-portal.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0",
-                    "short_id": "4e249e62"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "5.180.47.159",
-            "server_port": 8443,
-            "uuid": "2c564cf2-2291-4c8a-ad02-d8db601c41f9",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Bg1P8Pv18fdeezfJWpqfUScMYHUUInCgdXsXEWBNBFo",
-                    "short_id": "9edc548e1e284d84"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | NO🇳🇴 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "nr-01.opsvpnvless.ru",
-            "server_port": 443,
-            "uuid": "1218c022-dca8-49e5-b7d4-a04f3023db81",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stats.vk-portal.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0",
-                    "short_id": "4e249e62"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "fr.denditop.site",
@@ -1100,6 +1046,34 @@
                     "enabled": true,
                     "public_key": "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4",
                     "short_id": "9c2378562188c3cb"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "89.185.81.169",
+            "server_port": 443,
+            "uuid": "1218c022-dca8-49e5-b7d4-a04f3023db81",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stats.vk-portal.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0",
+                    "short_id": "4e249e62"
                 }
             }
         },
