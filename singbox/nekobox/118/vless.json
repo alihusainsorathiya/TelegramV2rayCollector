@@ -116,9 +116,9 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "RU🇷🇺",
-                "NL🇳🇱",
                 "FR🇫🇷",
                 "NO🇳🇴",
+                "NL🇳🇱",
                 "CY🇨🇾",
                 "RO🇷🇴",
                 "AL🇦🇱"
@@ -155,10 +155,9 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
+                "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vmess_vless_v2rayng | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
@@ -250,17 +249,6 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
@@ -275,6 +263,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -992,57 +990,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "cache2.datapull.cc",
-            "server_port": 8443,
-            "uuid": "742d2dcb-ab26-4b10-b0a3-2efed2c154fa",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "addons.mozilla.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "safari"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "nmdu3rhLXUr8KzGtN_0D4Zc5JS1V8t9S4_iDXvtWk2I",
-                    "short_id": "7f3d9b2c5e1a8d44"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "206.71.158.10",
-            "server_port": 443,
-            "uuid": "7c63f43f-f526-49bb-b5c8-2be26e11ef00",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "statue.lnmarketplace.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "fr.denditop.site",
@@ -1095,6 +1042,29 @@
                     "enabled": true,
                     "public_key": "2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0",
                     "short_id": "4e249e62"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "206.71.158.10",
+            "server_port": 443,
+            "uuid": "7c63f43f-f526-49bb-b5c8-2be26e11ef00",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "statue.lnmarketplace.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
