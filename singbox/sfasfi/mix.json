@@ -117,10 +117,12 @@
                 "SE🇸🇪",
                 "RU🇷🇺",
                 "FR🇫🇷",
+                "NO🇳🇴",
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "AL🇦🇱",
                 "GB🇬🇧",
+                "SG🇸🇬",
                 "MT🇲🇹"
             ]
         },
@@ -167,13 +169,15 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | AL🇦🇱 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @vmess_vless_v2rayng | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -300,6 +304,16 @@
             "tolerance": 50
         },
         {
+            "tag": "NO🇳🇴",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
@@ -342,10 +356,20 @@
             "tolerance": 50
         },
         {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣"
+                "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1302,6 +1326,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "89.185.81.169",
+            "server_port": 443,
+            "uuid": "1218c022-dca8-49e5-b7d4-a04f3023db81",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stats.vk-portal.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0",
+                    "short_id": "4e249e62"
+                }
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "206.71.158.10",
@@ -1410,7 +1462,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣1️⃣",
+            "tag": "رایگان | SS | @OutlineVpnOfficial | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "194.233.94.119",
+            "server_port": 80,
+            "method": "aes-256-gcm",
+            "password": "8t2xeemUtyui4zAv",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "رایگان | SS | @OutlineVpnOfficial | MT🇲🇹 | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "171.22.254.129",
             "server_port": 990,
