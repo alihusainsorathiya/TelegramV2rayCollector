@@ -114,8 +114,6 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "RU🇷🇺",
-                "FR🇫🇷",
-                "NO🇳🇴",
                 "NL🇳🇱",
                 "RO🇷🇴",
                 "AL🇦🇱",
@@ -153,8 +151,6 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | AL🇦🇱 | 0️⃣1️⃣",
@@ -240,26 +236,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NO🇳🇴",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -983,62 +959,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ServerNett | FR🇫🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "fr.denditop.site",
-            "server_port": 443,
-            "uuid": "256c5f48-4908-4255-83d1-c86cb58f22b4",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fr.denditop.site",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4",
-                    "short_id": "9c2378562188c3cb"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ServerNett | NO🇳🇴 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "89.185.81.169",
-            "server_port": 443,
-            "uuid": "1218c022-dca8-49e5-b7d4-a04f3023db81",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stats.vk-portal.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0",
-                    "short_id": "4e249e62"
-                }
             }
         },
         {
