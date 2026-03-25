@@ -117,7 +117,8 @@
                 "SE🇸🇪",
                 "RU🇷🇺",
                 "NL🇳🇱",
-                "RO🇷🇴"
+                "RO🇷🇴",
+                "AL🇦🇱"
             ]
         },
         {
@@ -151,7 +152,8 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣"
+                "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | AL🇦🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -252,6 +254,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AL🇦🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @FreakConfig | AL🇦🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -955,6 +967,29 @@
                 "path": "\/@AmirGeekTech-@FNET00",
                 "headers": {
                     "Host": "ipv4.farazteams.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | AL🇦🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "pq-albania1.09vpn.com",
+            "server_port": 80,
+            "uuid": "8910cbb3-33b1-4266-a243-ac780ac63394",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": ""
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
