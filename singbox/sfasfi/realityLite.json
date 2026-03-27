@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣"
             ]
         },
@@ -115,11 +116,40 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "89.208.86.65",
+            "server_port": 443,
+            "uuid": "3a83ab7a-9b6f-460c-a128-1799f63695e3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+                    "short_id": "f32140952ba18e18"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
