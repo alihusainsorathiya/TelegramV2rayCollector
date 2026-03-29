@@ -108,14 +108,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱"
+                "RU🇷🇺",
+                "NL🇳🇱",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,6 +144,44 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @rxv2ray | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "89.208.86.65",
+            "server_port": 443,
+            "uuid": "3a83ab7a-9b6f-460c-a128-1799f63695e3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+                    "short_id": "f32140952ba18e18"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @prrofile_purple | NL🇳🇱 | 0️⃣1️⃣",
@@ -156,6 +208,34 @@
                     "enabled": true,
                     "public_key": "_L_eqCCzVbP0fzWTA_AqtmlyZVscCzrJ5b2nXFnq3U0",
                     "short_id": "d020b2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.125.103.147",
+            "server_port": 443,
+            "uuid": "21915536-afb5-4a0c-b047-fcf549d3a173",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wikihow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ",
+                    "short_id": "8bd29483ded126b4"
                 }
             }
         },
