@@ -108,7 +108,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "AL🇦🇱",
+                "CZ🇨🇿",
+                "HK🇭🇰",
                 "RELAY🚩"
             ]
         },
@@ -116,7 +117,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | CZ🇨🇿 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @vmess_vless_v2rayng | RELAY🚩 | 0️⃣2️⃣"
             ],
@@ -125,10 +127,20 @@
             "tolerance": 50
         },
         {
-            "tag": "AL🇦🇱",
+            "tag": "CZ🇨🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | CZ🇨🇿 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,9 +158,28 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CZ🇨🇿 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "185.177.238.87",
+            "server": "194.87.240.185",
+            "server_port": 2083,
+            "password": "q2jXRWncMA7pQren_VjQKhSQfoBWK_",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/trojan-ws",
+                "headers": {
+                    "Host": "xo.e0f.cx"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "192.142.4.232",
             "server_port": 2083,
             "password": "q2jXRWncMA7pQren_VjQKhSQfoBWK_",
             "multiplex": {
