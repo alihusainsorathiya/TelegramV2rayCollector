@@ -114,6 +114,7 @@
                 "DE🇩🇪",
                 "SE🇸🇪",
                 "NL🇳🇱",
+                "IR🇮🇷",
                 "RO🇷🇴",
                 "CY🇨🇾",
                 "GB🇬🇧"
@@ -155,6 +156,7 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣",
@@ -247,6 +249,16 @@
             "outbounds": [
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1072,6 +1084,29 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ww.parspas.ir",
+            "server_port": 8880,
+            "uuid": "e013cae2-2922-4874-914d-abd98eb8342d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
