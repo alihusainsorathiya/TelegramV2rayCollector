@@ -111,6 +111,7 @@
                 "SE🇸🇪",
                 "US🇺🇸",
                 "NL🇳🇱",
+                "IR🇮🇷",
                 "RO🇷🇴",
                 "CY🇨🇾"
             ]
@@ -142,6 +143,7 @@
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @fnet00 | RO🇷🇴 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | VLESS | @FreakConfig | CY🇨🇾 | 0️⃣2️⃣"
@@ -222,6 +224,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -829,6 +841,38 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @lrnbymaa | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir",
+            "server_port": 443,
+            "uuid": "8c53daee-2173-4889-a483-4f698b4b0432",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless",
+                "headers": {
+                    "Host": "tangerine-5545db500b-kamdaug.apps.ir-central1.arvancaas.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
