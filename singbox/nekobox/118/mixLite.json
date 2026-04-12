@@ -640,8 +640,8 @@
             "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "snapp.ir",
-            "server_port": 80,
-            "uuid": "c3319fd7-627b-4ac2-a883-0bee53d15757",
+            "server_port": 443,
+            "uuid": "e5933eb3-2aa8-4f20-b622-92677bf618f8",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -649,11 +649,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "info.siilaam.online",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "arc.liarashop.ir"
+                    "Host": "cdn.siilaam.online"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
