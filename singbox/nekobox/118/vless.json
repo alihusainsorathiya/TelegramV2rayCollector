@@ -151,11 +151,11 @@
                 "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
@@ -233,11 +233,11 @@
             "outbounds": [
                 "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | VLESS | @proxystore11 | IR🇮🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -936,7 +936,21 @@
             "type": "vless",
             "server": "snapp.ir",
             "server_port": 80,
-            "uuid": "d9749e17-2e5c-4fe6-bd3b-2b5c5c2060ec",
+            "uuid": "c6a36680-536b-4578-9bad-3b6ad0329a95",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "trex.nahidapp.com",
+            "server_port": 443,
+            "uuid": "d3e4df67-8ab6-455e-912a-933f5b9b0608",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -944,22 +958,31 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "trex.nahidapp.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vless-ws",
                 "headers": {
-                    "Host": "gamefa.yeksanplus.ir"
+                    "Host": "trex.nahidapp.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 8080,
-            "uuid": "0a7fe2d9-d537-4876-a96d-202fa10eda90",
+            "server": "trex.nahidapp.com",
+            "server_port": 443,
+            "uuid": "75cee306-7440-4e09-b162-30b456ae45d2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -967,11 +990,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "trex.nahidapp.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vless-ws",
                 "headers": {
-                    "Host": "wt.programming-coding.ir"
+                    "Host": "trex.nahidapp.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1052,29 +1084,6 @@
             "server": "185.143.233.235",
             "server_port": 80,
             "uuid": "1f5358e8-f57c-44b8-9864-9c236672fbc8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "d.nsa03.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "185.143.234.235",
-            "server_port": 80,
-            "uuid": "04fa65ad-5178-49c0-b679-a5442e3bfe78",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
