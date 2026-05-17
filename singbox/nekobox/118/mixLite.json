@@ -122,9 +122,8 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @prrofile_purple | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
@@ -156,9 +155,8 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @prrofile_purple | TR🇹🇷 | 0️⃣2️⃣",
+                "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2rayNG_Matsuri | IR🇮🇷 | 0️⃣1️⃣",
-                "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
@@ -462,11 +460,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @prrofile_purple | TR🇹🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "snapp.tech-notes.xyz",
-            "server_port": 42293,
-            "uuid": "cea5a86c-bf57-4aba-9205-b9c7cfbe8f43",
+            "server": "185.143.233.235",
+            "server_port": 80,
+            "uuid": "ce5ccdd9-a6f8-488f-aaa1-e5d66b9f9133",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -474,21 +472,14 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "snapp.tech-notes.xyz",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "aparat-stream",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "d.nsa03.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -509,38 +500,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "pl1.dns-coco.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VLESS | @v2rayngvpn | IR🇮🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "trex.docos.tech",
-            "server_port": 443,
-            "uuid": "54c47dee-eaee-417c-9b3c-339c5e00eeb7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trex.docos.tech",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless-ws",
-                "headers": {
-                    "Host": "trex.docos.tech"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
