@@ -112,6 +112,7 @@
                 "URL-TEST | رایگان",
                 "SC🇸🇨",
                 "RELAY🚩",
+                "DE🇩🇪",
                 "IR🇮🇷",
                 "SE🇸🇪",
                 "NL🇳🇱",
@@ -133,6 +134,7 @@
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxy_kafee | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @prrofile_purple | IR🇮🇷 | 0️⃣2️⃣",
@@ -174,6 +176,16 @@
                 "رایگان | VLESS | @v2ray_swhil | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | RELAY🚩 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -461,6 +473,29 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @rxv2ray | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "statue.lnmarketplace.net",
+            "server_port": 443,
+            "uuid": "7c63f43f-f526-49bb-b5c8-2be26e11ef00",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "statue.lnmarketplace.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
