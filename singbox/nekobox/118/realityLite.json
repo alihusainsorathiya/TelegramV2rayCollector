@@ -108,48 +108,15 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": [
-                "URL-TEST | رایگان",
-                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣"
-            ]
+            "outbounds": null
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "45.15.160.132",
-            "server_port": 443,
-            "uuid": "0b89c53e-1d55-463f-90d7-f28b0e17b8a7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "2YrB1VDud3ZDZp-fnEGO7BKsHZQN9NVJuXU_5j-uzVI",
-                    "short_id": "ddb9"
-                }
-            }
         },
         {
             "tag": "direct",
