@@ -110,36 +110,36 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "DE🇩🇪"
+                "CY🇨🇾"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "136.244.93.228",
-            "server_port": 443,
-            "uuid": "43488128-319e-f480-64ea-0acdc712e2a8",
-            "flow": "xtls-rprx-vision",
+            "server": "45.15.162.178",
+            "server_port": 33826,
+            "uuid": "1b536681-edf6-4d30-a908-d081ab83ec0e",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -148,7 +148,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.booking.com",
+                "server_name": "xp.apple.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -156,9 +156,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c",
-                    "short_id": "a1b2c3d4e5f67890"
+                    "public_key": "mAp9MUXYFKezyoMbySDsN73_k5VHcI9McPHh0Xdmojo",
+                    "short_id": "f5"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
