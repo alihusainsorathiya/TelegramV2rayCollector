@@ -111,6 +111,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "CY🇨🇾",
+                "CA🇨🇦",
                 "US🇺🇸"
             ]
         },
@@ -119,6 +120,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @iP_CF | CY🇨🇾 | 0️⃣1️⃣",
+                "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -130,6 +132,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @iP_CF | CY🇨🇾 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,6 +178,32 @@
                 "path": "\/api\/v1",
                 "headers": {
                     "Host": "45.128.72.44"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "158.69.208.120",
+            "server_port": 80,
+            "uuid": "bed62ee5-2b42-41b0-aeae-e95d043da869",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/api\/v1",
+                "headers": {
+                    "Host": "158.69.208.120"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"

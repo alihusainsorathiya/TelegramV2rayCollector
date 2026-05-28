@@ -104,64 +104,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST | رایگان",
-                "CY🇨🇾"
+                "URL-TEST | رایگان"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "CY🇨🇾",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "رایگان | REALITY | @proxy_kafee | CY🇨🇾 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "45.15.162.178",
-            "server_port": 33826,
-            "uuid": "1b536681-edf6-4d30-a908-d081ab83ec0e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "xp.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "mAp9MUXYFKezyoMbySDsN73_k5VHcI9McPHh0Xdmojo",
-                    "short_id": "f5"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "direct",
