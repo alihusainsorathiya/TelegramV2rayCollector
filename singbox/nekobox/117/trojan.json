@@ -118,7 +118,8 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -132,7 +133,8 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,7 +144,7 @@
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -218,6 +220,34 @@
         {
             "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
+            "server": "188.114.97.6",
+            "server_port": 443,
+            "password": "mitivpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.linkman1.ir",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/720f09dba195249b423f771661162528\/workers\/services\/view\/mitivpn\/production\/settings",
+                "headers": {
+                    "Host": "cdn.linkman1.ir"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
             "server": "104.17.121.9",
             "server_port": 443,
             "password": "humanity",
@@ -244,7 +274,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "45.130.125.76",
             "server_port": 443,
