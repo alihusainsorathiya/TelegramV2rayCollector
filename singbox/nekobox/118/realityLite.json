@@ -110,28 +110,32 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | REALITY | @DarkTeam_VPN | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @v2rayngvpn | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "172.65.96.65",
-            "server_port": 25565,
-            "uuid": "sevengozar",
-            "flow": "",
+            "server": "150.241.101.222",
+            "server_port": 443,
+            "uuid": "749a5df1-2d12-45cf-80f3-f85ea6b2e405",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -140,21 +144,77 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "amazon.com",
+                "server_name": "google.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": null
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "p3uek4VApDn2A1N2z_gEBWcIepIlgoxp7W8_pdsNcg4",
-                    "short_id": "fcc0"
+                    "public_key": "Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8",
+                    "short_id": ""
                 }
             }
         },
         {
-            "tag": "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayngvpn | NL🇳🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "146.0.73.104",
+            "server_port": 8443,
+            "uuid": "af194c0e-95c3-417b-85bf-9ac3027f903e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ads.5ka.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xSnNFylG-eUpKDPa2a-R3rdSB1HDrmenM-jU19n-xXA",
+                    "short_id": "612d8fa72c"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "46.149.71.46",
+            "server_port": 443,
+            "uuid": "d511e429-e32b-46a7-ac07-a0fffa9b634c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.avito.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU",
+                    "short_id": "0123456789abcdef"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "panel.panel.pythash.tr",
             "server_port": 443,
