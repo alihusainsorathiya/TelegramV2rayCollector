@@ -105,9 +105,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "RELAY🚩",
                 "DE🇩🇪",
                 "AL🇦🇱",
-                "RELAY🚩",
                 "SC🇸🇨",
                 "US🇺🇸"
             ]
@@ -116,34 +116,13 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | SC🇸🇨 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | US🇺🇸 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AL🇦🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,8 +132,29 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AL🇦🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -181,39 +181,22 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "89.127.218.251",
-            "server_port": 14443,
-            "password": "fUTl8hxc-NWqcLmAU_13AA",
+            "server": "188.114.97.6",
+            "server_port": 443,
+            "password": "mitivpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "78.159.131.12",
-            "server_port": 28259,
-            "password": "MeaDiUmPlkWbZJ2BON8tz",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "78.159.131.12",
-            "server_port": 28259,
-            "password": "MeaDiUmPlkWbZJ2BON8tz",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/720f09dba195249b423f771661162528\/workers\/services\/view\/mitivpn\/production\/settings",
+                "headers": {
+                    "Host": "cdn.linkman1.ir"
+                }
             }
         },
         {
@@ -270,6 +253,30 @@
                 "headers": {
                     "Host": "www.calmlunch.com"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "89.127.218.251",
+            "server_port": 14443,
+            "password": "fUTl8hxc-NWqcLmAU_13AA",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "78.159.131.12",
+            "server_port": 28259,
+            "password": "MeaDiUmPlkWbZJ2BON8tz",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
