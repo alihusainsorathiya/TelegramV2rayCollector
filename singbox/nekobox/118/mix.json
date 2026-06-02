@@ -115,12 +115,14 @@
                 "SC🇸🇨",
                 "RELAY🚩",
                 "IR🇮🇷",
+                "MD🇲🇩",
+                "CH🇨🇭",
                 "SE🇸🇪",
                 "NL🇳🇱",
                 "IT🇮🇹",
                 "SG🇸🇬",
                 "NZ🇳🇿",
-                "CH🇨🇭",
+                "TR🇹🇷",
                 "DE🇩🇪",
                 "AL🇦🇱",
                 "GB🇬🇧"
@@ -166,6 +168,9 @@
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @shh_proxy | IR🇮🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | MD🇲🇩 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | VLESS | @SafeNet_Server | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vmessorg | NL🇳🇱 | 0️⃣1️⃣",
@@ -176,9 +181,10 @@
                 "رایگان | VLESS | @free1_vpn | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray1_ng | SG🇸🇬 | 0️⃣2️⃣",
                 "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣1️⃣",
-                "رایگان | VLESS | @SafeNet_Server | CH🇨🇭 | 0️⃣1️⃣",
+                "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
                 "رایگان | SS | @iP_CF | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | GB🇬🇧 | 0️⃣1️⃣"
             ],
@@ -268,6 +274,27 @@
             "tolerance": 50
         },
         {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | MD🇲🇩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | VLESS | @SafeNet_Server | CH🇨🇭 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
@@ -323,10 +350,10 @@
             "tolerance": 50
         },
         {
-            "tag": "CH🇨🇭",
+            "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @SafeNet_Server | CH🇨🇭 | 0️⃣1️⃣"
+                "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -336,7 +363,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -346,7 +374,7 @@
             "tag": "AL🇦🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1326,6 +1354,76 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @proxy_kafee | MD🇲🇩 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "62.3.12.171",
+            "server_port": 8443,
+            "uuid": "ea665460-221d-4d9d-b672-8b6dae6ef400",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "travel.yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "l1wifJhEAz5W5969rpYY9c3tV4gZ6BjGSm2DbUXG920",
+                    "short_id": "fb711576"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "83.228.226.72",
+            "server_port": 18921,
+            "uuid": "a1ee1f7f-deb9-48e4-9a97-6f565949817d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.booking.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1-7zKj1-3VrO684UVOk4FxaNzyPexU_tszVXRCmYX1I",
+                    "short_id": "4be126c9c5b32ff6"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @SafeNet_Server | CH🇨🇭 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "83.228.226.72",
+            "server_port": 443,
+            "uuid": "a1ee1f7f-deb9-48e4-9a97-6f565949817d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "185.146.173.237",
@@ -1576,13 +1674,39 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @SafeNet_Server | CH🇨🇭 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @SafeNet_Server | TR🇹🇷 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "83.228.226.72",
+            "server": "panel.panel.pythash.tr",
             "server_port": 443,
-            "uuid": "a1ee1f7f-deb9-48e4-9a97-6f565949817d",
-            "flow": "",
+            "uuid": "68f91cc2-4ef2-46fd-932a-2d0350f682c8",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MbVEbNu2iMIDhD5ziJFLKVfV0lBY7tGGpklBrwqVCyg",
+                    "short_id": "61ad"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "185.137.157.254",
+            "server_port": 443,
+            "password": "hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1590,7 +1714,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "172.236.220.10",
             "server_port": 443,
@@ -1602,7 +1726,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "78.159.131.12",
             "server_port": 28259,
