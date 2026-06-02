@@ -107,8 +107,7 @@
                 "URL-TEST | رایگان",
                 "RELAY🚩",
                 "AL🇦🇱",
-                "AT🇦🇹",
-                "US🇺🇸"
+                "SC🇸🇨"
             ]
         },
         {
@@ -116,9 +115,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | AT🇦🇹 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,7 +127,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,27 +138,17 @@
             "tag": "AL🇦🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "AT🇦🇹",
+            "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | AT🇦🇹 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray_vpn_ir | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,6 +156,25 @@
         },
         {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "104.19.229.21",
+            "server_port": 443,
+            "password": "aa710f78-eddb-45b4-bd32-1f8692a754e5",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ae-bo",
+                "headers": {
+                    "Host": "s.blibli.com.cyylr.eu.cc"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "cyylr.eu.cc",
             "server_port": 443,
@@ -184,7 +193,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AL🇦🇱 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "78.159.131.12",
             "server_port": 28259,
@@ -196,23 +205,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | AT🇦🇹 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | SC🇸🇨 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "185.126.236.44",
+            "server": "45.130.125.76",
             "server_port": 443,
-            "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "172.235.63.252",
-            "server_port": 443,
-            "password": "bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E",
+            "password": "0jvOqSPtoC",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -220,11 +217,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "da.aananas.ir",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": null
                 }
             }
         },
