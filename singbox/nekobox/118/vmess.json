@@ -113,7 +113,7 @@
                 "CA🇨🇦",
                 "BR🇧🇷",
                 "US🇺🇸",
-                "FR🇫🇷"
+                "CY🇨🇾"
             ]
         },
         {
@@ -123,8 +123,8 @@
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @v2ray_vpn_ir | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,17 +155,17 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | CY🇨🇾 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -241,7 +241,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "cg1c04.waimaojd.com",
             "server_port": 443,
@@ -277,11 +277,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | CY🇨🇾 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "51.195.91.135",
-            "server_port": 10000,
-            "uuid": "533ae32c-5dda-11f1-a6eb-23a176880b5a",
+            "server": "203.23.104.222",
+            "server_port": 443,
+            "uuid": "b3a21def-5fcc-47a8-a6a0-a34e29d5288a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -292,11 +292,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "203.23.104.222",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vpnjantit",
+                "path": "\/wss51068",
                 "headers": {
-                    "Host": "51.195.91.135"
+                    "Host": "203.23.104.222"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
