@@ -116,6 +116,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray_vpn_ir | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray_vpn_ir | US🇺🇸 | 0️⃣2️⃣"
@@ -128,6 +129,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -144,6 +146,41 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "best1.darkteam.info",
+            "server_port": 443,
+            "uuid": "f218423f-b529-4b50-a675-2ffa28555cbc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.amazon.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "iGmGz1yVM3MwLtgj-R0xqrLbysfBxgcRRlbXN6f883Y",
+                    "short_id": "f1b9917f2c6e42e8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "DarkTeam_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
