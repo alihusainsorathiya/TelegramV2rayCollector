@@ -113,7 +113,8 @@
                 "SE🇸🇪",
                 "IT🇮🇹",
                 "NL🇳🇱",
-                "NZ🇳🇿"
+                "NZ🇳🇿",
+                "RO🇷🇴"
             ]
         },
         {
@@ -149,7 +150,6 @@
                 "رایگان | VLESS | @proxy_kafee | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2rayngvpn | SC🇸🇨 | 0️⃣3️⃣",
                 "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VLESS | @V2rayNGn | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
@@ -170,7 +170,8 @@
                 "رایگان | VLESS | @v2rayNG_Matsuri | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2ray1_ng | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣2️⃣"
+                "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣1️⃣",
+                "رایگان | VLESS | @SafeNet_Server | RO🇷🇴 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -226,8 +227,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -302,7 +302,17 @@
             "tag": "NZ🇳🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣2️⃣"
+                "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RO🇷🇴",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @SafeNet_Server | RO🇷🇴 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1060,34 +1070,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "85.208.139.98",
-            "server_port": 8444,
-            "uuid": "c931f737-cafe-4e4f-998a-a65517941256",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdnjs.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Hp6K5hsiPY4_zATgAtef9YTxNGpSkhAHTTo9MUO7fik",
-                    "short_id": "77e934f68f02ab4c"
-                }
-            }
-        },
-        {
             "tag": "رایگان | VLESS | @DarkTeam_VPN | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "snapp.ir",
@@ -1572,7 +1554,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @VmessProtocol | NZ🇳🇿 | 0️⃣1️⃣",
             "type": "vless",
             "server": "202.37.33.80",
             "server_port": 443,
@@ -1601,6 +1583,29 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @SafeNet_Server | RO🇷🇴 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "77.74.123.169",
+            "server_port": 8443,
+            "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn3-87.vk-cdnvideo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
