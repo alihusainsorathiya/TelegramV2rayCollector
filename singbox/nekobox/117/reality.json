@@ -107,9 +107,8 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "NL🇳🇱",
-                "DE🇩🇪",
-                "SE🇸🇪",
                 "PL🇵🇱",
+                "DE🇩🇪",
                 "TR🇹🇷"
             ]
         },
@@ -119,12 +118,8 @@
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2rayngvpn | SE🇸🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣3️⃣",
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2ray_vpn_ir | TR🇹🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -152,33 +147,20 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2rayngvpn | SE🇸🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2rayngvpn | SE🇸🇪 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -251,11 +233,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @DarkTeam_VPN | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "109.70.74.36",
-            "server_port": 443,
-            "uuid": "0a65e0fa-62c8-40f2-ae2b-7549ddb69338",
+            "server": "82.40.62.3",
+            "server_port": 80,
+            "uuid": "540db6ea-ab26-465c-a9bb-8395b8b0b466",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -265,7 +247,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.amazon.com",
+                "server_name": "www.samsung.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -273,51 +255,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "iGmGz1yVM3MwLtgj-R0xqrLbysfBxgcRRlbXN6f883Y",
-                    "short_id": "8ba354e84e"
+                    "public_key": "PecpMnk9UK6kjpMZ18UBTNvpMQQNetgpu2Ne0fqoIlg",
+                    "short_id": "43"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "DarkTeam_VPN",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2rayngvpn | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "de.riotvpn.eu",
-            "server_port": 8443,
-            "uuid": "3e72a68f-e40d-44c6-a73d-13b99d0d1d50",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ads.x5.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
-                    "short_id": "e67fb918ed6b9ffb"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc-yandex",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -345,97 +285,6 @@
                     "enabled": true,
                     "public_key": "Hp6K5hsiPY4_zATgAtef9YTxNGpSkhAHTTo9MUO7fik",
                     "short_id": "77e934f68f02ab4c"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2rayngvpn | SE🇸🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "se.riotvpn.eu",
-            "server_port": 8443,
-            "uuid": "3e72a68f-e40d-44c6-a73d-13b99d0d1d50",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ads.x5.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
-                    "short_id": "e67fb918ed6b9ffb"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc-yandex",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2rayngvpn | SE🇸🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "se.riotvpn.eu",
-            "server_port": 443,
-            "uuid": "3e72a68f-e40d-44c6-a73d-13b99d0d1d50",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ads.x5.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-                    "short_id": "2f49bccf11150ef2"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "82.40.62.3",
-            "server_port": 80,
-            "uuid": "540db6ea-ab26-465c-a9bb-8395b8b0b466",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.samsung.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "PecpMnk9UK6kjpMZ18UBTNvpMQQNetgpu2Ne0fqoIlg",
-                    "short_id": "43"
                 }
             }
         },
