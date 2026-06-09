@@ -108,7 +108,7 @@
                 "BR🇧🇷",
                 "CA🇨🇦",
                 "US🇺🇸",
-                "AU🇦🇺",
+                "BZ🇧🇿",
                 "FR🇫🇷"
             ]
         },
@@ -119,8 +119,9 @@
                 "رایگان | VMESS | @v2ray1_ng | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | BR🇧🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @Hope_Net | AU🇦🇺 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣2️⃣",
                 "رایگان | VMESS | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -142,7 +143,8 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣2️⃣"
+                "رایگان | VMESS | @SafeNet_Server | CA🇨🇦 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,10 +161,10 @@
             "tolerance": 50
         },
         {
-            "tag": "AU🇦🇺",
+            "tag": "BZ🇧🇿",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @Hope_Net | AU🇦🇺 | 0️⃣1️⃣"
+                "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -239,6 +241,40 @@
             }
         },
         {
+            "tag": "رایگان | VMESS | @Hope_Net | CA🇨🇦 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "23.227.60.184",
+            "server_port": 2096,
+            "uuid": "73376c70-3108-11ee-9710-1239d0255272",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "23.227.60.184",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -265,11 +301,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @Hope_Net | AU🇦🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | BZ🇧🇿 | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "172.64.154.150",
+            "server": "203.30.190.190",
             "server_port": 443,
-            "uuid": "5f64fa65-7b14-49c5-954d-aa15c6bfcacd",
+            "uuid": "40d496a6-ceeb-4096-baeb-4cc52b205621",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -282,7 +318,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "172.64.154.150",
+                "server_name": "203.30.190.190",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -292,9 +328,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/dongtaiwang.com",
+                "path": "\/ECTCJ0DF",
                 "headers": {
-                    "Host": "clash6.ssr-free.xyz"
+                    "Host": "203.30.190.190"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
