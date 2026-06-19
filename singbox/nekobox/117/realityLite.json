@@ -105,11 +105,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣3️⃣"
@@ -119,11 +120,12 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣3️⃣"
@@ -131,6 +133,62 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "uk-gthost-01.com",
+            "server_port": 8443,
+            "uuid": "52faee73-e0fe-4661-992d-67259257170f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
+                    "short_id": "ea10cd5686751ec5"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "uk-gthost-01.com",
+            "server_port": 8443,
+            "uuid": "52faee73-e0fe-4661-992d-67259257170f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
+                    "short_id": "ea10cd5686751ec5"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @vmessorg | TR🇹🇷 | 0️⃣2️⃣",
@@ -241,34 +299,6 @@
                     "enabled": true,
                     "public_key": "odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4",
                     "short_id": "e069bfaf9ba2069c"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "45.195.137.5",
-            "server_port": 8443,
-            "uuid": "c56ff6cc-3aca-4db7-84c5-3dca67c7a1ff",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "storage.yandex.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-                    "short_id": "e3d38cee79d4f94c"
                 }
             }
         },
