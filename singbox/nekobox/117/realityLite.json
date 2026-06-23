@@ -105,30 +105,61 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | LV🇱🇻 | 0️⃣3️⃣"
+                "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | TR🇹🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | LV🇱🇻 | 0️⃣3️⃣"
+                "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @shh_proxy | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "194.116.236.222",
+            "server_port": 4111,
+            "uuid": "ce967499-9b55-480f-9d8e-6f2d37bba843",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.icloud.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "DW2C6G0T-udzyIjKtBHiEZFkJT1OE2AcQaGjnpI2pno",
+                    "short_id": "9e0df5878ac2f3c8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "yourServiceName",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
@@ -155,34 +186,6 @@
                     "enabled": true,
                     "public_key": "l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY",
                     "short_id": "4e590fdc"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "ge3.pandaonline.org",
-            "server_port": 443,
-            "uuid": "bf038412-931e-4b18-a6a7-32d09304f333",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ge3.pandaonline.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lvFOmvUfAoLa9vgvoAQVrZtCmU-wB-HcmgCU66WCQzc",
-                    "short_id": ""
                 }
             }
         },
@@ -267,62 +270,6 @@
                     "enabled": true,
                     "public_key": "y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo",
                     "short_id": "15052edc8120b63d"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "209.127.228.114",
-            "server_port": 443,
-            "uuid": "d205ae68-0819-473c-b425-6c5947ac2f8d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cars.morro-settings.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI",
-                    "short_id": "dd"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | LV🇱🇻 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "95.182.80.48",
-            "server_port": 15370,
-            "uuid": "8e13e299-1bbf-46da-a297-8ee19fe4c914",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "oYCopzg1jDV54b-i8nR9_ULi7uivm_qfCM95LwRBfXU",
-                    "short_id": "61"
                 }
             }
         },
