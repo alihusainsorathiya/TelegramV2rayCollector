@@ -111,9 +111,10 @@
                 "CH🇨🇭",
                 "DE🇩🇪",
                 "TR🇹🇷",
+                "US🇺🇸",
+                "ES🇪🇸",
                 "CA🇨🇦",
-                "LV🇱🇻",
-                "IT🇮🇹"
+                "LV🇱🇻"
             ]
         },
         {
@@ -123,9 +124,10 @@
                 "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @vmessorg | TR🇹🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | LV🇱🇻 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | LV🇱🇻 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,10 +164,30 @@
             "tolerance": 50
         },
         {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "ES🇪🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣"
+                "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -175,17 +197,7 @@
             "tag": "LV🇱🇻",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | LV🇱🇻 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IT🇮🇹",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | LV🇱🇻 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -276,7 +288,63 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | CA🇨🇦 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "netraidly.ru",
+            "server_port": 40443,
+            "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "deepl.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
+                    "short_id": "01d1bf2d4755d40c"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @lrnbymaa | ES🇪🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "5.180.173.222",
+            "server_port": 448,
+            "uuid": "626b07bd-81c4-4212-be7a-27442a579620",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.googletagmanager.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo",
+                    "short_id": "15052edc8120b63d"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣1️⃣",
             "type": "vless",
             "server": "209.127.228.114",
             "server_port": 443,
@@ -304,7 +372,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | LV🇱🇻 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | LV🇱🇻 | 0️⃣3️⃣",
             "type": "vless",
             "server": "95.182.80.48",
             "server_port": 15370,
@@ -328,34 +396,6 @@
                     "enabled": true,
                     "public_key": "oYCopzg1jDV54b-i8nR9_ULi7uivm_qfCM95LwRBfXU",
                     "short_id": "61"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | IT🇮🇹 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "31.76.113.25",
-            "server_port": 443,
-            "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "it.s3-cloud.xyz",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY",
-                    "short_id": "7a3f9e2b1c8d4f6a"
                 }
             }
         },
