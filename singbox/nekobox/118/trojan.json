@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "SC🇸🇨",
                 "RELAY🚩",
                 "DE🇩🇪"
             ]
@@ -118,9 +119,23 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @iP_CF | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @iP_CF | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,8 +145,11 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,6 +164,90 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @iP_CF | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "45.130.125.112",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.calmlunch.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": null
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.16.174.12",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ignitelimit.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.ignitelimit.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "104.16.174.36",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ignitelimit.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.ignitelimit.com"
+                }
+            }
         },
         {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
@@ -191,6 +293,34 @@
                 "path": "\/assignment",
                 "headers": {
                     "Host": "www.calmlunch.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.17.108.1",
+            "server_port": 443,
+            "password": "iKmZWib7Mb",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "a2.aananas.ir",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "a2.aananas.ir"
                 }
             }
         },
