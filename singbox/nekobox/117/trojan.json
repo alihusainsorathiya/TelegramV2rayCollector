@@ -109,7 +109,8 @@
                 "RELAY🚩",
                 "FR🇫🇷",
                 "ES🇪🇸",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "US🇺🇸"
             ]
         },
         {
@@ -124,7 +125,8 @@
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | ES🇪🇸 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -179,6 +181,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @v2ray1_ng | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -385,6 +397,34 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "141.193.213.21",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.calmloud.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.calmloud.com"
                 }
             }
         },
