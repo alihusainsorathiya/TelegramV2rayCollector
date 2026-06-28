@@ -110,30 +110,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "CH🇨🇭",
                 "GB🇬🇧",
+                "SC🇸🇨",
                 "DE🇩🇪",
-                "LT🇱🇹"
+                "LT🇱🇹",
+                "FI🇫🇮"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣2️⃣",
-                "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | LT🇱🇹 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "CH🇨🇭",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣",
+                "رایگان | REALITY | @iP_CF | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | LT🇱🇹 | 0️⃣1️⃣",
+                "رایگان | REALITY | @lrnbymaa | LT🇱🇹 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,7 +136,17 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @iP_CF | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +156,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,6 +166,7 @@
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | LT🇱🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | LT🇱🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -170,35 +174,17 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | CH🇨🇭 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "37.156.44.215",
-            "server_port": 2083,
-            "uuid": "89049f79-320b-48a0-b1cf-110165cae30c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY",
-                    "short_id": "4e590fdc"
-                }
-            }
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | GB🇬🇧 | 0️⃣1️⃣",
             "type": "vless",
             "server": "107.181.134.108",
             "server_port": 32221,
@@ -226,7 +212,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @iP_CF | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.197.134.89",
+            "server_port": 8443,
+            "uuid": "4fdec620-73bb-40a7-a8d5-2570a59f1832",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc",
+                    "short_id": "d515d6cfdfe60b02"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "159.195.46.178",
             "server_port": 443,
@@ -250,6 +264,34 @@
                     "enabled": true,
                     "public_key": "P5ceHLOW8Gmz45z-ozbm9T6xsdSsIGLB71-jMfSjCBQ",
                     "short_id": "04bc695105689674"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | LT🇱🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "5.199.170.105",
+            "server_port": 443,
+            "uuid": "fd47216b-4217-4ec1-85b9-98304634a391",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "amd.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE",
+                    "short_id": "6ba85179e30d4fc2"
                 }
             }
         },
@@ -279,6 +321,41 @@
                     "public_key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE",
                     "short_id": "6ba85179e30d4fc2"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | FI🇫🇮 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "fanlandv2.sorcepack.ir",
+            "server_port": 52077,
+            "uuid": "f6c9ef00-feb2-456e-ac54-11fd5a996cc3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PHBDzNOQhRFtN4bDJ6pOySCGlIA09CC_Josq13rTIwk",
+                    "short_id": "2f8f7f5099e27197"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
