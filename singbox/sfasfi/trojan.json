@@ -110,8 +110,8 @@
                 "URL-TEST | رایگان",
                 "SC🇸🇨",
                 "RELAY🚩",
+                "ID🇮🇩",
                 "DE🇩🇪",
-                "ES🇪🇸",
                 "US🇺🇸"
             ]
         },
@@ -122,8 +122,9 @@
                 "رایگان | TROJAN | @iP_CF | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | ES🇪🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | ID🇮🇩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -145,7 +146,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @iP_CF | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "ID🇮🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | ID🇮🇩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,17 +167,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "ES🇪🇸",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | ES🇪🇸 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -266,11 +268,30 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "185.137.157.142",
+            "server": "212.183.88.136",
             "server_port": 443,
-            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.calmlunch.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | ID🇮🇩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "130.94.94.15",
+            "server_port": 443,
+            "password": "tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -278,11 +299,11 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | ES🇪🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "193.148.19.210",
-            "server_port": 52794,
-            "password": "2eutknankxtbgkwcajzt",
+            "server": "185.137.157.142",
+            "server_port": 443,
+            "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
