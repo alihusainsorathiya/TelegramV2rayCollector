@@ -112,8 +112,8 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,15 +123,41 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
+            "server_port": 80,
+            "uuid": "46cfcfe1-e450-459d-a3ab-9406011ab3eb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tms.dingtalk.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free1_vpn | US🇺🇸 | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.77.77",
             "server_port": 8443,
@@ -161,32 +187,6 @@
                 "path": "\/lMnsZUN4\/",
                 "headers": {
                     "Host": "v2ray1.dozapp.xyz"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
-            "server_port": 80,
-            "uuid": "46cfcfe1-e450-459d-a3ab-9406011ab3eb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tms.dingtalk.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
