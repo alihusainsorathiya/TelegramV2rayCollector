@@ -107,8 +107,10 @@
                 "URL-TEST | رایگان",
                 "FI🇫🇮",
                 "DE🇩🇪",
+                "SC🇸🇨",
                 "NL🇳🇱",
-                "SC🇸🇨"
+                "IT🇮🇹",
+                "FR🇫🇷"
             ]
         },
         {
@@ -118,8 +120,10 @@
                 "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣"
+                "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | IT🇮🇹 | 0️⃣1️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,20 +151,40 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SC🇸🇨",
+            "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣"
+                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IT🇮🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | IT🇮🇹 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -251,7 +275,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | NL🇳🇱 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.206.0.36",
+            "server_port": 8443,
+            "uuid": "52faee73-e0fe-4661-992d-67259257170f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
+                    "short_id": "ea10cd5686751ec5"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vless",
             "server": "176.119.141.136",
             "server_port": 8443,
@@ -279,12 +331,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | IT🇮🇹 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "45.206.0.36",
-            "server_port": 8443,
-            "uuid": "52faee73-e0fe-4661-992d-67259257170f",
-            "flow": "xtls-rprx-vision",
+            "server": "talianaccentclouding.iranlast.com",
+            "server_port": 7009,
+            "uuid": "3f298aca-2412-49ac-9f20-235f0e448d31",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -293,16 +345,44 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "storage.yandex.net",
+                "server_name": "yahoo.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "qq"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8",
-                    "short_id": "ea10cd5686751ec5"
+                    "public_key": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "luemborgclouding.iranlast.com",
+            "server_port": 7009,
+            "uuid": "3f298aca-2412-49ac-9f20-235f0e448d31",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
+                    "short_id": ""
                 }
             }
         },
