@@ -117,7 +117,8 @@
                 "SE🇸🇪",
                 "DE🇩🇪",
                 "NL🇳🇱",
-                "AE🇦🇪"
+                "AE🇦🇪",
+                "FR🇫🇷"
             ]
         },
         {
@@ -143,7 +144,7 @@
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @DarkTeam_VPN | SC🇸🇨 | 0️⃣1️⃣",
-                "رایگان | VLESS | @SafeNet_Server | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | VLESS | @SafeNet_Server | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣2️⃣",
                 "رایگان | VLESS | @rxv2ray | CY🇨🇾 | 0️⃣1️⃣",
                 "رایگان | VLESS | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
@@ -167,7 +168,8 @@
                 "رایگان | VLESS | @azadi_az_inja_migzare | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @SafeNet_Server | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -205,7 +207,7 @@
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | VLESS | @ARv2ray | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @DarkTeam_VPN | SC🇸🇨 | 0️⃣1️⃣",
-                "رایگان | VLESS | @SafeNet_Server | SC🇸🇨 | 0️⃣1️⃣"
+                "رایگان | VLESS | @SafeNet_Server | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -302,6 +304,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VLESS | @SafeNet_Server | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -840,7 +852,7 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @SafeNet_Server | SC🇸🇨 | 0️⃣1️⃣",
+            "tag": "رایگان | VLESS | @SafeNet_Server | SC🇸🇨 | 0️⃣2️⃣",
             "type": "vless",
             "server": "45.130.125.114",
             "server_port": 8443,
@@ -1496,6 +1508,29 @@
                     "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
                     "short_id": "abcd"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @SafeNet_Server | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "162.19.228.119",
+            "server_port": 80,
+            "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/http",
+                "headers": {
+                    "Host": "de.vpnbase.net"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
