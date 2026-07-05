@@ -108,8 +108,7 @@
                 "FI🇫🇮",
                 "SC🇸🇨",
                 "DE🇩🇪",
-                "AE🇦🇪",
-                "NL🇳🇱"
+                "AE🇦🇪"
             ]
         },
         {
@@ -120,8 +119,8 @@
                 "رایگان | REALITY | @DarkTeam_VPN | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,7 +151,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @iP_CF | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,16 +163,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "NL🇳🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -291,6 +281,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "84.32.223.22",
+            "server_port": 443,
+            "uuid": "63d34c62-c655-498f-81e1-1bdd964a2611",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cherry-de1.t1n2.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A0oiMHyUXzvKw3vlEtfUulJ3ba8fjOKbSXg8PoRCgG8",
+                    "short_id": "ecf7a3c57ca42895"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @VmessProtocol | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
             "server": "89.125.20.104",
@@ -315,34 +333,6 @@
                     "enabled": true,
                     "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
                     "short_id": "abcd"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | NL🇳🇱 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "176.119.141.136",
-            "server_port": 8443,
-            "uuid": "0828a0bc-8acf-422c-9fac-8ad885a0dbaf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.nvidia.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Zfr2SDTLuLNtbRR4hGX0oE3z1wbK3XvwzrvUfPQNugE",
-                    "short_id": "205f8d"
                 }
             }
         },
