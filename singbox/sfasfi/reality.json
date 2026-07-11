@@ -110,7 +110,8 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "DE🇩🇪",
-                "PL🇵🇱"
+                "CH🇨🇭",
+                "FR🇫🇷"
             ]
         },
         {
@@ -120,7 +121,8 @@
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | PL🇵🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2ray1_ng | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -148,10 +150,20 @@
             "tolerance": 50
         },
         {
-            "tag": "PL🇵🇱",
+            "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | PL🇵🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2ray1_ng | CH🇨🇭 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -242,11 +254,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | PL🇵🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | CH🇨🇭 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "83.168.71.216",
+            "server": "179.237.75.21",
             "server_port": 443,
-            "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+            "uuid": "56fde86d-7985-4385-bc75-276b29a70e44",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -256,7 +268,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ads.x5.ru",
+                "server_name": "yahoo.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -264,8 +276,43 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-                    "short_id": "2f49bccf11150ef2"
+                    "public_key": "MhOa-Fkr656VVRcxXd27gam263cdXF_uyGiHZZEISUA",
+                    "short_id": "ce741cbe468babc7"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "xyz",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | FR🇫🇷 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "54.37.2.131",
+            "server_port": 443,
+            "uuid": "36644091-0cec-47fe-9955-97c3f424baf7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+                    "short_id": "98fa0b00d09419f7"
                 }
             }
         },
