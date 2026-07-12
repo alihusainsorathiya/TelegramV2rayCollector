@@ -123,7 +123,8 @@
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,7 +156,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -299,6 +301,41 @@
                     "public_key": "EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig",
                     "short_id": "28415a7918168947"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "hub.oneoknews.com",
+            "server_port": 443,
+            "uuid": "729a43e6-6926-4c27-92f6-b70a67471afc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hub.oneoknews.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc",
+                    "short_id": "064c2d37308aeeb6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
