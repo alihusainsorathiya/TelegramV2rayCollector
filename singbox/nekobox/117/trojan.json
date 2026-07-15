@@ -107,9 +107,9 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "IE🇮🇪",
-                "RELAY🚩",
                 "US🇺🇸",
-                "LT🇱🇹"
+                "LT🇱🇹",
+                "RELAY🚩"
             ]
         },
         {
@@ -119,11 +119,10 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | IE🇮🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | LT🇱🇹 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | LT🇱🇹 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,21 +150,10 @@
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -176,7 +164,17 @@
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | LT🇱🇹 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | LT🇱🇹 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -219,63 +217,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "104.16.174.12",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.ignitelimit.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.ignitelimit.com"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "104.18.152.246",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.calmloud.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.calmloud.com"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "151.101.1.194",
             "server_port": 443,
@@ -331,7 +273,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | LT🇱🇹 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | LT🇱🇹 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "89.116.250.135",
             "server_port": 443,
@@ -355,6 +297,34 @@
                 "path": "\/---@MiTiVPN\/---@MiTiVPN\/---@MiTiVPN\/---@MiTiVPN\/---@MiTiVPN=WIN-nl",
                 "headers": {
                     "Host": "Wihn-Nlkl--ol.App-Cloud.Ir"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "104.18.152.246",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.calmloud.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.calmloud.com"
                 }
             }
         },
