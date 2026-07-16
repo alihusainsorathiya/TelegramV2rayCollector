@@ -110,7 +110,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "IT🇮🇹",
                 "FR🇫🇷",
+                "NL🇳🇱",
                 "DE🇩🇪"
             ]
         },
@@ -118,9 +120,22 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | IT🇮🇹 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IT🇮🇹",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | IT🇮🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +146,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @lrnbymaa | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @lrnbymaa | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,6 +172,34 @@
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | IT🇮🇹 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "hudrososov.blog",
+            "server_port": 443,
+            "uuid": "2428711f-5117-46e9-a2cb-741797a60ed8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hudrososov.blog",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yuKSmrb2MumCllTTmBJiuNTQcGxEaNhqmZVR8dVjLwI",
+                    "short_id": "d1c2b3a4"
+                }
+            }
         },
         {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | FR🇫🇷 | 0️⃣1️⃣",
@@ -207,6 +261,62 @@
                     "enabled": true,
                     "public_key": "mkrHaywJJYB4wuvs5Sj2kuKFM3kbi8w3jd2CEC-AkBc",
                     "short_id": "1aa760b0"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "check07.allenshop66244.ir",
+            "server_port": 8443,
+            "uuid": "720642d3-035e-469a-b0a1-6dcd3601a82c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw",
+                    "short_id": "b7b70c104ad267b8"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | NL🇳🇱 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "nl4.helper-internet.com",
+            "server_port": 443,
+            "uuid": "59da5351-5151-417d-b2f7-6923848b717e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl4.helper-internet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+                    "short_id": "ff776ff77be48b88"
                 }
             }
         },
