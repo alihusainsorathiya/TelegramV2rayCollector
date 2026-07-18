@@ -117,10 +117,10 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | GB🇬🇧 | 0️⃣2️⃣",
@@ -136,7 +136,7 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -148,7 +148,7 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -214,6 +214,41 @@
         {
             "tag": "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
+            "server": "api.oneokgames.com",
+            "server_port": 443,
+            "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api.oneokgames.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+                    "short_id": "a30b344b5214d62f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "push.v2.FeedService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣",
+            "type": "vless",
             "server": "dl.onetimeok.com",
             "server_port": 443,
             "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
@@ -230,7 +265,7 @@
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": null
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
@@ -241,41 +276,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "api.v2.PushService",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "media.oneokgames.com",
-            "server_port": 443,
-            "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "media.oneokgames.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38",
-                    "short_id": "dbdbeaf4aa6e1a5c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "api.v2.ObjectService",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -345,7 +345,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "new.akinamo.willbe.sinitk.outforyou.ir",
             "server_port": 20580,
