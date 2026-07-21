@@ -111,7 +111,6 @@
                 "SC🇸🇨",
                 "RU🇷🇺",
                 "RO🇷🇴",
-                "SE🇸🇪",
                 "FR🇫🇷",
                 "GB🇬🇧",
                 "DE🇩🇪"
@@ -123,9 +122,10 @@
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | RO🇷🇴 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | GB🇬🇧 | 0️⃣3️⃣",
@@ -150,6 +150,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -167,19 +168,10 @@
             "tolerance": 50
         },
         {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @lrnbymaa | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -264,6 +256,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "84.38.187.169",
+            "server_port": 443,
+            "uuid": "39b25b94-3b44-0037-94bf-98456f1b38a3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mc.yandex.tr",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rJMYW6mHgjs61mHxfm8Gmm_Re23sV_xe5b0IrTpLsiQ",
+                    "short_id": "94c9dbbf07366d96"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @FreakConfig | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
             "server": "185.185.142.98",
@@ -320,12 +340,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | SE🇸🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "185.231.101.89",
-            "server_port": 443,
-            "uuid": "ecad47b0-249e-4f6f-adff-e3c8f02b1897",
-            "flow": "xtls-rprx-vision",
+            "server": "141.227.160.73",
+            "server_port": 6300,
+            "uuid": "b1a689fa-20c3-43b4-a107-4af64f8a7cf3",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -334,16 +354,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "se.quattro-tech.ru",
+                "server_name": "play.google.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": null
+                    "fingerprint": "qq"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-                    "short_id": "43dcff53849b81e6"
+                    "public_key": "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo",
+                    "short_id": ""
                 }
             }
         },
