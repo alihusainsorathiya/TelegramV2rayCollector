@@ -107,7 +107,9 @@
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
                 "DE🇩🇪",
-                "RELAY🚩"
+                "RELAY🚩",
+                "SC🇸🇨",
+                "CH🇨🇭"
             ]
         },
         {
@@ -120,8 +122,12 @@
                 "رایگان | TROJAN | @v2ray1_ng | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -155,8 +161,30 @@
             "outbounds": [
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray_vpn_ir | SC🇸🇨 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CH🇨🇭",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -276,7 +304,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "162.159.38.119",
             "server_port": 443,
@@ -329,6 +357,109 @@
                 "headers": {
                     "Host": "www.creationlong.org"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.18.152.77",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ignitelimit.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.ignitelimit.com"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "188.114.98.0",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.creationlong.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.creationlong.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "45.130.125.112",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.calmlunch.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": null
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "0101010101010101010101010101011010.poki-pakipon.ir",
+            "server_port": 14579,
+            "password": "1oVfSPR0eM",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
