@@ -110,8 +110,8 @@
                 "URL-TEST | رایگان",
                 "PL🇵🇱",
                 "US🇺🇸",
-                "RELAY🚩",
-                "CH🇨🇭"
+                "CH🇨🇭",
+                "RELAY🚩"
             ]
         },
         {
@@ -119,13 +119,15 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,7 +137,8 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,20 +148,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -168,8 +158,22 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -177,6 +181,18 @@
         },
         {
             "tag": "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "62.112.222.212",
+            "server_port": 443,
+            "password": "KV63147582",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "62.112.222.200",
             "server_port": 443,
@@ -188,7 +204,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "141.193.213.21",
             "server_port": 443,
@@ -207,28 +223,66 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | CH🇨🇭 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "151.101.1.194",
-            "server_port": 443,
-            "password": "MiTiVPN",
+            "server": "179.237.75.149",
+            "server_port": 36029,
+            "password": "yBN5491Fle",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
             "transport": {
-                "type": "ws",
-                "path": "\/---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sws",
-                "headers": {
-                    "Host": "mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net"
-                }
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.16.174.12",
+            "server": "179.237.74.104",
+            "server_port": 2518,
+            "password": "1-----------------BanV2ray-----------------1",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "37.156.45.60",
+            "server_port": 4611,
+            "password": "1------------------BanV2ray------------------1",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "162.159.38.119",
             "server_port": 443,
             "password": "humanity",
             "multiplex": {
@@ -238,7 +292,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.ignitelimit.com",
+                "server_name": "www.creationlong.org",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -249,7 +303,7 @@
                 "type": "ws",
                 "path": "\/assignment",
                 "headers": {
-                    "Host": "www.ignitelimit.com"
+                    "Host": "www.creationlong.org"
                 }
             }
         },
@@ -282,9 +336,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.21.40.34",
+            "server": "162.159.38.119",
             "server_port": 443,
             "password": "humanity",
             "multiplex": {
@@ -294,7 +348,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.multiplydose.com",
+                "server_name": "www.gossipglove.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -305,46 +359,36 @@
                 "type": "ws",
                 "path": "\/assignment",
                 "headers": {
-                    "Host": null
+                    "Host": "www.gossipglove.com"
                 }
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "179.237.74.104",
-            "server_port": 2518,
-            "password": "1-----------------BanV2ray-----------------1",
+            "server": "162.159.38.119",
+            "server_port": 443,
+            "password": "humanity",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": "",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | CH🇨🇭 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "37.156.45.60",
-            "server_port": 3716,
-            "password": "1------------------BanV2ray------------------1",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tls": {
+                "enabled": true,
+                "server_name": "www.creationlong.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.creationlong.org"
+                }
             }
         },
         {
