@@ -109,8 +109,11 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
@@ -122,8 +125,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray_vpn_ir | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
@@ -143,6 +149,39 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "62.112.222.69",
+            "server_port": 443,
+            "password": "OD90375861",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "119.246.1.143",
+            "server_port": 443,
+            "password": "BxceQaOe",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -174,9 +213,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | NZ🇳🇿 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "162.159.38.119",
+            "server": "202.37.33.80",
             "server_port": 443,
             "password": "humanity",
             "multiplex": {
@@ -186,7 +225,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.gossipglove.com",
+                "server_name": "www.creationlong.org",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -197,7 +236,35 @@
                 "type": "ws",
                 "path": "\/assignment",
                 "headers": {
-                    "Host": "www.gossipglove.com"
+                    "Host": "www.creationlong.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray_vpn_ir | US🇺🇸 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "165.215.250.14",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.calmlunch.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.calmlunch.com"
                 }
             }
         },
