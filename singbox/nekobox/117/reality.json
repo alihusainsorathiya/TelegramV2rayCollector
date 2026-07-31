@@ -110,7 +110,6 @@
                 "SC🇸🇨",
                 "US🇺🇸",
                 "PL🇵🇱",
-                "CY🇨🇾",
                 "RU🇷🇺",
                 "DE🇩🇪"
             ]
@@ -119,16 +118,15 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @V2rayCollector | CH🇨🇭 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollector | SC🇸🇨 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | SC🇸🇨 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @ShadowProxy66 | CY🇨🇾 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣3️⃣"
             ],
@@ -140,7 +138,7 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -171,7 +169,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | REALITY | @Outline_Vpn | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -188,22 +187,11 @@
             "tolerance": 50
         },
         {
-            "tag": "CY🇨🇾",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ShadowProxy66 | CY🇨🇾 | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | RU🇷🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -221,7 +209,7 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @shh_proxy | SE🇸🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "43bdd4d92502bd60.mbcloudy.ir",
             "server_port": 23857,
@@ -375,6 +363,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "70.39.198.93",
+            "server_port": 46197,
+            "uuid": "5aab0d40-c509-4560-b048-ade921fdfb6a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "updates.cdn-apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "npJEB6VpYJ9iYTZ-z0IL06Xs7PEz0N3fZU_IRwftQ00",
+                    "short_id": "f24c17bb7fc284"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "83.168.71.216",
@@ -399,34 +415,6 @@
                     "enabled": true,
                     "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
                     "short_id": "2f49bccf11150ef2"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ShadowProxy66 | CY🇨🇾 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "fi1.levikogjgfdd.ir",
-            "server_port": 40443,
-            "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "deepl.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
-                    "short_id": "a8ae"
                 }
             }
         },
@@ -460,34 +448,6 @@
         },
         {
             "tag": "رایگان | REALITY | @lrnbymaa | RU🇷🇺 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "qq.utiltools.ru",
-            "server_port": 443,
-            "uuid": "eb78e1f0-d921-4ca9-a889-261fcc5a0547",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "qq.utiltools.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "qq.utiltools.ru",
             "server_port": 443,
