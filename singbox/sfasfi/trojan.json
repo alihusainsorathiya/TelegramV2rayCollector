@@ -109,7 +109,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
-                "RELAY🚩"
+                "RELAY🚩",
+                "SC🇸🇨"
             ]
         },
         {
@@ -120,9 +121,11 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,9 +148,20 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -192,6 +206,34 @@
         {
             "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
+            "server": "188.114.97.7",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ignitelimit.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": null
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
             "server": "millionaire.levikogjgfdd.ir",
             "server_port": 443,
             "password": "521314",
@@ -214,34 +256,6 @@
                 "path": "\/Leviko_v2ray",
                 "headers": {
                     "Host": "tjplay.lxdxo.kdns.fr"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "172.67.149.60",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.ignitelimit.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.ignitelimit.com"
                 }
             }
         },
@@ -299,6 +313,30 @@
                 "headers": {
                     "Host": "www.calmloud.com"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "185.126.64.171",
+            "server_port": 50585,
+            "password": "8M8U8Cv0eX",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | SC🇸🇨 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "185.126.64.171",
+            "server_port": 52140,
+            "password": "4CdMaVX1HU",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
