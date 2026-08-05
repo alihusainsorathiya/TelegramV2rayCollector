@@ -111,7 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
-                "US🇺🇸"
+                "US🇺🇸",
+                "DE🇩🇪"
             ]
         },
         {
@@ -119,9 +120,11 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,6 +135,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -144,6 +148,16 @@
             "outbounds": [
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | US🇺🇸 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,6 +178,42 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "185.146.173.158",
+            "server_port": 443,
+            "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jahfkjha.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "jahfkjha.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
@@ -230,6 +280,32 @@
                 "path": "\/vipmax",
                 "headers": {
                     "Host": "dl3name.global.ssl.fastly.net"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @Hope_Net | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "speed.cloudflare.com",
+            "server_port": 80,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram\/XV2ray",
+                "headers": {
+                    "Host": "rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aparat.com.v2ray.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net."
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
