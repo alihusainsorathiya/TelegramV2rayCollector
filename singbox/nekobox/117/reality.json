@@ -107,9 +107,11 @@
                 "URL-TEST | رایگان",
                 "FR🇫🇷",
                 "RU🇷🇺",
+                "SA🇸🇦",
                 "AE🇦🇪",
                 "DE🇩🇪",
-                "PL🇵🇱"
+                "PL🇵🇱",
+                "US🇺🇸"
             ]
         },
         {
@@ -118,10 +120,12 @@
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @shh_proxy | RU🇷🇺 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayCollector | AE🇦🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayCollector | SA🇸🇦 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayCollector | AE🇦🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -148,10 +152,20 @@
             "tolerance": 50
         },
         {
+            "tag": "SA🇸🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayCollector | SA🇸🇦 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayCollector | AE🇦🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @V2rayCollector | AE🇦🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -173,6 +187,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @prrofile_purple | PL🇵🇱 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -235,7 +259,42 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @V2rayCollector | AE🇦🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @V2rayCollector | SA🇸🇦 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "81.208.170.142",
+            "server_port": 1500,
+            "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ebay.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+                    "short_id": "775eb6408888248e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayCollector | AE🇦🇪 | 0️⃣3️⃣",
             "type": "vless",
             "server": "78.40.195.56",
             "server_port": 443,
@@ -343,6 +402,34 @@
                     "enabled": true,
                     "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
                     "short_id": "2f49bccf11150ef2"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "104.167.197.22",
+            "server_port": 443,
+            "uuid": "bdba330b-dfc6-4b66-93e4-b10f906bf4fb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "monalisgame.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Td6pxpk4V5hmDKU7_K0zV64VzUL1mEtI-F_6TCHNwjE",
+                    "short_id": ""
                 }
             }
         },
