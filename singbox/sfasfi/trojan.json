@@ -108,9 +108,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "US🇺🇸",
                 "SC🇸🇨",
                 "CH🇨🇭",
-                "PL🇵🇱",
                 "RELAY🚩"
             ]
         },
@@ -118,11 +118,21 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | SC🇸🇨 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | SC🇸🇨 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +142,7 @@
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | SC🇸🇨 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | SC🇸🇨 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,17 +152,7 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "PL🇵🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -170,7 +170,19 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SC🇸🇨 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "64.94.95.115",
+            "server_port": 57142,
+            "password": "kkzh2prsyr2ik47as615",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SC🇸🇨 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "154.90.62.70",
             "server_port": 56127,
@@ -191,7 +203,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | CH🇨🇭 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "86.106.84.195",
             "server_port": 53261,
@@ -209,18 +221,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | PL🇵🇱 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "relaxed-gull.rooster465.autos",
-            "server_port": 443,
-            "password": "ND91608427",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
