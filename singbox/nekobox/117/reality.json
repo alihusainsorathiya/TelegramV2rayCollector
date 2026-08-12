@@ -107,7 +107,8 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "NL🇳🇱",
-                "AE🇦🇪",
+                "EE🇪🇪",
+                "RU🇷🇺",
                 "GB🇬🇧",
                 "US🇺🇸"
             ]
@@ -120,7 +121,9 @@
                 "رایگان | REALITY | @ShadowProxy66 | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | EE🇪🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣3️⃣",
                 "رایگان | REALITY | @FreakConfig | GB🇬🇧 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣"
             ],
@@ -151,10 +154,21 @@
             "tolerance": 50
         },
         {
-            "tag": "AE🇦🇪",
+            "tag": "EE🇪🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣"
+                "رایگان | REALITY | @v2ray1_ng | EE🇪🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -300,11 +314,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | EE🇪🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "78.17.112.103",
-            "server_port": 13868,
-            "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+            "server": "188.255.236.213",
+            "server_port": 443,
+            "uuid": "2a12bb81-f3a3-41bb-99ab-36febf676b4a",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -314,16 +328,72 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.epicgames.com",
+                "server_name": "cosmic-aurora.cdn.cachefleet.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "random"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk",
-                    "short_id": "e852dc"
+                    "public_key": "UMvz-4jhwqv9obtELN1iozBhEUsayjnOvXBSHEiX_DI",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.143.201.8",
+            "server_port": 443,
+            "uuid": "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hasty-dolphin.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | RU🇷🇺 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "45.143.201.8",
+            "server_port": 443,
+            "uuid": "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hasty-dolphin.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M",
+                    "short_id": ""
                 }
             }
         },
