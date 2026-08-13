@@ -122,6 +122,7 @@
                 "رایگان | VLESS | @V2rayCollector | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayCollector | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @azadi_az_inja_migzare | SG🇸🇬 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
@@ -141,7 +142,7 @@
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VLESS | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
@@ -168,6 +169,7 @@
                 "رایگان | VLESS | @V2rayCollector | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayCollector | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | VLESS | @azadi_az_inja_migzare | SG🇸🇬 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | VLESS | @Outline_Vpn | DE🇩🇪 | 0️⃣3️⃣",
@@ -187,7 +189,7 @@
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣3️⃣",
-                "رایگان | VLESS | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
@@ -480,6 +482,20 @@
                     "public_key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw",
                     "short_id": "899530"
                 }
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @azadi_az_inja_migzare | SG🇸🇬 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "qzc6tbpu04c4.dop69.com",
+            "server_port": 10962,
+            "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -1029,26 +1045,31 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @ConfigsHUB | RU🇷🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "168.222.202.15",
-            "server_port": 4100,
-            "uuid": "2001e98b-e06e-4244-910f-7ff640746eda",
-            "flow": "",
+            "server": "169.40.42.173",
+            "server_port": 443,
+            "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/v1",
-                "headers": {
-                    "Host": ""
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+                    "short_id": "c39cc7310a"
+                }
             }
         },
         {
