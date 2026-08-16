@@ -108,7 +108,8 @@
                 "DE🇩🇪",
                 "NL🇳🇱",
                 "RELAY🚩",
-                "US🇺🇸"
+                "PL🇵🇱",
+                "JP🇯🇵"
             ]
         },
         {
@@ -121,7 +122,9 @@
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,10 +164,21 @@
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -291,31 +305,39 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "130.250.137.171",
+            "server": "discrete-basilisk.rooster465.autos",
             "server_port": 443,
-            "password": "humanity",
+            "password": "ND91608427",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.ignitelimit.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.ignitelimit.com"
-                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "healthy-louse.rooster465.autos",
+            "server_port": 443,
+            "password": "ND91608427",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "moral-buzzard.rooster465.autos",
+            "server_port": 443,
+            "password": "ND91608427",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {

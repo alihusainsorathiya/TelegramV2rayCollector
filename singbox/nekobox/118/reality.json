@@ -112,7 +112,9 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "DE🇩🇪",
-                "FR🇫🇷"
+                "SC🇸🇨",
+                "FR🇫🇷",
+                "MD🇲🇩"
             ]
         },
         {
@@ -122,8 +124,10 @@
                 "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
-                "رایگان | REALITY | @flyv2ray | FR🇫🇷 | 0️⃣3️⃣"
+                "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @flyv2ray | FR🇫🇷 | 0️⃣3️⃣",
+                "رایگان | REALITY | @ConfigsHUB | MD🇲🇩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,11 +155,31 @@
             "tolerance": 50
         },
         {
+            "tag": "SC🇸🇨",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | REALITY | @flyv2ray | FR🇫🇷 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | MD🇲🇩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -246,7 +270,35 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @v2ray1_ng | SC🇸🇨 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.155.68.164",
+            "server_port": 13868,
+            "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yoox.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xbCFPD2Gk3HP6EwfFT_0W3D_-biFaz10wlPc2h3y6QQ",
+                    "short_id": "e852dc"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣2️⃣",
             "type": "vless",
             "server": "node5.get-tres.ru",
             "server_port": 443,
@@ -298,6 +350,34 @@
                     "enabled": true,
                     "public_key": "VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs",
                     "short_id": "49bcf0de6392f0"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | MD🇲🇩 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "144.31.131.241",
+            "server_port": 8443,
+            "uuid": "b406bc51-9002-474c-beae-b194b02c91da",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mold.speedload.online",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+                    "short_id": "a20d3ed244c76426"
                 }
             }
         },
