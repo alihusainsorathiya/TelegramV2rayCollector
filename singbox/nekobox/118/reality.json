@@ -111,8 +111,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
+                "NL🇳🇱",
                 "DE🇩🇪",
-                "RU🇷🇺",
                 "FR🇫🇷"
             ]
         },
@@ -120,11 +120,11 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | REALITY | @V2rayCollector | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @azadi_az_inja_migzare | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
-                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -135,7 +135,17 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayCollector | NL🇳🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,20 +163,10 @@
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
+                "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -174,11 +174,39 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "billing.netraidly.ru",
-            "server_port": 40443,
-            "uuid": "17d29827-7cf1-4115-b40d-548e10ec355d",
+            "server": "66.33.22.231",
+            "server_port": 55089,
+            "uuid": "183ee94c-771c-4960-8e8c-66ecc92e8537",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "is1-ssl.mzstatic.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PCHmeeMMm3NuigTrIFwOrir7K3nHd1hV28currvUvx0",
+                    "short_id": "5a3ff5a13d"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayCollector | NL🇳🇱 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "144.124.238.87",
+            "server_port": 443,
+            "uuid": "ee71862e-816b-4d26-97d2-f200898e385d",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -188,16 +216,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "deepl.com",
+                "server_name": "www.cisco.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "qq"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM",
-                    "short_id": "aa3c"
+                    "public_key": "RczU3DRITvFHE2I8iPI2aWMtiZpVrd21lFTNE1Mmwz8",
+                    "short_id": "b7bbbeeeb367bf3a"
                 }
             }
         },
@@ -258,35 +286,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | RU🇷🇺 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "82.202.247.181",
-            "server_port": 443,
-            "uuid": "cd60668d-28d0-4070-8179-47ad0d151dd5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yandex.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | FR🇫🇷 | 0️⃣1️⃣",
             "type": "vless",
             "server": "162.19.156.14",
             "server_port": 6800,
