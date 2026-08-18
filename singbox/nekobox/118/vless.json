@@ -116,7 +116,7 @@
                 "US🇺🇸",
                 "SE🇸🇪",
                 "NL🇳🇱",
-                "JP🇯🇵",
+                "IR🇮🇷",
                 "FR🇫🇷"
             ]
         },
@@ -150,6 +150,7 @@
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
@@ -169,7 +170,7 @@
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣1️⃣",
                 "رایگان | VLESS | @v2logy | SE🇸🇪 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | VLESS | @ConfigsHUB | JP🇯🇵 | 0️⃣2️⃣",
+                "رایگان | VLESS | @ConfigsHUB | IR🇮🇷 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | FR🇫🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -215,6 +216,7 @@
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @SafeNet_Server | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | VLESS | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @free1_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @flyv2ray | RELAY🚩 | 0️⃣1️⃣",
@@ -276,10 +278,10 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "IR🇮🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VLESS | @ConfigsHUB | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | VLESS | @ConfigsHUB | IR🇮🇷 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1017,9 +1019,9 @@
         {
             "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 2086,
-            "uuid": "8137e9a6-22e6-4707-a120-a6dea17c7e00",
+            "server": "104.17.25.32",
+            "server_port": 443,
+            "uuid": "f5842fc5-8251-463e-ad57-350a247c20bc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1027,11 +1029,52 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "auto-f5842f.rohawmk.workers.dev",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/eyJqdW5rIjoic1VBWDhGMXJsREg5WUoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI4My4xNDcuMjU0LjI0NSJdfQ==?ed=2560",
+                "path": "\/?TELEGRAM-TOOTFFARANGI?ed=2560",
                 "headers": {
-                    "Host": "dry-snow-2e6f.fastip25478.workers.dev"
+                    "Host": "auto-f5842f.rohawmk.workers.dev"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "190.93.245.176",
+            "server_port": 443,
+            "uuid": "7493883f-6047-46a7-8d95-f59e137ffaec",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "auto-749388.rohawmk.workers.dev",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?TELEGRAM-TOOTFFARANGI?ed=2560",
+                "headers": {
+                    "Host": "auto-749388.rohawmk.workers.dev"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1576,11 +1619,11 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @ConfigsHUB | JP🇯🇵 | 0️⃣2️⃣",
+            "tag": "رایگان | VLESS | @ConfigsHUB | IR🇮🇷 | 0️⃣3️⃣",
             "type": "vless",
-            "server": "45.192.200.133",
-            "server_port": 8443,
-            "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
+            "server": "snapp.ir",
+            "server_port": 2095,
+            "uuid": "41bc5a50-7c41-4078-9a2a-611ab1c6dddb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1588,20 +1631,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "rubifen.adaspoloandco.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/GOrbEh",
+                "path": "\/",
                 "headers": {
-                    "Host": "rubifen.adaspoloandco.com"
+                    "Host": "lizardf1.fastshop11.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
