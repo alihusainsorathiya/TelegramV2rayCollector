@@ -105,6 +105,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣"
             ]
         },
@@ -112,11 +114,55 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "95.40.110.184",
+            "server_port": 50887,
+            "password": "6ec301428255a78a1d826988d86cc87e",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nintendogames.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "95.40.43.135",
+            "server_port": 50887,
+            "password": "6ec301428255a78a1d826988d86cc87e",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nintendogames.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "رایگان | TROJAN | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
