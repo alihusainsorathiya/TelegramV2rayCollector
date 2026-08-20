@@ -110,14 +110,42 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "FR🇫🇷"
+                "SG🇸🇬",
+                "HK🇭🇰",
+                "FR🇫🇷",
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,6 +162,70 @@
             "tolerance": 50
         },
         {
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.212.77.228",
+            "server_port": 443,
+            "password": "FH72359861",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "95.40.110.184",
+            "server_port": 50887,
+            "password": "6ec301428255a78a1d826988d86cc87e",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nintendogames.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "95.40.43.135",
+            "server_port": 50887,
+            "password": "6ec301428255a78a1d826988d86cc87e",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nintendogames.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "رایگان | TROJAN | @VmessProtocol | FR🇫🇷 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "moral-dolphin.rooster465.autos",
@@ -147,6 +239,27 @@
             "tls": {
                 "enabled": true,
                 "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | JP🇯🇵 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "160.16.110.77",
+            "server_port": 55682,
+            "password": "7d8e6db4-96cc-4710-afc0-619edde2d7a1",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "t11.qifei.app",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
