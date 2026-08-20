@@ -118,7 +118,7 @@
                 "CH🇨🇭",
                 "RU🇷🇺",
                 "NL🇳🇱",
-                "HK🇭🇰",
+                "PL🇵🇱",
                 "AE🇦🇪"
             ]
         },
@@ -133,6 +133,7 @@
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VLESS | @Lockey_vpn | RELAY🚩 | 0️⃣2️⃣",
@@ -169,8 +170,7 @@
                 "رایگان | REALITY | @V2rayCollector | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
                 "رایگان | SS | @VmessProtocol | NL🇳🇱 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣",
                 "رایگان | SS | @free4allVPN | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -187,7 +187,8 @@
                 "رایگان | VLESS | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣"
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -293,11 +294,10 @@
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣"
+                "رایگان | REALITY | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -475,9 +475,9 @@
         {
             "tag": "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "199.232.78.159",
+            "server": "69.46.46.71",
             "server_port": 443,
-            "uuid": "be42674a-296a-43d8-bf04-b8314d65ff63",
+            "uuid": "6ddf87dd-8a90-4a80-b360-9e19a29dc03e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -487,7 +487,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ssl.fastly.com",
+                "server_name": "web-production-c5a8b.up.railway.app",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -496,9 +496,41 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER",
+                "path": "\/ws\/vless\/6ddf87dd-8a90-4a80-b360-9e19a29dc03e",
                 "headers": {
-                    "Host": "pane2.global.ssl.fastly.net"
+                    "Host": "web-production-c5a8b.up.railway.app"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VLESS | @FreakConfig | US🇺🇸 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "69.46.46.123",
+            "server_port": 443,
+            "uuid": "fb85a8a7-e8b4-6f16-3928-55f09552e091",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x4g-production-eed37.up.railway.app",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws\/fb85a8a7-e8b4-6f16-3928-55f09552e091",
+                "headers": {
+                    "Host": "x4g-production-eed37.up.railway.app"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -1521,11 +1553,13 @@
             "plugin_opts": ""
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "95.40.110.184",
-            "server_port": 50887,
-            "password": "6ec301428255a78a1d826988d86cc87e",
+            "tag": "رایگان | REALITY | @ConfigsHUB | PL🇵🇱 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.144.51.101",
+            "server_port": 443,
+            "uuid": "fe0138b5-ca60-4a67-91aa-b5a49266eeb5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1533,32 +1567,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.nintendogames.net",
-                "insecure": true,
+                "server_name": "pl.chick-team.ru",
+                "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | HK🇭🇰 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "95.40.43.135",
-            "server_port": 50887,
-            "password": "6ec301428255a78a1d826988d86cc87e",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.nintendogames.net",
-                "insecure": true,
-                "utls": {
+                    "fingerprint": "firefox"
+                },
+                "reality": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "public_key": "tPkLNwERe23qHETdRm0NN6TSF-bwvUeWKnmXR8CK3nc",
+                    "short_id": "58d746158028c90d"
                 }
             }
         },
