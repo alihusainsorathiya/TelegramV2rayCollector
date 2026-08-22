@@ -108,6 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "SG🇸🇬",
                 "PL🇵🇱",
                 "NL🇳🇱",
                 "SC🇸🇨",
@@ -120,7 +121,9 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @prrofile_purple | SC🇸🇨 | 0️⃣1️⃣",
@@ -134,10 +137,21 @@
             "tolerance": 50
         },
         {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @proxy_kafee | SG🇸🇬 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣2️⃣"
+                "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -196,7 +210,63 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | SG🇸🇬 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "sg10.levikogjgfdd.ir",
+            "server_port": 443,
+            "uuid": "8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rJ-aDop3jUC-FzyETfI2uDSXQ659PFlehr7XWm5Cm0A",
+                    "short_id": "fe1a104caf309f5a"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | SG🇸🇬 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "162.128.87.50",
+            "server_port": 443,
+            "uuid": "be154d71-04ca-4389-8a89-d14219b25cd7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.bing.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kwZBG2HBA1WN4eZW1GK0D9OVC4TPEs5J-ZeeBA2bVBw",
+                    "short_id": "08f1620e7ad50ca8"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | PL🇵🇱 | 0️⃣3️⃣",
             "type": "vless",
             "server": "p1.levikogjgfdd.ir",
             "server_port": 443,
