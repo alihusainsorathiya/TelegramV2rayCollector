@@ -108,8 +108,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "BE🇧🇪",
+                "FI🇫🇮",
                 "DE🇩🇪",
+                "BE🇧🇪",
                 "SC🇸🇨",
                 "IT🇮🇹"
             ]
@@ -118,11 +119,35 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @V2rayCollector | FI🇫🇮 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayCollector | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @free1_vpn | SC🇸🇨 | 0️⃣3️⃣",
                 "رایگان | REALITY | @flyv2ray | IT🇮🇹 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayCollector | FI🇫🇮 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @V2rayCollector | DE🇩🇪 | 0️⃣2️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,17 +158,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -170,11 +184,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @V2rayCollector | FI🇫🇮 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "109.69.218.164",
+            "server": "fi1.levikogjgfdd.ir",
             "server_port": 443,
-            "uuid": "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03",
+            "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -184,7 +198,35 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zealous-vortex.cdn.cachefleet.com",
+                "server_name": "fin2.freeinternat.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk",
+                    "short_id": "ff776ff77be48b88"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @V2rayCollector | DE🇩🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "br1.levikogjgfdd.ir",
+            "server_port": 443,
+            "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -192,8 +234,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc",
-                    "short_id": ""
+                    "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+                    "short_id": "c39cc7310a"
                 }
             }
         },
@@ -257,6 +299,34 @@
                     "enabled": true,
                     "public_key": "uUJJTIzw37fc46Ywh-LJIcobqF2Dim7JPCFm1VuMfFg",
                     "short_id": "c0c3011371b97459"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @Outline_Vpn | BE🇧🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "109.69.218.164",
+            "server_port": 443,
+            "uuid": "c28ee61d-0d43-4e69-8e6a-6397ed0ffc03",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zealous-vortex.cdn.cachefleet.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc",
+                    "short_id": ""
                 }
             }
         },
