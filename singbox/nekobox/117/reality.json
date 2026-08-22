@@ -107,7 +107,6 @@
                 "URL-TEST | رایگان",
                 "DE🇩🇪",
                 "US🇺🇸",
-                "SE🇸🇪",
                 "FR🇫🇷",
                 "GB🇬🇧",
                 "CA🇨🇦"
@@ -118,12 +117,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | REALITY | @V2rayCollector | SE🇸🇪 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | GB🇬🇧 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2ray1_ng | CA🇨🇦 | 0️⃣3️⃣"
+                "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,8 +130,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,16 +141,6 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @V2rayCollector | SE🇸🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -184,7 +170,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @v2ray1_ng | CA🇨🇦 | 0️⃣3️⃣"
+                "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -219,41 +205,6 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "core.noneok.com",
-            "server_port": 443,
-            "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "core.noneok.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs",
-                    "short_id": "fde63d9c58210bf9"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "api.v1.StreamService",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @proxy_kafee | US🇺🇸 | 0️⃣2️⃣",
             "type": "vless",
             "server": "de3.voronvpn.com",
@@ -278,34 +229,6 @@
                     "enabled": true,
                     "public_key": "UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk",
                     "short_id": "54861d36"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @V2rayCollector | SE🇸🇪 | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "2.26.101.64",
-            "server_port": 443,
-            "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nordic.cendora.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU",
-                    "short_id": "2186a755ed67b034"
                 }
             }
         },
@@ -366,7 +289,7 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @v2ray1_ng | CA🇨🇦 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | CA🇨🇦 | 0️⃣3️⃣",
             "type": "vless",
             "server": "184.107.141.174",
             "server_port": 443,
