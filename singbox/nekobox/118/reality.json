@@ -113,9 +113,10 @@
                 "SC🇸🇨",
                 "US🇺🇸",
                 "NL🇳🇱",
+                "DE🇩🇪",
                 "FI🇫🇮",
                 "FR🇫🇷",
-                "JP🇯🇵"
+                "TW🇹🇼"
             ]
         },
         {
@@ -129,9 +130,10 @@
                 "رایگان | REALITY | @V2rayCollector | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | TW🇹🇼 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -172,6 +174,16 @@
             "tolerance": 50
         },
         {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
@@ -192,10 +204,10 @@
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
+            "tag": "TW🇹🇼",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣2️⃣"
+                "رایگان | REALITY | @FreakConfig | TW🇹🇼 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -398,6 +410,41 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "core.noneok.com",
+            "server_port": 443,
+            "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "core.noneok.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs",
+                    "short_id": "fde63d9c58210bf9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
             "type": "vless",
             "server": "13.143.129.2",
@@ -454,12 +501,12 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | JP🇯🇵 | 0️⃣2️⃣",
+            "tag": "رایگان | REALITY | @FreakConfig | TW🇹🇼 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "31.76.91.138",
-            "server_port": 2087,
-            "uuid": "309b0ce3-09a8-4883-bfe4-bd56e215be44",
-            "flow": "",
+            "server": "92yqc126g8qwe6v23n01.haiyucloud.com",
+            "server_port": 50567,
+            "uuid": "485717cf-e96c-40db-9bc1-624060b89f20",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -468,24 +515,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ads.x5.ru",
+                "server_name": "www.python.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "JfuItzJ81sJehx1PbxyliWSJvuBMKoa9ahNgPO3R7R4",
-                    "short_id": "c226283c4de5b1ad"
+                    "public_key": "i0nN_0uLl5ha8pIf6gNNLeLQe7it-nXDFLC5eM1BHV4",
+                    "short_id": "bb9b8f5f"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
