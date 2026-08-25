@@ -118,7 +118,8 @@
                 "NL🇳🇱",
                 "FI🇫🇮",
                 "PL🇵🇱",
-                "DE🇩🇪"
+                "RO🇷🇴",
+                "AE🇦🇪"
             ]
         },
         {
@@ -152,7 +153,6 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | VLESS | @vless_vmess | NL🇳🇱 | 0️⃣1️⃣",
@@ -161,7 +161,8 @@
                 "رایگان | REALITY | @FreakConfig | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2ray1_ng | PL🇵🇱 | 0️⃣2️⃣",
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @free1_vpn | RO🇷🇴 | 0️⃣1️⃣",
+                "رایگان | REALITY | @free1_vpn | AE🇦🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -233,8 +234,7 @@
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | VLESS | @v2ray_swhil | US🇺🇸 | 0️⃣3️⃣",
                 "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | VLESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | VLESS | @V2rayngninja | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -276,10 +276,20 @@
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "RO🇷🇴",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣"
+                "رایگان | REALITY | @free1_vpn | RO🇷🇴 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AE🇦🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @free1_vpn | AE🇦🇪 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -1017,38 +1027,6 @@
             }
         },
         {
-            "tag": "رایگان | VLESS | @free1_vpn | US🇺🇸 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "k2.cloud--vpn.site",
-            "server_port": 443,
-            "uuid": "ce99a4f9-02a4-4476-d31d-8152b0d999ea",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ssl.fastly.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "c12.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
             "type": "vless",
             "server": "31.77.170.103",
@@ -1268,9 +1246,37 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @free1_vpn | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @free1_vpn | RO🇷🇴 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "170.168.99.5",
+            "server": "103.126.50.203",
+            "server_port": 443,
+            "uuid": "76f6b7fe-5de8-4637-87a0-6ddd33d67b3e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ro.getvlessvpn.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xp7g5asMyVx4aI7vEwfZZPrpd57izUvnNzAOpBs4mh0",
+                    "short_id": "b9f8f9772217538f"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @free1_vpn | AE🇦🇪 | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "89.47.55.7",
             "server_port": 8443,
             "uuid": "28a53b24-f7cc-c55d-75d6-86dfff4e3a4c",
             "flow": "",
@@ -1282,7 +1288,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn.steamstatic.com",
+                "server_name": "download.nvidia.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -1290,7 +1296,7 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
+                    "public_key": "wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk",
                     "short_id": ""
                 }
             },
