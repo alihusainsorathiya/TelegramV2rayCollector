@@ -112,6 +112,7 @@
                 "NL🇳🇱",
                 "RU🇷🇺",
                 "BG🇧🇬",
+                "FR🇫🇷",
                 "PL🇵🇱"
             ]
         },
@@ -120,11 +121,13 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | REALITY | @Outline_Vpn | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | REALITY | @v2rayNG_Matsuri | BG🇧🇬 | 0️⃣2️⃣",
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @free1_vpn | PL🇵🇱 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -136,6 +139,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @prrofile_purple | DE🇩🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -174,6 +178,16 @@
             "tolerance": 50
         },
         {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
@@ -185,6 +199,34 @@
         },
         {
             "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.155.70.123",
+            "server_port": 8443,
+            "uuid": "f82332b2-dc8c-eac4-ac12-f276e37e278a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "s1.test.anti-zapret.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY",
+                    "short_id": "58fbcddfaae3ade9"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @proxy_kafee | DE🇩🇪 | 0️⃣2️⃣",
             "type": "vless",
             "server": "45.155.70.123",
             "server_port": 8443,
@@ -355,6 +397,34 @@
                     "enabled": true,
                     "public_key": "4p9HuPujWxxtdp0GB_cJN42sFnF-woybk26SXLb1qAo",
                     "short_id": "4eb17bfdb000bef0"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "62.133.62.179",
+            "server_port": 443,
+            "uuid": "d67af820-f54c-48ab-862c-19086357f276",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telegraf.lv",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+                    "short_id": "e5f67890"
                 }
             }
         },
