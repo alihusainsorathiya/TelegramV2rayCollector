@@ -106,9 +106,10 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣"
             ]
@@ -118,9 +119,10 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | SG🇸🇬 | 0️⃣2️⃣",
+                "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
                 "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣"
             ],
@@ -156,11 +158,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @ConfigsHUB | NL🇳🇱 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "guanwang.awsno.com",
-            "server_port": 443,
-            "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+            "server": "nekonkor.velmor.xyz",
+            "server_port": 7088,
+            "uuid": "1c46e7ee-ba01-4d3d-8625-7752253f70ac",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -170,16 +172,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "guanwang.awsno.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @ConfigsHUB | FR🇫🇷 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "frkonkor.velmor.xyz",
+            "server_port": 6718,
+            "uuid": "1c46e7ee-ba01-4d3d-8625-7752253f70ac",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -209,11 +218,47 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | SG🇸🇬 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "43.228.126.187",
-            "server_port": 47630,
-            "uuid": "9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb",
+            "server": "jahfkjha.cfd",
+            "server_port": 443,
+            "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jahfkjha.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "jahfkjha.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "dashboard.afrashop.top",
+            "server_port": 5381,
+            "uuid": "130b0fbf-4f19-44d0-911f-95355e9632e4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -226,7 +271,7 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
             "type": "vmess",
             "server": "176.120.17.21",
             "server_port": 1015,
@@ -250,23 +295,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | VMESS | @FreakConfig | IR🇮🇷 | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "dashboard.afrashop.top",
-            "server_port": 5381,
-            "uuid": "130b0fbf-4f19-44d0-911f-95355e9632e4",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
