@@ -109,7 +109,9 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "JP🇯🇵"
+                "RELAY🚩",
+                "JP🇯🇵",
+                "LU🇱🇺"
             ]
         },
         {
@@ -119,9 +121,12 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @VmessProtocol | JP🇯🇵 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @VmessProtocol | JP🇯🇵 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | LU🇱🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,8 +139,19 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,6 +162,16 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @VmessProtocol | JP🇯🇵 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "LU🇱🇺",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | LU🇱🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -209,7 +235,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "130.250.137.171",
             "server_port": 443,
@@ -237,7 +263,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "render.com",
             "server_port": 443,
@@ -265,6 +291,62 @@
             }
         },
         {
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "188.114.97.7",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ignitelimit.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": null
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "104.21.64.113",
+            "server_port": 443,
+            "password": "50414e45-4c5f-5a45-5553-87e305887235",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ez-4e9ea0.ahmohmadaminah.workers.dev",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/stream\/PANEL_ZEUS\/87e305887235\/loc-0",
+                "headers": {
+                    "Host": "ez-4e9ea0.ahmohmadaminah.workers.dev"
+                }
+            }
+        },
+        {
             "tag": "رایگان | TROJAN | @VmessProtocol | JP🇯🇵 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "moral-dolphin.rooster465.autos",
@@ -282,6 +364,34 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | LU🇱🇺 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "188.42.145.180",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.volumeroot.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.volumeroot.com"
                 }
             }
         },
