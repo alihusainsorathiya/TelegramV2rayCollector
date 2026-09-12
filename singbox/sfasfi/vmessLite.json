@@ -108,7 +108,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "رایگان | VMESS | @ConfigsHUB | KR🇰🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
             ]
         },
@@ -116,7 +116,7 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @ConfigsHUB | KR🇰🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @DeamNet_Proxy | RU🇷🇺 | 0️⃣1️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -124,11 +124,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | VMESS | @ConfigsHUB | KR🇰🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @DeamNet_Proxy | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "217.142.138.61",
-            "server_port": 80,
-            "uuid": "ac1b933d-afff-4487-93ef-f57130a55dff",
+            "server": "renderer-stream-2-62.mirra.now",
+            "server_port": 443,
+            "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -138,6 +138,25 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "renderer-stream-2-62.mirra.now",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/api\/v1\/gpu-stream\/socket",
+                "headers": {
+                    "Host": "renderer-stream-2-62.mirra.now"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
