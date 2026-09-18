@@ -110,11 +110,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
-                "NL🇳🇱",
-                "BG🇧🇬",
+                "AE🇦🇪",
+                "GB🇬🇧",
                 "US🇺🇸",
-                "KR🇰🇷",
-                "DE🇩🇪",
                 "MD🇲🇩"
             ]
         },
@@ -122,13 +120,10 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣",
-                "رایگان | REALITY | @V2rayCollector | BG🇧🇬 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣1️⃣",
+                "رایگان | REALITY | @proxy_kafee | AE🇦🇪 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayCollector | GB🇬🇧 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | KR🇰🇷 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -136,21 +131,20 @@
             "tolerance": 50
         },
         {
-            "tag": "NL🇳🇱",
+            "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣"
+                "رایگان | REALITY | @proxy_kafee | AE🇦🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "BG🇧🇬",
+            "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @V2rayCollector | BG🇧🇬 | 0️⃣1️⃣",
-                "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣1️⃣"
+                "رایگان | REALITY | @V2rayCollector | GB🇬🇧 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -168,26 +162,6 @@
             "tolerance": 50
         },
         {
-            "tag": "KR🇰🇷",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | KR🇰🇷 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
             "tag": "MD🇲🇩",
             "type": "urltest",
             "outbounds": [
@@ -198,11 +172,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | REALITY | @shh_proxy | NL🇳🇱 | 0️⃣3️⃣",
+            "tag": "رایگان | REALITY | @proxy_kafee | AE🇦🇪 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "78.111.89.171",
-            "server_port": 443,
-            "uuid": "0370b162-baff-4757-86cc-cce4bf07f6f1",
+            "server": "45.88.13.5",
+            "server_port": 8443,
+            "uuid": "2bb8b13c-b3f0-2552-da05-d0929bfb36db",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -212,61 +186,33 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cloudflare.com",
+                "server_name": "download.nvidia.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "random"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4",
-                    "short_id": "cfe08c23a85f24"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @V2rayCollector | BG🇧🇬 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "bg5.univesalsrv.com",
-            "server_port": 443,
-            "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "bg5.univesalsrv.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
-                    "short_id": "1a3102bb8e51399e"
+                    "public_key": "FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk",
+                    "short_id": ""
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "gw.v2.RelayService",
+                "service_name": "TunService",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
             }
         },
         {
-            "tag": "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @V2rayCollector | GB🇬🇧 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "bg3.univesalsrv.com",
+            "server": "95.133.242.211",
             "server_port": 443,
-            "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-            "flow": "",
+            "uuid": "8da63e76-21d0-4632-bb1b-9ab52e90aa2b",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -275,24 +221,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "bg3.univesalsrv.com",
+                "server_name": "filesconvert.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": ""
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk",
-                    "short_id": "1be1bd931c98c84a"
+                    "public_key": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs",
+                    "short_id": "a61d99e920140145"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "home.v1.ApiService",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -352,65 +291,9 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | KR🇰🇷 | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "47.80.62.188",
-            "server_port": 443,
-            "uuid": "e85ca8bc-21a5-418d-a639-00236f0c3d81",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.nvidia.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "an8lRnGRbCvX-GW3zuc5woB6hrTxEhfyrGCv-7_QyVo",
-                    "short_id": "b229991df62826cc"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "8ct5dbv5.danqela.ir",
-            "server_port": 5071,
-            "uuid": "f9ac7d57-ccd9-4c3c-bcf2-08e08d1c7eed",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "android.clients.google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "edge"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "K-ra5wYRignlacUglfdjgTJOf4C4_oxKVm_T6YdgsTM",
-                    "short_id": "8509f205ecd87e17"
-                }
-            }
-        },
-        {
             "tag": "رایگان | REALITY | @FreakConfig | MD🇲🇩 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "md1.univesalsrv.com",
+            "server": "89.35.14.31",
             "server_port": 443,
             "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
             "flow": "",
@@ -422,7 +305,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "md1.univesalsrv.com",
+                "server_name": "md2.univesalsrv.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -430,13 +313,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
-                    "short_id": "221ba6174224ca5b"
+                    "public_key": "JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o",
+                    "short_id": "d36a38659ce106cb"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "hub.v1.RelayService",
+                "service_name": "hub.v1.SyncService",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
