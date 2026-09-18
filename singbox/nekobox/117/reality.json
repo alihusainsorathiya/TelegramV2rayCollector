@@ -107,8 +107,9 @@
                 "URL-TEST | رایگان",
                 "FI🇫🇮",
                 "CY🇨🇾",
+                "MD🇲🇩",
                 "US🇺🇸",
-                "FR🇫🇷",
+                "TR🇹🇷",
                 "RU🇷🇺",
                 "BG🇧🇬"
             ]
@@ -119,8 +120,9 @@
             "outbounds": [
                 "رایگان | REALITY | @shh_proxy | FI🇫🇮 | 0️⃣1️⃣",
                 "رایگان | REALITY | @V2rayCollector | CY🇨🇾 | 0️⃣2️⃣",
+                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣",
                 "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+                "رایگان | REALITY | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣",
                 "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
                 "رایگان | REALITY | @FreakConfig | BG🇧🇬 | 0️⃣1️⃣"
             ],
@@ -149,6 +151,16 @@
             "tolerance": 50
         },
         {
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
@@ -159,10 +171,10 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | REALITY | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -245,6 +257,34 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @v2ray1_ng | MD🇲🇩 | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "94.103.2.251",
+            "server_port": 443,
+            "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "io.ozone.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "a8huhMB5qb3Q0zYwG1QzPjSDTrXufkZMlADT-_EMPhc",
+                    "short_id": "00000000"
+                }
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @VmessProtocol | US🇺🇸 | 0️⃣1️⃣",
             "type": "vless",
             "server": "2.24.124.64",
@@ -273,11 +313,11 @@
             }
         },
         {
-            "tag": "رایگان | REALITY | @ConfigsHUB | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | REALITY | @ConfigsHUB | TR🇹🇷 | 0️⃣1️⃣",
             "type": "vless",
-            "server": "130.49.77.6",
-            "server_port": 443,
-            "uuid": "2bb8b13c-b3f0-2552-da05-d0929bfb36db",
+            "server": "ciel.hlsd.ir",
+            "server_port": 7003,
+            "uuid": "e86f7c2b-7c75-4d01-8a81-b4240d0a0b68",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -287,25 +327,32 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "download.nvidia.com",
+                "server_name": "api.steampowered.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM",
-                    "short_id": ""
+                    "public_key": "p_-bElvezRO_z9MBb0m_T866lAmn-CH8i7G0x95fVmM",
+                    "short_id": "a7d7"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Hamid",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
             "tag": "رایگان | REALITY | @ConfigsHUB | RU🇷🇺 | 0️⃣2️⃣",
             "type": "vless",
-            "server": "tgfree.rush-server.com",
+            "server": "anime-hub.online",
             "server_port": 443,
-            "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+            "uuid": "81676625-4b25-408d-b8f6-98315d7d338e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -315,16 +362,16 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "anyfile2file.com",
+                "server_name": "anime-hub.online",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
-                    "short_id": "64c1fe36c7846400"
+                    "public_key": "8ryf65dQrgnS_uO6CHEsndhXhpOVd0fcAjMcN5FoJ3o",
+                    "short_id": "a08fae6b86e059fa"
                 }
             }
         },
