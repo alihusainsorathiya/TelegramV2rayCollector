@@ -109,16 +109,39 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST | رایگان"
+                "URL-TEST | رایگان",
+                "AE🇦🇪"
             ]
         },
         {
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "رایگان | SS | @free4allVPN | AE🇦🇪 | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "AE🇦🇪",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | SS | @free4allVPN | AE🇦🇪 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "رایگان | SS | @free4allVPN | AE🇦🇪 | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "217.60.249.112",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "0eC4ZBvStOgQEzTpCYjWN5",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "direct",
