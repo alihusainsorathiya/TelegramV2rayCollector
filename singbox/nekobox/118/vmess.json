@@ -112,8 +112,9 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "RELAY🚩",
-                "FR🇫🇷",
-                "IT🇮🇹"
+                "IT🇮🇹",
+                "ES🇪🇸",
+                "FR🇫🇷"
             ]
         },
         {
@@ -126,8 +127,9 @@
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣3️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
-                "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣1️⃣",
+                "رایگان | VMESS | @ConfigsHUB | ES🇪🇸 | 0️⃣1️⃣",
+                "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -158,20 +160,30 @@
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "IT🇮🇹",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "IT🇮🇹",
+            "tag": "ES🇪🇸",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣2️⃣"
+                "رایگان | VMESS | @ConfigsHUB | ES🇪🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -365,9 +377,9 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | FR🇫🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "45.80.215.8",
+            "server": "89.41.172.85",
             "server_port": 22324,
             "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
             "security": "auto",
@@ -382,9 +394,26 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @v2ray1_ng | IT🇮🇹 | 0️⃣2️⃣",
+            "tag": "رایگان | VMESS | @ConfigsHUB | ES🇪🇸 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "89.41.172.85",
+            "server": "66.163.118.73",
+            "server_port": 22324,
+            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free1_vpn | FR🇫🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "45.80.215.8",
             "server_port": 22324,
             "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
             "security": "auto",
