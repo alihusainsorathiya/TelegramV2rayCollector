@@ -107,9 +107,8 @@
                 "URL-TEST | رایگان",
                 "US🇺🇸",
                 "DE🇩🇪",
-                "RELAY🚩",
                 "LU🇱🇺",
-                "HK🇭🇰"
+                "RELAY🚩"
             ]
         },
         {
@@ -119,10 +118,8 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,18 +140,7 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,17 +150,17 @@
             "tag": "LU🇱🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -224,54 +210,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "31.77.168.35",
-            "server_port": 443,
-            "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ajv",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "188.114.97.6",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.pleadcourt.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.pleadcourt.org"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣1️⃣",
             "type": "trojan",
             "server": "188.42.145.180",
             "server_port": 443,
@@ -299,15 +238,31 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | HK🇭🇰 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "47.240.80.220",
-            "server_port": 2052,
-            "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
+            "server": "188.114.97.6",
+            "server_port": 443,
+            "password": "humanity",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.pleadcourt.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.pleadcourt.org"
+                }
             }
         },
         {
