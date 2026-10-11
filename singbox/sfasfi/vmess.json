@@ -109,6 +109,7 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "HK🇭🇰",
+                "CN🇨🇳",
                 "US🇺🇸",
                 "RELAY🚩"
             ]
@@ -118,6 +119,9 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | CN🇨🇳 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | CN🇨🇳 | 0️⃣2️⃣",
+                "رایگان | VMESS | @free1_vpn | CN🇨🇳 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣"
@@ -131,6 +135,18 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | HK🇭🇰 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CN🇨🇳",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | CN🇨🇳 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | CN🇨🇳 | 0️⃣2️⃣",
+                "رایگان | VMESS | @free1_vpn | CN🇨🇳 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -188,6 +204,84 @@
                 "path": "\/ws-vmess",
                 "headers": {
                     "Host": "qTKDR8jXE3wEFxJM.v.3dns.vip"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | CN🇨🇳 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "120.48.133.162",
+            "server_port": 10086,
+            "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+                "headers": {
+                    "Host": "120.48.133.162"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | CN🇨🇳 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "120.48.133.162",
+            "server_port": 10086,
+            "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "120.48.133.162"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @free1_vpn | CN🇨🇳 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "120.48.133.162",
+            "server_port": 10086,
+            "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+                "headers": {
+                    "Host": "120.48.133.162"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
