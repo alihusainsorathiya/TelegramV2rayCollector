@@ -105,6 +105,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "US🇺🇸",
                 "LU🇱🇺",
                 "RELAY🚩"
             ]
@@ -113,12 +114,23 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,9 +140,7 @@
             "tag": "LU🇱🇺",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,14 +152,52 @@
             "outbounds": [
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "167.82.64.46",
+            "server_port": 443,
+            "password": "mitivpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "mitivpn--s2.global.ssl.fastly.net"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "199.232.78.160",
+            "server_port": 443,
+            "password": "mitivpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "mitivpn--s2.global.ssl.fastly.net"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "188.42.145.180",
             "server_port": 443,
@@ -168,28 +216,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @oneclickvpnkeys | LU🇱🇺 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "188.42.145.180",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/assignment",
-                "headers": {
-                    "Host": "www.volumeroot.com"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | LU🇱🇺 | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "188.42.145.180",
+            "server": "188.114.98.0",
             "server_port": 443,
             "password": "humanity",
             "multiplex": {
@@ -215,7 +244,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
             "type": "trojan",
             "server": "8.47.69.0",
             "server_port": 443,
@@ -243,7 +272,7 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | RELAY🚩 | 0️⃣3️⃣",
             "type": "trojan",
             "server": "188.114.97.6",
             "server_port": 443,
@@ -267,34 +296,6 @@
                 "path": "\/assignment",
                 "headers": {
                     "Host": "www.pleadcourt.org"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "104.16.72.101",
-            "server_port": 443,
-            "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "space.byu.id.yxls.eu.cc",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/us-gllc@ThePackageCom",
-                "headers": {
-                    "Host": "space.byu.id.yxls.eu.cc"
                 }
             }
         },
