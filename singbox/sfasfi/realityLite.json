@@ -109,9 +109,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "رایگان | REALITY | @V2rayCollector | CH🇨🇭 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayCollector | SA🇸🇦 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | HK🇭🇰 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣1️⃣"
@@ -122,9 +121,8 @@
             "type": "urltest",
             "outbounds": [
                 "رایگان | REALITY | @V2rayCollector | CH🇨🇭 | 0️⃣1️⃣",
+                "رایگان | REALITY | @V2rayCollector | SA🇸🇦 | 0️⃣3️⃣",
                 "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣1️⃣",
-                "رایگان | REALITY | @v2rayNG_Matsuri | HK🇭🇰 | 0️⃣2️⃣",
-                "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @VmessProtocol | DE🇩🇪 | 0️⃣2️⃣",
                 "رایگان | REALITY | @lrnbymaa | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | REALITY | @flyv2ray | DE🇩🇪 | 0️⃣1️⃣"
@@ -169,6 +167,41 @@
             }
         },
         {
+            "tag": "رایگان | REALITY | @V2rayCollector | SA🇸🇦 | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "81.208.170.142",
+            "server_port": 1500,
+            "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ebay.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+                    "short_id": "775eb6408888248e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "رایگان | REALITY | @Outline_Vpn | RU🇷🇺 | 0️⃣1️⃣",
             "type": "vless",
             "server": "83.217.195.128",
@@ -193,62 +226,6 @@
                     "enabled": true,
                     "public_key": "RlmSSm1cMoLgu1Cc5zW_g42oMy-r1HHtxNwnw-kbQSY",
                     "short_id": "a912f2bba75c4ffd"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2rayNG_Matsuri | HK🇭🇰 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "hk3.oh-node.com",
-            "server_port": 443,
-            "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hk4e-launcher-static.hoyoverse.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zV4Sja0iajpdzkR1iBMbI7RRWL2nlpgwGOtirQSG-zc",
-                    "short_id": "b81edf7fdee4"
-                }
-            }
-        },
-        {
-            "tag": "رایگان | REALITY | @v2ray1_ng | AE🇦🇪 | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "nl1.fluxorvpn.net",
-            "server_port": 443,
-            "uuid": "6c713691-3ca2-0009-ad25-113d1bed6b03",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hatch.senko.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E",
-                    "short_id": "b8c6965f3596688a"
                 }
             }
         },
