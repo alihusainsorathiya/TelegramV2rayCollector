@@ -111,8 +111,10 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "RELAY🚩",
+                "TR🇹🇷",
+                "IR🇮🇷",
                 "US🇺🇸",
-                "IR🇮🇷"
+                "SE🇸🇪"
             ]
         },
         {
@@ -121,9 +123,11 @@
             "outbounds": [
                 "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣",
+                "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣2️⃣",
                 "رایگان | VMESS | @yaney_01 | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | VMESS | @Hope_Net | US🇺🇸 | 0️⃣1️⃣",
-                "رایگان | VMESS | @free1_vpn | IR🇮🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,6 +145,26 @@
             "tolerance": 50
         },
         {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
@@ -152,10 +176,10 @@
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
+            "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | VMESS | @free1_vpn | IR🇮🇷 | 0️⃣1️⃣"
+                "رایگان | VMESS | @FreakConfig | SE🇸🇪 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,7 +188,7 @@
         {
             "tag": "رایگان | VMESS | @DeamNet_Proxy | RELAY🚩 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "guanwang.awsno.com",
+            "server": "www.shopify.com",
             "server_port": 443,
             "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
             "security": "auto",
@@ -179,7 +203,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": null,
+                "server_name": "guanwang.awsno.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -191,7 +215,7 @@
                 "type": "ws",
                 "path": "\/hls\/cctv5phd.m3u8",
                 "headers": {
-                    "Host": null
+                    "Host": "guanwang.awsno.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -228,6 +252,49 @@
                 "path": "\/glweidf.cfd\/linkws",
                 "headers": {
                     "Host": "77h2quiet-dream-5c34.foratay741.workers.dev"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | TR🇹🇷 | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "206.1.100.161",
+            "server_port": 8080,
+            "uuid": "0b4313e0-4f7b-45fb-8552-a60d130c84d2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | VMESS | @v2ray1_ng | IR🇮🇷 | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "octpus1.gsmonline.ir",
+            "server_port": 8080,
+            "uuid": "43bd6027-1a36-41d7-ac07-93d56e3aa39b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "snapp.ir"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -296,11 +363,11 @@
             }
         },
         {
-            "tag": "رایگان | VMESS | @free1_vpn | IR🇮🇷 | 0️⃣1️⃣",
+            "tag": "رایگان | VMESS | @FreakConfig | SE🇸🇪 | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "octpus1.gsmonline.ir",
-            "server_port": 8080,
-            "uuid": "43bd6027-1a36-41d7-ac07-93d56e3aa39b",
+            "server": "defe.sync-bridge.ir",
+            "server_port": 443,
+            "uuid": "386c5322-48aa-4fc1-814f-2ff6c34d77e0",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -311,14 +378,15 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "snapp.ir"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+            "tls": {
+                "enabled": true,
+                "server_name": "defe.sync-bridge.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
