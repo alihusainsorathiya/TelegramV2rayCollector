@@ -110,6 +110,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST | رایگان",
+                "US🇺🇸",
                 "RELAY🚩"
             ]
         },
@@ -117,9 +118,20 @@
             "tag": "URL-TEST | رایگان",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @proxystore11 | RELAY🚩 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,8 +141,6 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @proxystore11 | RELAY🚩 | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -138,11 +148,11 @@
             "tolerance": 50
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "172.66.40.99",
+            "server": "199.232.78.160",
             "server_port": 443,
-            "password": "humanity",
+            "password": "mitivpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -150,7 +160,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.trusteeforward.com",
+                "server_name": "firefox.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -159,18 +169,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/assignment",
+                "path": "\/?",
                 "headers": {
-                    "Host": "www.trusteeforward.com"
+                    "Host": "mitivpn.ac.ir"
                 }
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "tag": "رایگان | TROJAN | @v2ray1_ng | US🇺🇸 | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "172.66.40.99",
+            "server": "167.82.64.46",
             "server_port": 443,
-            "password": "humanity",
+            "password": "mitivpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -178,7 +188,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.trusteeforward.com",
+                "server_name": "firefox.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -187,9 +197,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/assignment",
+                "path": "\/?",
                 "headers": {
-                    "Host": "www.trusteeforward.com"
+                    "Host": "mitivpn.ac.ir"
                 }
             }
         },
