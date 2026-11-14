@@ -110,6 +110,7 @@
                 "URL-TEST | رایگان",
                 "NL🇳🇱",
                 "CH🇨🇭",
+                "US🇺🇸",
                 "RELAY🚩"
             ]
         },
@@ -121,7 +122,9 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | NL🇳🇱 | 0️⃣3️⃣",
                 "رایگان | TROJAN | @v2ray1_ng | CH🇨🇭 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @proxystore11 | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,10 +153,21 @@
             "tolerance": 50
         },
         {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @proxystore11 | RELAY🚩 | 0️⃣1️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -217,9 +231,9 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @proxystore11 | RELAY🚩 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "188.114.97.6",
+            "server": "199.232.78.160",
             "server_port": 443,
             "password": "mitivpn",
             "multiplex": {
@@ -229,7 +243,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "d-e.mitivpn.in.net",
+                "server_name": "ssl.fastly.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -238,9 +252,65 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/--@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN",
+                "path": "\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/D-e1i@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN",
                 "headers": {
-                    "Host": "d-e.mitivpn.in.net"
+                    "Host": "mitivpn---ss--s---mitivpn-4.global.ssl.fastly.net"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "190.93.245.148",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.pleadcourt.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/assignment",
+                "headers": {
+                    "Host": "www.pleadcourt.org"
+                }
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | RELAY🚩 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "188.114.97.3",
+            "server_port": 443,
+            "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mfyousheng.nl.eu.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/tjwsLhx0SFASG4l9FERJ1g",
+                "headers": {
+                    "Host": null
                 }
             }
         },
