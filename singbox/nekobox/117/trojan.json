@@ -106,8 +106,8 @@
             "outbounds": [
                 "URL-TEST | رایگان",
                 "US🇺🇸",
-                "DE🇩🇪",
-                "CL🇨🇱"
+                "CA🇨🇦",
+                "DE🇩🇪"
             ]
         },
         {
@@ -117,8 +117,9 @@
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
-                "رایگان | TROJAN | @ConfigsHUB | CL🇨🇱 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | CA🇨🇦 | 0️⃣2️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +131,18 @@
             "outbounds": [
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣1️⃣",
                 "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣2️⃣",
-                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣"
+                "رایگان | TROJAN | @oneclickvpnkeys | US🇺🇸 | 0️⃣3️⃣",
+                "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "رایگان | TROJAN | @ConfigsHUB | CA🇨🇦 | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,17 +152,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "CL🇨🇱",
-            "type": "urltest",
-            "outbounds": [
-                "رایگان | TROJAN | @ConfigsHUB | CL🇨🇱 | 0️⃣2️⃣"
+                "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -193,11 +195,35 @@
             }
         },
         {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣1️⃣",
+            "tag": "رایگان | TROJAN | @ConfigsHUB | US🇺🇸 | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "leviko-de5569.shopingggg.ir",
+            "server": "167.88.61.175",
             "server_port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | CA🇨🇦 | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "216.152.147.74",
+            "server_port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "رایگان | TROJAN | @ConfigsHUB | DE🇩🇪 | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "167.17.183.99",
+            "server_port": 443,
+            "password": "69279e79-7938-4e75-8560-705f3d056ade",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -205,32 +231,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "courses.iloverussia2026.com",
+                "server_name": "denot-8up7.edge-mil-jgpthc.workers.dev",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "رایگان | TROJAN | @ConfigsHUB | CL🇨🇱 | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "leviko-cl0640.shopingggg.ir",
-            "server_port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/stream\/DEVCOP\/705f3d056ade\/loc-0",
+                "headers": {
+                    "Host": "denot-8up7.edge-mil-jgpthc.workers.dev"
                 }
             }
         },
